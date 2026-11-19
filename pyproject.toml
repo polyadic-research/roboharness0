@@ -28,7 +28,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "pydantic-ai-slim[openai]>=2.1",
+    "pydantic-ai-slim[openai,anthropic]>=2.1",
     "pydantic>=2",
     "python-dotenv>=1.0",
     "fastapi>=0.110",

@@ -18,15 +18,15 @@
     "integrity_scope": "Exact official release URL/version and installed metadata/import checks. No independently verified wheel digest is claimed; the wheel is outside the PyPI hash locks."
   },
   "files": {
-    "coordinator.in": "677c55ce0c1679e923b77dc6c8fd2eea8fa36f08f088b2ba2cc263d3af6b8830",
-    "coordinator.lock": "29add760a5615c9590124423c0bf43d90eafba2f1d0748d030e29fa302e0e596",
+    "coordinator.in": "db876cc89ce868e6df1f54280146021581254e636bc72c0dacec6abe549dfb96",
+    "coordinator.lock": "c6797141cde0e895be13ca71c4571e57ce33d728ca764e2a61a09858a4f3825b",
     "policy.in": "d7d2acb05212f764e55ba5e26a3352f6070e59b243fc9d2a59ca512b958c3c8f",
     "policy.lock": "a0fb7f27a1677a6a78b4da93acd62b48a153525fed91827267050030c4d3708c",
     "simulator.in": "bef5b179375164cc355690639e840315fa9768d1885215fff99465fbf8f7ceb9",
     "simulator.lock": "c91e8563358cebf6fce111c300c3908a34ad74249ab3a6147bc35e24328d4b6d",
     "coordinator-tested-versions.json": "00ed47386cf7ef1c6ae03c2c553d5c4531c38709e1fabda2596fcf87da7d7148"
   },
-  "coordinator_resolution": "uv 0.13.7 pip compile --python-version 3.11 --python-platform x86_64-manylinux_2_28 --generate-hashes --no-header --no-annotate --prerelease disallow; scoped re-resolution used the prior exact-version lock as constraints and cached package metadata",
+  "coordinator_resolution": "uv 0.13.7 pip compile --python-version 3.11 --python-platform x86_64-manylinux_2_28 --generate-hashes --no-header --no-annotate --prerelease disallow. The 2026-11-20 update constrained all 51 existing packages to their prior pins and preserved their artifact hashes.",
   "coordinator_compatibility_evidence": "coordinator-tested-versions.json",
   "required_asset_types": [
     "tex",
@@ -35,5 +35,5 @@
     "objs_lw",
     "objs_objaverse"
   ],
-  "coordinator_scope": "API CodexGateway coordinator; optional native Claude/Codex SDK and Anthropic packages omitted; retained pins unchanged."
+  "coordinator_scope": "API CodexGateway coordinator. The frozen planner imports the Anthropic SDK while constructing model settings. Native Claude and Codex SDKs remain optional."
 }

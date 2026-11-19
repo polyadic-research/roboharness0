@@ -25,7 +25,10 @@ except ModuleNotFoundError:
 ROOT = Path(__file__).resolve().parents[1]
 ZERO_WORKLOAD = dict(setup.ZERO_WORKLOAD)
 IMPORTS = {
-    "coordinator": ("httpx", "pydantic_ai", "fastapi", "uvicorn", "rpent.runtime.api", "rpent.harness.state"),
+    "coordinator": (
+        "httpx", "pydantic_ai", "pydantic_ai.models.anthropic", "fastapi", "uvicorn",
+        "rpent.runtime.api", "rpent.harness.state",
+    ),
     "simulator": ("mujoco", "robocasa", "robosuite", "robots.robocasa.env_server"),
     "policy": ("torch", "transformers", "accelerate", "safetensors", "flash_attn", "rpent.policies.xiaomi_mibot_server"),
 }

@@ -470,18 +470,18 @@
       "mode": "100644"
     },
     "evaluations/robocasa365/2.0/environments/coordinator.in": {
-      "sha256": "677c55ce0c1679e923b77dc6c8fd2eea8fa36f08f088b2ba2cc263d3af6b8830",
-      "bytes": 334,
+      "sha256": "db876cc89ce868e6df1f54280146021581254e636bc72c0dacec6abe549dfb96",
+      "bytes": 362,
       "mode": "100644"
     },
     "evaluations/robocasa365/2.0/environments/coordinator.lock": {
-      "sha256": "29add760a5615c9590124423c0bf43d90eafba2f1d0748d030e29fa302e0e596",
-      "bytes": 91261,
+      "sha256": "c6797141cde0e895be13ca71c4571e57ce33d728ca764e2a61a09858a4f3825b",
+      "bytes": 91644,
       "mode": "100644"
     },
     "evaluations/robocasa365/2.0/environments/manifest.json": {
-      "sha256": "483e1a2fe5c66fbdfb80d724f566628bdc32c9becfebd83f59e993a94792373f",
-      "bytes": 2040,
+      "sha256": "88abaae11beb8e95881a5ab61ad88ce839aa4dd8f0498720b9a8e92417a64704",
+      "bytes": 2094,
       "mode": "100644"
     },
     "evaluations/robocasa365/2.0/environments/policy.in": {
@@ -545,8 +545,8 @@
       "mode": "100644"
     },
     "pyproject.toml": {
-      "sha256": "d192879a7e991aac2bdc1df4e861c620269e582cb587f685a8839a736e50388d",
-      "bytes": 2594,
+      "sha256": "9fe6d0eaecaf0fb480d52e0e940d6ac28629b7a270098d23128d77c594d0cae1",
+      "bytes": 2604,
       "mode": "100644"
     },
     "pytest.ini": {
@@ -2535,8 +2535,8 @@
       "mode": "100644"
     },
     "tools/check_robocasa_submission_environment.py": {
-      "sha256": "19425fe0ac5334d51d4b30e39e6c2625dd0e1cdd1adc01807bef8a67e959d5ef",
-      "bytes": 11878,
+      "sha256": "bc355fc9993c853ab66b846d845f916237904643f10a260672b8c77fb6e6a46b",
+      "bytes": 11933,
       "mode": "100644"
     },
     "tools/configure_robocasa_planner.py": {
