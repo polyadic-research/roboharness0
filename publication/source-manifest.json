@@ -310,8 +310,8 @@
       "mode": "100644"
     },
     ".github/workflows/open-source-prep.yml": {
-      "sha256": "6a0af3a2247dacb14bb0fda99ca5062b912a6a10e2c7a5e6db1d51421f2a0899",
-      "bytes": 2591,
+      "sha256": "59417c6b611241f18f60b3d69253e26e9f9a49fc2e3d42ea8eb3ec5f93fdb9e2",
+      "bytes": 2551,
       "mode": "100644"
     },
     ".gitignore": {

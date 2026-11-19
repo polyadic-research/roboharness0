@@ -19,7 +19,6 @@ jobs:
     timeout-minutes: 15
     env:
       NO_PROXY: 127.0.0.1,localhost,::1
-      no_proxy: 127.0.0.1,localhost,::1
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
