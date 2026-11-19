@@ -1,0 +1,40 @@
+{
+  "harness_version": "1.2.3.5",
+  "base_harness_version": "1.2.3.4",
+  "base_commit": "63731e10cc4aef6c3c83107a44542e21f609fa12",
+  "branch": "codex/rules-synthesis-20261022",
+  "selected_changes": [
+    "completed_step_review",
+    "semantic_target_conflict_escalation",
+    "review_before_multi_container_release",
+    "bounded_finishing_reserve",
+    "isolated_skill_library_0.0.1",
+    "static_acceptance_reference_0.1.0"
+  ],
+  "skill_library_version": "0.0.1",
+  "skill_library_read_default": false,
+  "updater_autostart": false,
+  "acceptance_skill_version": "0.1.0",
+  "acceptance_skill_attached_by_default": true,
+  "ora_takeover": false,
+  "original_1_2_3_grasp_and_motion_preserved": true,
+  "existing_evaluation_defaults_changed": false,
+  "success_rate_improvement_claimed": false,
+  "base_source_digest": "e96c45f19877e7c3d8fe9fab49caaf12544d2739c6333d3e187eda045e41234c",
+  "ported_from_version": "1.2.6",
+  "ported_from_commit": "ec09d7006bad40e7a3de31ba6b0ee7520bdbf099",
+  "whole_task_policy_first_preserved": true,
+  "approved_preclose_suffix_preserved": true,
+  "task_action_reviews_respect_policy_first_scope": true,
+  "base_source_manifest_sha256": "0e4a455328898ad17a284c249ffdd1ef45b9f58311808431fcdafa59687a891e",
+  "additional_changes": [
+    "separate_semantic_policy_review_from_motor_takeover",
+    "current_goal_phase_progress_evidence",
+    "explicit_physical_failure_classification"
+  ],
+  "physical_failure_threshold": 2,
+  "original_1_2_3_3_preserved": true,
+  "experimental": true,
+  "base_frozen_source": "evaluations/automated/Harness-1.2.3.4-paired72-xiaomi-20261020-launch03/source",
+  "isolated_baseline_commit": "998ebb3a9cc06268bc1e610608535b7663ec822d"
+}

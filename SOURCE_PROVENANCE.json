@@ -1,0 +1,45 @@
+{
+  "schema_version": 3,
+  "edition": "2.0",
+  "source_commits": {
+    "2.0": "c8911c64f24393e8665bd9ecc34f819173d9c3ba"
+  },
+  "source_versions": {
+    "2.0": "1.2.3.5"
+  },
+  "source_digests": {
+    "2.0": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc"
+  },
+  "original_snapshot": {
+    "files": 896,
+    "digest_scope": "Original accepted full scientific snapshot; the public source is curated and separately inventoried."
+  },
+  "public_file_inventory": "publication/source-manifest.json",
+  "preservation": {
+    "runtime_and_model_bound_inputs": "Retained RoboCasa/Xiaomi runtime, prompts and reference files are byte-exact original source. Unrelated modules are explicitly excluded, not rewritten.",
+    "original_RELEASE_json": "Preserved byte-exact; internal source version remains 1.2.3.5.",
+    "protocol": "Unchanged native-success feedback, verification and RGB-D behavior.",
+    "results": "Five byte-exact selected200 r002 identity, summary, index and verification records."
+  },
+  "history_policy": "Export verified files and initialize new Git history for public hosting. The internal preparation branch ancestry must not be published.",
+  "metadata": {
+    "team": "Polyadic Research Group",
+    "paper": "<ARXIV_URL>",
+    "project_license": "Apache-2.0",
+    "project_license_confirmed_on": "2026-11-17",
+    "project_license_file": "LICENSE",
+    "third_party_notice_file": "NOTICE",
+    "contact_email": "123090492@link.cuhk.edu.cn",
+    "citation_file": "CITATION.bib"
+  },
+  "publication_scope": {
+    "id": "robocasa365-xiaomi-submission",
+    "kind": "curated_subset_of_original_2.0",
+    "excluded_original_files": 82,
+    "exclusion_inventory": "publication/source-manifest.json#excluded_frozen_files",
+    "original_frozen_files": 292,
+    "retained_frozen_files": 210,
+    "complete_original_source_published": false,
+    "retained_original_file_bytes_unchanged": true
+  }
+}

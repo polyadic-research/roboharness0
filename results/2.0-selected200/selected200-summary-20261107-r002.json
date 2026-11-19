@@ -1,0 +1,180 @@
+{
+  "kind": "astra-user-selected-final200-native-summary-v2",
+  "updated_at": "2026-11-07T15:42:04.584651+00:00",
+  "user_instruction": "把U11这次成功的补测结果更新进去，汇总一下200局的最终成绩，把后继03这批的结果先拿掉",
+  "status": "final_native_scores_with_user_authorized_plan600_supplements",
+  "included_batches": [
+    "fresh50",
+    "followup01",
+    "followup02",
+    "followup04"
+  ],
+  "excluded_batches": [
+    {
+      "batch": "followup03",
+      "batch_id": "astra50-followup-03-20261104-r001",
+      "native_completed": 50,
+      "successes": 25,
+      "failures": 25,
+      "scope": "excluded_from_current_summary_only",
+      "raw_results_sources_and_Windows_archive_retained": true,
+      "deletion_performed": false,
+      "scientific_rejection_inferred": false
+    }
+  ],
+  "batches": [
+    {
+      "batch": "fresh50",
+      "display_name": "首批",
+      "native_completed": 50,
+      "successes": 34,
+      "failures": 16,
+      "success_rate": 0.68,
+      "native_episode_index": 1
+    },
+    {
+      "batch": "followup01",
+      "display_name": "后继01",
+      "native_completed": 50,
+      "successes": 36,
+      "failures": 14,
+      "success_rate": 0.72,
+      "native_episode_index": 2
+    },
+    {
+      "batch": "followup02",
+      "display_name": "后继02",
+      "native_completed": 50,
+      "successes": 34,
+      "failures": 16,
+      "success_rate": 0.68,
+      "native_episode_index": 3
+    },
+    {
+      "batch": "followup04",
+      "display_name": "后继04",
+      "native_completed": 50,
+      "successes": 37,
+      "failures": 13,
+      "success_rate": 0.74,
+      "native_episode_index": 4
+    }
+  ],
+  "native_completed": 200,
+  "successes": 141,
+  "failures": 59,
+  "success_rate": 0.705,
+  "success_rate_percent": 70.5,
+  "selected_native_unscored": 0,
+  "selected_scene_IDs_unique": true,
+  "attempts_not_used_as_denominator": true,
+  "selected_case_index": {
+    "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/user-selected200-native-index-20261107-r002.json",
+    "sha256": "1a801d939d2837116b4fe4a7ab025f9fcb24466a794e1099a7e50256683ad018"
+  },
+  "U11_selection": {
+    "scene": "U11-04",
+    "attempt_id": "2840f207-2485-4a25-838e-a29edcac571b",
+    "native_status": "success",
+    "steps": 2135,
+    "official_horizon": 2250,
+    "plan_generation_timeout_s": 600,
+    "API_timeout_s": 330,
+    "native_and_terminal_RNG_cold_next_independently_verified": true,
+    "explicit_user_adoption": true,
+    "replaces_one_prior_selected_failure_not_an_extra_unique": true,
+    "source_report": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/followup04-U11-plan600-SDS-final-native-report-r001.json",
+      "sha256": "426d5bbd1aeb6bc9470e150691dbc74ec5ae6ef3b2d20102d8125b360bdb8b75"
+    },
+    "other_three_scores_unchanged": true
+  },
+  "parameter_override_disclosure": {
+    "uniform_unchanged_180second_protocol_claimed": false,
+    "user_requested_600second_nested_planning_cases": [
+      "U11-04",
+      "U12-02",
+      "C10-03",
+      "U04-03",
+      "U10-03",
+      "U11-03",
+      "U13-03",
+      "U08-04",
+      "U12-04",
+      "U13-04"
+    ],
+    "number_of_selected_600second_cases": 10,
+    "scientific_core_changed": false,
+    "model_and_other_scene_inputs_unchanged": true,
+    "selected200_mixed_protocol_supplemental_summary": true,
+    "original250_baseline_rewritten": false
+  },
+  "baseline_reports_and_old_failed_attempts_retained": true,
+  "original250_baseline_rewritten": false,
+  "native_scores_vs_full_workflow_qualification_distinct": true,
+  "all200_full_workflow_canary_and_archive_complete": false,
+  "current_scope_full_Windows_archive_verified_cases": 150,
+  "followup04_full_batch_POST_audit_archive_cancelled_remains_cancelled": true,
+  "new_evaluation_retry_canary_reset_archive_or_deletion": false,
+  "formal_token_cost": null,
+  "formal_usage_reason": "gateway_not_provided",
+  "source_evidence": {
+    "fresh50_audit": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra50-fresh-20261103-r001/actual-retained-final50-audit-r002.json",
+      "sha256": "d70a5d30c7badfbd810afea6c9214d379d0c6fc34c66218bd181b114478b5672"
+    },
+    "followup01_audit": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/checks/actual-followup01-full-retained-audit-r001.json",
+      "sha256": "0e29bc433b64b2b0549f28db04c95aa106d9546abcd68048dc031e59c1aab4eb"
+    },
+    "followup02_audit": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/checks/actual-followup02-full-retained-audit-r001.json",
+      "sha256": "deb75e7071aa056d0c58800cf7884d9201434b0a4993611a930eeba6980f8702"
+    },
+    "fresh50_handoff": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/predecessor-handoff-verified-r001.json",
+      "sha256": "953d3963c604c5a2b4785466a66ef9b29e36add7f194109793c6297ff44bab67"
+    },
+    "followup01_handoff": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/followup01-handoff-verified-r001.json",
+      "sha256": "d169a22f4805a2b9289d06f5ba1ebd9ba20361aaea1228091454b10d0652d51d"
+    },
+    "followup02_C09_handoff": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/C09-repair-handoff-verified-r001.json",
+      "sha256": "5b8725d933357b5d18c6f426e65a36188f9efe87ae19184a26c82e66f2aca4a2"
+    },
+    "followup04_original46": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/checks/cancel-20261106-054939Z-SDS2-ledgers-r001.json",
+      "sha256": "d44f9ee451a1b7525175e907b9ebe571e0dbf9503885b37b7adf951494d815e1"
+    },
+    "followup04_four_supplements": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/followup04-four-SDS-final-native-report-r001.json",
+      "sha256": "7b5a04e2fa9b5abc73c90dae9807ec9390e0372eaf78f10b959ef4542f3b160a"
+    },
+    "U11_plan600_accepted_success": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/followup04-U11-plan600-SDS-final-native-report-r001.json",
+      "sha256": "426d5bbd1aeb6bc9470e150691dbc74ec5ae6ef3b2d20102d8125b360bdb8b75"
+    },
+    "U11_plan600_independent_audit": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/checks/U11-plan600-final-independent-acceptance-20261107-r001.json",
+      "sha256": "89e1f6a71e155cc0b23c4f6c67f4bb374d4fc3c2280237290699dcc0f6dd5838"
+    },
+    "excluded03_handoff": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/followup03-handoff-verified-r001.json",
+      "sha256": "5e4074a357b22f94eb715555dc6f5d7ec263a264b9bf6bcafe9f55feb7a275dc"
+    },
+    "selected200_nine_plan600_final": {
+      "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/selected200-nine-plan600-final-native-report-20261107-r001.json",
+      "sha256": "3803b8e0396b5c4eeb47d7303ac74334d3424879d8746ac108586b24eb8e87e8"
+    }
+  },
+  "previous_summary": {
+    "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/user-selected-final200-native-summary-20261107-r001.json",
+    "sha256": "e29bef8bbad750b0e7b9e0f4adca7f80ff15330545b72adf283d735b0e907446"
+  },
+  "supplemental_selection_rule": "Each independently accepted new native result, regardless of success or failure, becomes the supplemental result for that exact scene; no best-of, no refund, no extra attempt. An unscored new attempt does not erase the previous accepted result.",
+  "nine_supplements": {
+    "path": "/Users/adam/Documents/ChatGPT/VLM/outputs/astra-next100-20261104-r001/selected200-nine-plan600-final-native-report-20261107-r001.json",
+    "sha256": "3803b8e0396b5c4eeb47d7303ac74334d3424879d8746ac108586b24eb8e87e8"
+  }
+}

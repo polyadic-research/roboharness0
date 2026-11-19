@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "source_commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+  "scope": "Allowlisted historical configuration and source-binding evidence; not an authenticated independent upstream model attestation.",
+  "provider": "OpenAI Codex SDK via CodexGateway",
+  "configured_model_provider": "openai",
+  "allow_provider_model_fallback": false,
+  "sdk_version": "0.159.0",
+  "independently_verified": false,
+  "configuration": {
+    "planner": "api",
+    "transport": "codexgateway",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "max_tokens": 0,
+    "http_request_timeout_s": 330,
+    "planner_timeout_s": null,
+    "plan_generation_timeout_s": 180
+  },
+  "evidence": [
+    {
+      "basename": "tool_chat.py",
+      "sha256": "33526edd7487955ff011b595697177f63a0f667e726f5b848f6d4ece3e6a9c3f",
+      "fields": {
+        "modelProvider": "openai",
+        "allowProviderModelFallback": false
+      },
+      "source_lines": [
+        123,
+        336,
+        337
+      ]
+    },
+    {
+      "basename": "config.py",
+      "sha256": "61e3b0bc14b1df6135df58eae81cdfffcbd1626d6e9ce178fbe01d1b724a7f9a",
+      "fields": [
+        "CODEX_DEFAULT_MODEL",
+        "CODEX_DEFAULT_REASONING_EFFORT"
+      ],
+      "source_lines": [
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "basename": "actual03-owned-Mac-SDK-as-run-byte-provenance-r009.json",
+      "sha256": "318dbfc2d167796f94cc936777ff3d3650454e4edb00ce2ddc314b47b7ad74cc",
+      "fields": {
+        "SDK_version": "0.159.0",
+        "gateway_source_sha256": {
+          "codex_api/runtime/tool_chat.py": "33526edd7487955ff011b595697177f63a0f667e726f5b848f6d4ece3e6a9c3f",
+          "codex_api/config.py": "61e3b0bc14b1df6135df58eae81cdfffcbd1626d6e9ce178fbe01d1b724a7f9a"
+        }
+      },
+      "scope": "Gateway source-byte binding only. No excluded followup03 outcome is added to selected200."
+    },
+    {
+      "basename": "actual-started-independent-Windows-API-owner-r002.json",
+      "sha256": "7d0b68a62abbf90cbed6d0586539d363e6074eca20ae7d075dac556a7c6beb87",
+      "fields": {
+        "CODEX_DEFAULT_MODEL": "gpt-6-astra",
+        "CODEX_DEFAULT_REASONING_EFFORT": "xhigh"
+      }
+    },
+    {
+      "basename": "actual-persistent-fresh-API-route-ready-r002.json",
+      "sha256": "14a03d51c011d0998d9699298ba9f4c31cda2e1cbe0b63f965a9324a0ea5b656",
+      "fields": {
+        "models.data[1].id": "gpt-6-astra",
+        "models.data[1].owned_by": "openai-codex"
+      }
+    },
+    {
+      "basename": "runtime-binding.json",
+      "sha256": "7b18a715785fc3e6d4ccfb24bc16692b4c33fafdced1f9eaab8ce74872e883a2",
+      "scope": "Selected followup04 job.api and request.api",
+      "fields": {
+        "protocol": "codexgateway",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh",
+        "timeout_s": 330,
+        "max_tokens": 0
+      }
+    },
+    {
+      "basename": "schedule.json",
+      "sha256": "46204868f046401940b36f0f7ad3d765c0fb221b7d8bac84b2e39af4f1729985",
+      "fields": {
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh",
+        "timeout_s": 330,
+        "max_tokens": 0
+      }
+    }
+  ],
+  "publication_policy": {
+    "raw_operational_records_included": false,
+    "private_urls_hosts_or_keys_included": false,
+    "new_model_requests": 0,
+    "raw_record_access": "Original operational records remain private; only hashes and allowlisted configuration fields are published."
+  }
+}

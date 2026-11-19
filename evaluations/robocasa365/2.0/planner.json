@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harness-2.0-xiaomi-historical-planner",
+  "source_commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+  "provider": "OpenAI Codex SDK via CodexGateway",
+  "provider_identity_scope": "Allowlisted historical configuration and source-binding evidence; not an authenticated independent upstream model attestation.",
+  "cli": {
+    "planner": "api",
+    "model": "codexgateway:gpt-6-astra",
+    "max_tokens": 0,
+    "plan_generation_timeout_s": 180,
+    "planner_timeout_s": null
+  },
+  "gateway": {
+    "reasoning_effort": "xhigh",
+    "http_request_timeout_s": 330,
+    "settings_scope": "gateway/server configuration; frozen client does not send reasoning effort",
+    "confirmation": "Reviewer must confirm gateway-side model and reasoning settings. This is not an automated upstream identity audit."
+  },
+  "private_environment": {
+    "base_url_env": "OPENAI_BASE_URL",
+    "api_key_env": "OPENAI_API_KEY"
+  },
+  "historical_overrides": {
+    "scope": "Exact selected200 historical evidence; not automatically applied to a new official evaluation.",
+    "cases": [
+      {
+        "scene_id": "U12-02",
+        "selected_attempt_id": "559dc380-52b1-44d0-ac11-08c0dc4a922d",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "C10-03",
+        "selected_attempt_id": "f121110d-9bfd-4ee4-a204-df5c968dbae9",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U04-03",
+        "selected_attempt_id": "2be29cc4-7c69-42f9-97ad-1482d5de9a83",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U10-03",
+        "selected_attempt_id": "b884a0f8-8042-47a5-afd6-8f27d7a609f3",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U11-03",
+        "selected_attempt_id": "dd46ee27-3ce1-4cbf-ac25-3ed058827316",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U13-03",
+        "selected_attempt_id": "87f2bcbd-20e3-43b2-a4a6-bd69902856f5",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U08-04",
+        "selected_attempt_id": "d54f1510-2d59-4244-8ca4-4e4b6eec6763",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U11-04",
+        "selected_attempt_id": "2840f207-2485-4a25-838e-a29edcac571b",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U12-04",
+        "selected_attempt_id": "551c73ad-546d-4041-a646-c9711f0302e8",
+        "plan_generation_timeout_s": 600
+      },
+      {
+        "scene_id": "U13-04",
+        "selected_attempt_id": "f9c613a5-a02a-4676-ac25-a4da09c4668c",
+        "plan_generation_timeout_s": 600
+      }
+    ]
+  },
+  "reproducibility": {
+    "keys_or_endpoints_in_repository": false,
+    "network_requests_for_configuration_check": 0,
+    "provider_identity_independently_verified": false
+  },
+  "evidence": "planner-evidence.json",
+  "access": {
+    "delivery": "private_api",
+    "base_url_env": "OPENAI_BASE_URL",
+    "api_key_env": "OPENAI_API_KEY",
+    "endpoint_and_key_in_repository": false
+  }
+}

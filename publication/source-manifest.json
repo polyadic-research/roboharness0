@@ -1,0 +1,2668 @@
+{
+  "schema_version": 2,
+  "edition": "2.0",
+  "source_commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+  "source_digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc",
+  "original_version": "1.2.3.5",
+  "frozen_files": {
+    "robots/__init__.py": "9f57c5cfa32be03bab2ea4eecb3217f111daff80afb09501b9a41a741d3a9290",
+    "robots/libero/__init__.py": "d2490b97c169a8053011bfc45ce133aa456ed958bbe3567750ee4e362abb7314",
+    "robots/libero/binding.py": "8a0df707c8c6981cb2ea8a0d5205225852db744b1b2b32946730a3e852ce16ca",
+    "robots/libero/bootstrap.py": "fae0ac12e220157f84a75957760a2291e89fd2c47cac23eb2a1ba13706bec298",
+    "robots/libero/data_schema.py": "3034e47fbbd00bbce363438503576bbb2ee6dedc2dcb618d1d33133625da9f11",
+    "robots/libero/display.py": "e94b834606191149b9aab143d00430669420431fedf97de54d78c0e50834f189",
+    "robots/libero/env_client.py": "229b874afbbb9c5489b7f3cb80eca1bba278377e33e65c778ff66d4f6f7bd404",
+    "robots/libero/env_server.py": "b609ef010346627ec2faa787c8b9507a2eb29bf82363d6c0f06b94bd5a63716b",
+    "robots/libero/evaluation.py": "076b154faf75b9e8c763eb8767bdf853d77dd2ee0e30eebca4e1dad98217a28d",
+    "robots/libero/guides/env_calibration.md": "c643d8340f892e5b380113e43f921f45852080d8de2e5cf92c964f1542ba2419",
+    "robots/libero/guides/pro_hybrid_guide.md": "28f955febde47acaef5390d5429cfce9e232e45dce4b12c094fc3506151dcae5",
+    "robots/libero/guides/strict_hybrid_guide.md": "bc53b9b228cf2d3ecd0d9e0dcf391dbca06ac59d3aa75e2131504907c3f4e105",
+    "robots/libero/inference_pool.py": "20a79850de51cca19b06feca7e7ede11d78a5d644ca67ecc81af3838254ced2b",
+    "robots/libero/launch.py": "85346469178acba1a24b25481fe677ef60c9ea1b41a09d3deafd57f4215b5d1e",
+    "robots/libero/outcomes.py": "296ee7fd782eb97cb9af38cc8f46d0a9df1bcfbfcd3825329bbbb133efe6cf73",
+    "robots/libero/prompt_bundle.py": "c2813456aeef92a0c31733f3bb22da349e24664866e6213a284975c1bfcca600",
+    "robots/libero/prompts/__init__.py": "87cec1bd4a978e2ceaf3e5904d4817a224855378b879ba4a21d7d88ed3fad6eb",
+    "robots/libero/prompts/system.py": "ab00273d06134cf5f01b91c35588c49ca59cfa11a4101ee26c1e43f28afafa90",
+    "robots/libero/prompts/user.py": "eae7e5d09463719aeb2d7cadfa661876153e8a59532430558d8414292bd3fa09",
+    "robots/libero/sam3_server.py": "1ee096cf9f374e67dc85c9ba97044d9abb4f8b11b971d816077629682102b1bb",
+    "robots/libero/session.py": "9aaaf3bb5b52253d2616c70f8be9b2613230fcd6e2f92e699b84e554d3afc03c",
+    "robots/libero/toolkit.py": "4329ddddb76b72b6348e23010e413359652202183917e7b3456e316b21f6b1f7",
+    "robots/libero/tools.py": "e4b16aac4d1f226b24added87cb9ade7e2c4567d48014a3e07780afe680a3c0f",
+    "robots/libero/vla_runner.py": "96de5115af27a730922190ecdae8ca41808bf3760e5a29f80c85684015c8852b",
+    "robots/libero/vla_server.py": "61d2187836da9103d1e0c2e435e3548676b212e3a3fe43601af4907c724ca8b7",
+    "robots/robocasa/__init__.py": "38448f82df4919a9de833386b2317e5d4bba70f350f666c91eee794f3eebb438",
+    "robots/robocasa/acceptance_skills/__init__.py": "e63dff0ea89f23955bf3511b37b083952330900446f174a1f638ec49d1d78263",
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/SKILL.md": "b4597c3dd9de4416bb3e5f46f7402d2ba65f7bf87f6d1feabee74e2184e4732b",
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/manifest.json": "65905941639a9c99d1e2375c65ada0d145924791a07f29a7366bde5755810121",
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/OrganizeMeasuringCups.md": "7e5e0e2576c23d4bb91cd9e60ef0b8b7538c3e9d31e3b3d6f94cd67688cfa47d",
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/PortionHotDogs.md": "baf80f6be22326f40b6da9edce556762f9439cc35dea76bdb153d2c423403a8f",
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/RestockSinkSupplies.md": "3099e2c5441ffdb32ef9eeb2150483b687d9be0cfbda0343f000ca69e90f2039",
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/StrainerSetup.md": "09b3dc024fb3954e831dcff8fcdf1f403a31080f3a5b1106c36bc1ef92e12dcd",
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/WeighIngredients.md": "e9433af5e3131b8bb5784c02e7776af52e424819829184c838eb2a9b2168fdc2",
+    "robots/robocasa/binding.py": "a36738240f1b8fc65fa62a64978ab5d1ba09c006a92b89e384d89b4f63aae724",
+    "robots/robocasa/capabilities.py": "543dabe5745be5e2166198683127979ce3a762e68ee8345525eeb1ca176d4c38",
+    "robots/robocasa/competition.py": "a519ad7b9c46bb33f8bd49d504544d52bd408f3efc3e99c2587051064e951b03",
+    "robots/robocasa/competition_worker.py": "9dae2db2c9920e824a78c4f72ef08176ef9ad1d8489aeb526e35866dda40f89e",
+    "robots/robocasa/config.py": "3e8685f0133a550d0dce978786ea76918bd0a6744940196061016b0ef7da66cb",
+    "robots/robocasa/control_ablation.py": "35f7ccc250596dcdb67a4696154a6aee57b042bb5a4dd79c04329231ba7d9df1",
+    "robots/robocasa/control_modes.py": "ae1808652780dfb351c33553b2ef611eb0b0b5c11de384fd7ccb5233ae512fd3",
+    "robots/robocasa/daemon.py": "cf31cdbdbb6c275952752b332f0d13dcc06101b44b38729e9184483f47cb93d9",
+    "robots/robocasa/data_schema.py": "044c6210da26299947233222a0d9c5fafd612d704144296edd11ed963b890020",
+    "robots/robocasa/dependencies.py": "0455eaac1e264a548fbbb4d73dca6e1fc58376e44b89bd789a56fc69a67559e8",
+    "robots/robocasa/display.py": "36db58de51c131f721ef8fbe0ca8303ea2353bc77daa26601359efb5645229f0",
+    "robots/robocasa/env_client.py": "d8c327b926e4df7270890fe2e4d5116a544230994fb555fc4cdad3599a514f92",
+    "robots/robocasa/env_server.py": "20c9548fb6192613178161d5fd42c81d4c8126946e3955c71ea63d90f2348d6e",
+    "robots/robocasa/evaluation.py": "32819513f1e2cb18800f87b46185d2b90e97ada73f39d99c630ec88e31a30478",
+    "robots/robocasa/grasp_progress.py": "61e9839f77ac5fe988f3aa1d1e12452e4553236424612a7a9fb941109318c2e5",
+    "robots/robocasa/launch.py": "f60c752c7433e4ab282752c7bfa2e2217128799c3983c31fc469251c0a104fe1",
+    "robots/robocasa/object_registry_preflight.py": "7b9f131b947daded0bfbd60bb68195d4eb59aa16b6385ed185c106327a5b340f",
+    "robots/robocasa/observation.py": "bd377e07da88303a685ae4b9a07226d6af64bc56f7734538150e02d276fa8b49",
+    "robots/robocasa/outcomes.py": "ba8feb9e9b1b6a974c93fce87c7af80660937570b856f0eae8501f74efb98b19",
+    "robots/robocasa/perception.py": "982bd2fc6958f0c1fd3c9a087434b0e71926378f318afde0f81e017d04a8233d",
+    "robots/robocasa/pi05_binding.py": "db701e2197f5e147009c3dd3bf68f631a0e4cce6e0fb21ada89e82e74aa063b9",
+    "robots/robocasa/policy_pool.py": "3b872b3ed08ec5db151900ef3288ba5287e091a553d4e305592807b2f0cb3180",
+    "robots/robocasa/policy_selection.py": "784246d0fb9cbde1725458105973b3d6c61cba9e69c3ae6f928565bc92f3f380",
+    "robots/robocasa/policy_skills/__init__.py": "3a2c34cd5d9c72f211c0bce958e639063c15df5f6dab30cd3efde1a41bcc7869",
+    "robots/robocasa/policy_skills/pi05.capabilities.json": "9af3768b5de8ba92665c533dae4b917eaa6bf03d5c234ad9fc5693644b64b5f6",
+    "robots/robocasa/policy_skills/pi05.md": "f562f526c1e1d30ab02bb84547cfbc6307087aded08c8afc0da22ef46f4aaf07",
+    "robots/robocasa/policy_skills/xiaomi-mibot.capabilities.json": "eed90286f66dc803cac5b39f141dec982370866eac5ad5f86517ef3e14bee83e",
+    "robots/robocasa/policy_skills/xiaomi-mibot.md": "fc7fef1f6713bde5578fe2550d3670b9d88108cb620a2ef2910a0432a4c48fd4",
+    "robots/robocasa/pour_tool.py": "cdbeb1b9e57f3ee4ae6d4ec44403e27b0487b231b6bfc98d1cce4fa2e8f91d5b",
+    "robots/robocasa/privileged_tools.py": "8ec222311dc2f9e45250ea8e49b86af4ef2dfd8c036dd3a96f4ef941adf3f8d0",
+    "robots/robocasa/prompts/__init__.py": "618fd7c1177504ea0bdda17475fb80843c5c7e2cddc4ad25df379f8d4f52b26f",
+    "robots/robocasa/prompts/system.py": "9b4a79e40896029573405bfc0c2e189317b0328de6c566453a5c35db476048d1",
+    "robots/robocasa/qualification.py": "664f5fb7908ec62e415082478a67493c948d2e3eac6b2ffc405492c633da91fc",
+    "robots/robocasa/runtime.py": "8451be995529da874b649ae5e223c38273d3bc9bd7a971ddb3325081a7157fca",
+    "robots/robocasa/session.py": "ad451c9e8a63ca8915b24631fb22872fd15e404a9d4f45c0acc0b48895166815",
+    "robots/robocasa/submission.py": "13a0ae0cc61c584fe9624506a3b872d19ba93d07129c8473146c141b981a832b",
+    "robots/robocasa/task_groups.json": "ba9cb693927d4f7cdf60b13189e68b5dfca1604c2a7d4f0e784bc1d03937aa3f",
+    "robots/robocasa/task_review.py": "e659bf2fdc156518229a0776bf6f52c73a1207d4157c82e8ece62fd6bc85113a",
+    "robots/robocasa/tasks.py": "de8f1c78c3a7f9fa33f3866a498244a0aa6ef42fb59a4dfe9ffea80a6549cff7",
+    "robots/robocasa/toolkit.py": "58a071c5980febfe9d59e435682915699f54a22e018646deee0a804536504966",
+    "robots/robocasa/tools/build_capabilities.py": "72803d476b287a9622df1eb66bb3090a36c28b38b754d6523945337ed546ba4b",
+    "robots/robocasa/tools/build_handback.py": "3329eabea36d7155c93d9786cfb13629b21aefa94ffa497f3f08d84842ce7d39",
+    "robots/robocasa/tools/convert_xiaomi_summary.py": "08c549c24951eb00558ff05fee0a51cce13a637e5e22bbe21418c65874f292ec",
+    "robots/robocasa/tools/skill_table.py": "7763fb87fed016a1a5807dcc4574ff71fcee054c34bfc245dc6d9f6b90898665",
+    "robots/robocasa/vla_runner.py": "1ed7e725a51cec3f3634719246fbbf5a7c810270867f331d517a814c9fec9967",
+    "robots/robocasa/xiaomi_binding.py": "ce24144af97b60763561964640515725a1b6caade3a32941b7ab7e7525e16c96",
+    "robots/robocasa/xiaomi_policy_pool.py": "665b0c7990ef089885464a7afdef5b9e1fad969534c314dc86500d6661e83039",
+    "robots/robocerebra/__init__.py": "49fe8d1a659b0cebb707f00ff0695bda54d3ee214588f2ecfe2b8ad0684d3839",
+    "robots/robocerebra/binding.py": "95e9e1d97aad01483273d9f4d74281ffe101246dae863edf759a66027b468dde",
+    "robots/robocerebra/config.py": "28996f3b6d64d47f90d0f6f918b6943a7f64e2f470dabd0cbcfaaa1d3e9bf66f",
+    "robots/robocerebra/data_schema.py": "036ced1d46856dec7f2fe6792ad72306591875fec422db665a61f994fb7691ed",
+    "robots/robocerebra/display.py": "3db43624e70949a2c7175999af08f4b2317bed4d08782f5341f99ac34cbd938b",
+    "robots/robocerebra/evaluation.py": "6a2343523d1c5dd479373ab005c1a1c44e82fa730854ec353d7602a1f9947fa9",
+    "robots/robocerebra/launch.py": "2e7c5f2dc47e6defad0fc3db0eaabe051aace533d03555647082cc865e9d347a",
+    "robots/robocerebra/prompts/__init__.py": "00a39c537ead14f7586319b5090a1a691dcb4e8d29e90803c306bc303fb1266b",
+    "robots/robocerebra/prompts/system.py": "54d950e5fa469ea9691eb553f1943472658bc572bfc5af12864a3cf96e9eef7f",
+    "robots/robocerebra/runtime.py": "fdd668488da196f79dc4176f17566d946e01c9c93e3496e430cdc61b7ef31b99",
+    "robots/robocerebra/tasks.py": "9360fd3d83344af635e43eb94fa1440b60dfa3993c7610965e59f6648e0e1028",
+    "robots/robocerebra/toolkit.py": "00a3903786025571aeca6c0a0633b1dfe434cf2ea839ff4979bb9af11f86be67",
+    "rpent/__init__.py": "b6890a4c8ccc5a8094cab709d31d4665940dc2be3af0b2beca96f099b0938201",
+    "rpent/agent_runtime.py": "391e70f7d9455c987a3c474785edeaded6e5a23c549b3adbe5f99c0169ac9da2",
+    "rpent/cli/__init__.py": "b50411ce305d7912aea5e39b1c359fb28eaec5fb98dc6b1ee93b2f715175f814",
+    "rpent/cli/main.py": "af4c88ded3017f9b923761212f67d1c04cf2f6cf13addce4c430bc7247b85b63",
+    "rpent/cli/tui.py": "5bf64582b31305a92d5804ca668ee2c486d4855eefde675e204153f63886c0e6",
+    "rpent/context/__init__.py": "a6adaa709caa5664aeec8e470c27fe2009beeae93222cdca95c8d065661cb13d",
+    "rpent/context/policy.py": "94fbc22c6d20a1641702672c8f62e3708eb48ea79a3f60589e7a1a502bd200a6",
+    "rpent/context/projectors.py": "1c20a19f629d226101269802ac1bdacfde2f3ded64eca241d85f544437151516",
+    "rpent/context/prompt_utils.py": "4ae5644f52f690bc19c2bba38850cec240507f99002282b12b6f2579b1e5f98e",
+    "rpent/context/prompts/prompt.py": "c618a4a5a14c3c7eab287b96f4a71907d42568cea518b1cbdd3f2ac4a9886b3c",
+    "rpent/context/registry.py": "5671b53210280c85a7dd3154f86148ba220fc5a72d95ee9648ca70f29534689e",
+    "rpent/dashboard/__init__.py": "5497bac5720c5957d884d50d1a005a44571db57fd778d7698093b8c721f92048",
+    "rpent/dashboard/attachment.py": "1d12d0fe043385c848c85e304291104f485fa5a0232470bdf557418e1fa79a7e",
+    "rpent/dashboard/index.html": "8f5ae3e657a95ae5dc21b5e18a5679300cfc32e52a315db50be89d8f2287dafa",
+    "rpent/dashboard/index.zh-cn.html": "b57a321250b2f177eb0f4fef2a144eab5f246be7541ddab22642d513ff4aeca2",
+    "rpent/dashboard/launcher.py": "d54533d8914dbaee4c815c3be3a18535da4d2e884dea84bf5b3e945f3357c33b",
+    "rpent/dashboard/planning_view.py": "5e81f96b821d7cb229254a160f6c250ffdb316fcc50d6ca7128505e9c2bee01f",
+    "rpent/dashboard/server.py": "190b7d1c9aefba65fbc1bc817cb8b61e9681469771e597b61e4e13df92c0e112",
+    "rpent/dashboard/state.py": "86fa4fb6ff52faecc7d6792dd9bf990c4d41a17837edb076caa4ce5d6b4e77ae",
+    "rpent/envs/__init__.py": "c8b9459fe697afc7d327628ee6376a32a300e2c01bd7ce7095df0dd55d7280e5",
+    "rpent/envs/base.py": "67bc137bcbcdb77996e8310aa135fc18896024493cb7afb3f6d7e599edc769d3",
+    "rpent/envs/env_spec.py": "d0cb798206d99057f595afd1920d9fb250900163d674fac21f18c34bbde9b006",
+    "rpent/envs/launch.py": "7a7eeb88ff6bb8d4c4c9ed8da46644f91a9cb7425a74c25ee9a6e17e0726a7a3",
+    "rpent/envs/prerequisites.py": "dfc989cd8dfa94a82c17649c4e65685ada42834ef320a9de4871e9445cf1deba",
+    "rpent/envs/prompt_bundle.py": "1cb7c508ee179a27ebee798fa8ae13f2e2acff7fd48f7665b4314b11470cde25",
+    "rpent/episode/__init__.py": "e3943b83f95da9d4d45227b60e0e20e24f26a4542ece4a9636dd1dec41372d32",
+    "rpent/episode/binding.py": "88685c588a20408afc5b34684c0ace5c1ea91d60d7b58582f7d6711e28928155",
+    "rpent/episode/contracts.py": "95ae98ca9f5e710b838f9c168c4fead52502eb591b95c9ec32b2a22bba8c2bd9",
+    "rpent/episode/controller.py": "6727b507f1c4fb99cce8390993c3cbc2bf7e9d2aa3e4e3756f9396fc87dbf426",
+    "rpent/episode/liveness.py": "55c748f4afac4d08099963e240c187c9d5c0b0158cdbb4a16bae4d2e8e470085",
+    "rpent/episode/presets.py": "496326dbb6a112635f1747843ffaef27f5d91c2465a802150a1becc986e39e8d",
+    "rpent/episode/recording.py": "842dfa54b83e07168c538f72520244c92cd2e2eeb3c11657101a113ae1b15c9b",
+    "rpent/episode/runtime.py": "6a48a8817e641c0166e23643cc8cc21d5fec29447e19358c53f35a0ea2464deb",
+    "rpent/evaluation/__init__.py": "83412abcdf810592541f3db780c7bc4771c6e582312211c82ac44233d44062d2",
+    "rpent/evaluation/attempt_registration.py": "5e178e4101c31299af4d8df513c39a1b9a5bf7aac703a7a09ab31e0476f62790",
+    "rpent/evaluation/batches.py": "5563a2c4a63d2b759d5e2e3cc4b8b4e23a3800fc2de830df7ebed41ae6ae7b82",
+    "rpent/evaluation/cases.py": "7652f64b7cd0bf9689aa35a55c2235f2cab92bed5832a8133cbf0832f9eb9770",
+    "rpent/evaluation/control.py": "8cfa07fb6ae312e1daa91a42fef8c913e31267c42a3f735d564c4259a930341b",
+    "rpent/evaluation/coordinator.py": "507cd6ae12675fd83eebd3318f99e234ba52fd4abfc06b7612d1be6531acb71c",
+    "rpent/evaluation/diagnostics.py": "eb6210c00396fbc369955507788eaa12c7d09f27b4028043234205eaff0e6929",
+    "rpent/evaluation/front_controller.py": "c2e991cd84e949d55577b74a0a151448bf05806446ad4eb55c6a2f0e817e193e",
+    "rpent/evaluation/manifest.py": "f8233d6976d0f23f930274ddc610c0d909760a5ca14e5ea96f0764a7a908c1fb",
+    "rpent/evaluation/official_metrics.py": "314bd6e9a9e4963f167dff4f5b42867ad26ffb2aa59a5a2f249c771e03eab4de",
+    "rpent/evaluation/parallel.py": "db1625311ec66ce5be7e8572a024f29bc28469f2dc63f040430dc71bb30488d2",
+    "rpent/evaluation/preparation.py": "34cc517bb060e3d10d81020ddf83d9e991e391e21661ab35eca29e7eeef6ecc0",
+    "rpent/evaluation/preparation_progress.py": "117c531fe049761f03d7dabfa99febf2bf47e7a6ce03a6da136cf40ed5abaf06",
+    "rpent/evaluation/result_acceptance.py": "ab7223e335bee7b4fd7241da1c71537bd1da3fefb6e1f4e63a21f56b7bcc48a4",
+    "rpent/evaluation/results.py": "593f327c98e978ccbaf64ebd03ae0f277dc6ede91ec59689516378d688829320",
+    "rpent/evaluation/startup.py": "596b6c738edb0144de6088d223ab1465efbf45b27393936577ffb6e3a9936600",
+    "rpent/evaluation/startup_log.py": "3bb7eda2ab067e941c8e6e5e71bf6d859ba9068733fc03958a10b794864a3dda",
+    "rpent/evaluation/timeouts.py": "26f3a7bda37d804a43bd8daf2c876bdae18939efc4d31f4945e3f6896d3d1e18",
+    "rpent/evaluation/worker.py": "9e1e94e406848560ad237d0bb7bf9c7327cd154dcda02e33d9fc8abcbbe91130",
+    "rpent/harness/__init__.py": "8690d2534f1e99ccd78397228820b0906e61da54bc999759aef9b42eebf3e54a",
+    "rpent/harness/controller.py": "ee992c63dd2fbf030ca6c4c5de939dba023a54accfc8ee5c0b1c6fa79378b14e",
+    "rpent/harness/evidence.py": "609c4b669a506467ad73ca3d7142ea2aa28ba77a52a28d02b9cb9a87534641ae",
+    "rpent/harness/finishing.py": "ab285bba7a1392192403db30bc95053f24ebc5fdf6f7a647a00520cfb0206947",
+    "rpent/harness/gate.py": "4cfddd5de863d75e856882eaba4c217786f628d5a57aa722f30279a44b62da65",
+    "rpent/harness/hooks.py": "b22bf66b3e4a069850735dfaed792196c477f8ec9e095bffb988f3c3fd91805c",
+    "rpent/harness/lifecycle.py": "a74004ad5c5b41e5185b374c4e1a48dd2376838b54a9f521ad2f13b122915f9b",
+    "rpent/harness/outcomes.py": "35575bbfa22963338e1ef2c2bb1b2246370adaa944e5552026dcbd3a1d605ef5",
+    "rpent/harness/policy_progress.py": "7790b5acb058fea5e4884dafd73bd481bec7c56e900845ea098b9e3c9f7022bd",
+    "rpent/harness/recovery.py": "a0c709f72b73de56a24655f2b7f4360a8bad0ed8f4c04013ff9e3c282a8beba3",
+    "rpent/harness/session.py": "b3eac9d5124076615734836d9748c3dd0b7e2a771ee9d16a94756eb29146f947",
+    "rpent/harness/stages.py": "2e48cfdea71359533c37970a184c86fe9071ea676d0a561a1d30749e3f90272a",
+    "rpent/harness/state.py": "efba615dbdcfecfe83a0174f85e7ca3f3966421a691ebcabed3c7de0293d6e38",
+    "rpent/harness/verification.py": "3b417add3eaf45a0ec35f4453a5ad33467ac8fe11df7616f6d7fa651e9cc805d",
+    "rpent/harness/verifiers.py": "0e35c8097dd489af655583e8b02e69cd240c67720a224d9032fcb79854135072",
+    "rpent/planner/__init__.py": "74ec689f8f1a8ffe6d63000f91dd3c2614478ab8390ebeb6c3dcbbf582b72813",
+    "rpent/planner/api_loop.py": "09128757e29e6ce8afb9114d629302c8590535f3a66c3074ad26287d2b0b5326",
+    "rpent/planner/base.py": "51c6ebb1ca27b86517ba7069416480d6c20924b3bc4c3b07506a40fd5cc3ab7f",
+    "rpent/planner/claude_code.py": "af1a49f3dc4395ec0c88b6297b84d3edde4e61667b47d69b7cec32c9fca76ac8",
+    "rpent/planner/codex.py": "db0f0e1375646176dea11922d5401ad36fcc1f37feb829e0ea7b634d96586847",
+    "rpent/planner/utils/__init__.py": "34d67b01cb662a1184d34727fa6c20a33ce2067e52d6b08f8104b601ba611967",
+    "rpent/planner/utils/http_mcp_server.py": "7e6e460b32870fd499cfea32d3ebe4f9d6419ad7e04572f3ba15523df1130676",
+    "rpent/planning/__init__.py": "7600c7f3c75318dfdfe9ee05a72c030b03572ba809cfca75a9c926fde4b4f55c",
+    "rpent/planning/backend.py": "6b48736f391852cb6a6d44b3264d1ef9ac6582acbf33cde1e8bdefa6fe96f4d3",
+    "rpent/planning/components.py": "8d144e0e68a17545a06bcd78737a261d9fe85f628ee46b24cacddd721728bf15",
+    "rpent/planning/coverage.py": "8d972c45619c8e071b99af699d515d8d9ed7e6595c706bf2f1a52821da494c0e",
+    "rpent/planning/events.py": "93e46debd74a8e4d6faa53c42037f0dc6d6b955bd98e5589e83f0ea83c21fc20",
+    "rpent/planning/feedback.py": "d2f0bec1fa51452c6d070338e4209a2dee9c12f9a4ea1bb7b652973180254329",
+    "rpent/planning/generator.py": "8e0a78cbb0b4e1899bb9ea243577c5d12e9c5d8716547d86f16dc25cb8d3c5fb",
+    "rpent/planning/information.py": "4ec9a2ea9e2f69b81df6624d45e69745c4611a4addcc54061fc2d7f7a10850a3",
+    "rpent/planning/instructions.py": "5ede25eddbaeabc69bc73faed11a0cca7986a477e074cb215db37f7eba029666",
+    "rpent/planning/manifest.py": "71f06b725a9d08424b75e791f5364b4a36ff9d58ec3ad1c1124db8f6d3d537f9",
+    "rpent/planning/observation.py": "4b1f142c5902235e94db71f8fec472c4be2592ca1f1acc77c195642eec6b7764",
+    "rpent/planning/outcome_program.py": "726ab3c87e58739ee5586a345baff1df6db455f14a742bf400093ec2dd8925d5",
+    "rpent/planning/outcomes.py": "1bf2647a893f79734d2774b8417c263b198e2fe223abb75a1af343acc2556351",
+    "rpent/planning/policy.py": "c998942be572f038ae9e1572fc7e85ba8ec0d29937bbe8d9277488055e0e6c4f",
+    "rpent/planning/profiles.py": "b528dddbaa37907da95c9d11a2cb084c0f6325d0090c2632a6c3b252bd162856",
+    "rpent/planning/replay.py": "00be94d76e8796c9a54aa21a61d42adab737ee1db637f407377090fa10e0c708",
+    "rpent/planning/runtime.py": "5853abe75080f407dc5506e98ba5cf720dd68aa7bb7902cc07915ac4bff80298",
+    "rpent/planning/schemas.py": "0a16b52e2bc4f614f9c87921b1a47d07d6b3a8bb571c28f906aca9bcf2a3dbaa",
+    "rpent/planning/stack.py": "9c8a5457f1ae43bd47721c57e29dd00cc24745136ce328cda06e964a1d99043f",
+    "rpent/policies/__init__.py": "2e3bc461e51d4eaf5b62c925965f3c5a123e3c9f477eb0de446ddf84b57cae16",
+    "rpent/policies/lerobot_smolvla_artifacts.py": "fac8964be3501562fe2de4c56e25b42ed1d4b754170da476ae316e3b38d6bacb",
+    "rpent/policies/lerobot_smolvla_server.py": "58d2ef94c32e52c35ee0a4dcbd6157854731aeec2b3a3801e2b834640a72612c",
+    "rpent/policies/pi05.py": "7921c83519604e67f782ded21090fc20a33c1e4e0cbe3615a0ea331aa4462559",
+    "rpent/policies/robocasa_pi05_artifacts.json": "b68e0fd1cd4187b06567d10a1a894a7f51c67167f65ba411185d49f41f116bad",
+    "rpent/policies/robocasa_pi05_catalog.py": "df1bbbf4e2b773919bae361318240c15cb2d648335ac1f28c096c402d30b308a",
+    "rpent/policies/robocasa_pi05_daemon.py": "67c2ddc69d579efca8ccf9cb7bf34b7c6fec133ed05b0a9c6bb4428366527868",
+    "rpent/policies/robocasa_pi05_server.py": "122a850f39c12a7c815c3d605aae8748cee4dd9b51cb02c686e5723fc6d71e6b",
+    "rpent/policies/smolvla_catalog.py": "ad6b1fdbe7e30f190a09f85a0cc0623da5144430f9f00c1d1aab85d4081ae6d0",
+    "rpent/policies/smolvla_client.py": "8de3daf80dce9533a1bc7dfc2d1de23c2dbb9e59e695921a006a429e5ca17ced",
+    "rpent/policies/smolvla_daemon.py": "590191011a9e381d2851d9f1dfc057b0d336dd265af12fbcb15cdd3ca9796379",
+    "rpent/policies/smolvla_protocol.py": "4c3c5a4ef519a06b96f7d99353b559a9f65006f00287c9c5afffeabe3230224f",
+    "rpent/policies/xiaomi_mibot_artifacts.py": "baa4869413f1780f6daec7a67eb6e3f5bba3c84682cad0bd802d67165f4c9237",
+    "rpent/policies/xiaomi_mibot_catalog.py": "1d7ba603efde72514a98a398a5bc6fa51ddee07783c1e0e78b967133bac44c96",
+    "rpent/policies/xiaomi_mibot_client.py": "00e199078d947d5a385e47f99854a6198dbf9915779fc184a5dbe0e8ecf20a9b",
+    "rpent/policies/xiaomi_mibot_daemon.py": "6f6e2cbe78232199856f054ff8ed8995257c417cfea5f640c942c9877400e7e7",
+    "rpent/policies/xiaomi_mibot_protocol.py": "db2d1b54da1016965d2629884018352e15545149ebed8a612f22374f521ec1df",
+    "rpent/policies/xiaomi_mibot_rng.py": "eb9d4da198e07143adb09e38051f414b154ceba47871867bd5fec18ba9659f53",
+    "rpent/policies/xiaomi_mibot_server.py": "e9cbea4b9e7c877b448fa31e498f167ca9b6611aafaed04eec0ce5f598b9f879",
+    "rpent/recording/__init__.py": "19ef80fe0de57824077de949402c8ae27c0b5b34a4ecf62e8f163553fde73b55",
+    "rpent/recording/contracts.py": "d1037ee6c3a3d868af9f9e3f3c8f9430f1c2c561be9575efae97aae19340462e",
+    "rpent/recording/data_schema.py": "1fc8919bee67937596eb9f83ee76d1d760ee8dee9bd09fbfff211e460d12faf5",
+    "rpent/recording/display.py": "39bf41fba844c23073b80dd50dbf476b87a494278af62ae1e432078b0d5edc19",
+    "rpent/recording/json_safe.py": "3f9379dc9230315b8062b2c467862e7c90786859e5c1a5e5a90befc9b775cb13",
+    "rpent/recording/live_events.py": "20b2bde7f068f642ae5a14cad67402ac895bea8bb9b352e9272c046baf87916a",
+    "rpent/recording/llm_images.py": "6c41fd293b739482ab0d6d62bd8e239d46aa6811340827a9b742609796e0e719",
+    "rpent/recording/media.py": "e0a6df578a757cd387b1a6b94c7d12d6b0da773de4d99b83497ff1988ea910fd",
+    "rpent/recording/narrated/__init__.py": "f731817697360544d2de436555e17c6f18dd42d3be8c5adbe610f5d670b9aec8",
+    "rpent/recording/narrated/__main__.py": "c60a4a595a7ffafde72da406c6ad1c8ca2f805dd96eb647c0b304971b6558f0c",
+    "rpent/recording/narrated/cameras.py": "a8327ec677b19f7146b8a50a6a856c07ce6c8a0cbcad9d18437d7e1f1187a17a",
+    "rpent/recording/narrated/capture.py": "da6e6387e42591f2d38c58b1c8f2ebf3318e929f084da660ece52c13a8bc1ec0",
+    "rpent/recording/narrated/content.py": "5724a9787b5177aa8ff9e4c4b58a02f5ed081ce0dcb9752ddb9c75024e4bb50b",
+    "rpent/recording/narrated/hd.py": "6bfcd7186bbd9cd99bad76a1e708287c063c90c0c2cfc0808a358d30f1d8ac2c",
+    "rpent/recording/narrated/instrumentation.py": "8ec5ebf947f7781961b744cb635f9990d05f3e72ab86b80683eeb13f5b983a55",
+    "rpent/recording/narrated/model.py": "7632471d613be4fe82d6a24c7915313a40ac5fe1c09ef58ceb5af357496daccf",
+    "rpent/recording/narrated/pipeline.py": "96004c83b84896b857414acab742a609c9ac0f228aed864368256182d6846975",
+    "rpent/recording/narrated/playback.py": "3ce1993af972b6e43077d2ead14ac621ac2f057595140837b90b2e3ca302341a",
+    "rpent/recording/narrated/remote_worker.py": "70c008e673f63a566ed424e66868d572c77a5cbd41ddcddb012d8f07b99e313b",
+    "rpent/recording/narrated/render.py": "c9e2b943396ea21a25de5546b0c6b3ec4574f8070b666caf722e913d15dda222",
+    "rpent/recording/narrated/timeline.py": "23cef6f33dffede92bada72c28aa030d2a04061cca694a5af47346ef3a509b1f",
+    "rpent/recording/narrated/verify.py": "12d4289ca457dcbaafc6562733076925f2252169ce204053382684b4d9c3374a",
+    "rpent/recording/notifications.py": "63904c9805e353a4de332f4609c8a93a2eec32d556cf1d5878d3bd89a131b526",
+    "rpent/recording/recorder.py": "efa67f98f089438d8c810e49569178972a0935cf8420f06ae8640defee061ca8",
+    "rpent/runtime/__init__.py": "64e08a9bad32b909d8349b213ac5cecdf877f013aa61adf932a7c1e9b165d1d8",
+    "rpent/runtime/api.py": "fa223957ee8d6f3ae2d86205c224b1946fc190c01c0703a0b2f3349bb15eb09e",
+    "rpent/runtime/base.py": "f931a13ff9a5bfa2933f8ba86dae9db4c09e709df5a9cf6ed296ca2bcf57d76b",
+    "rpent/runtime/claude.py": "00845ea7d5eac07de81e66dd29edfa15f3b3da5bd8d86f04e930447cb33a55c2",
+    "rpent/runtime/codex.py": "2e12086aa6c6fa5b42fe2e7ba4246a496c34448a84a52c16139b2b41837cff4e",
+    "rpent/runtime/codexgateway.py": "e06d903d0c2f6f0d0aae48e74ef8b061d7da413cde080cd779734477daa756e7",
+    "rpent/runtime/factory.py": "e99e27d161f9acdde9273dcb0ed69621447dc1cbf7d9970e7e3f7252e54aadc2",
+    "rpent/runtime/finish.py": "3977eeee2f5b491977f821e24244343eb1e8635bf380d99c9fcb9ed59281b8c5",
+    "rpent/runtime/http_mcp_server.py": "8592cb73fec1d02451d298c3f63a479a80c2629522927e61624fdc94aa4ce2f0",
+    "rpent/runtime/plan_generation.py": "0ae487715bf6ad6f48bff6459934f598c470440286409ea778f95eb239a8820a",
+    "rpent/runtime/predicate_verification.py": "c0a2b078e9dc920c13ed09da799409520ef1af5e46e2ce57e49101ea788edf88",
+    "rpent/runtime/telemetry.py": "86c5a674e9fa67982ebf94f72e9df7b5fa15cc7f3c642eaa7f47895cfb9447e7",
+    "rpent/runtime/termination.py": "16e1b65b3fad93a51d52663d45d806628effaf7ea1bef2ff9aa63979ba65d8e4",
+    "rpent/skill_library/__init__.py": "8af5d680c84feeb6483b5be7d2e3181d24318f18de2477ca5efb8c8ed0c46600",
+    "rpent/skill_library/__main__.py": "366b811da424e1099b208b6def2643713c4030320e78c3a0c44b9f6f74a589c7",
+    "rpent/skill_library/mining.py": "67aa82fadcf59b6f4d92c2a3c32f356a54a4085646b09ffdf9f7807c7d6f760a",
+    "rpent/skill_library/model.py": "c3c2e8c319aebd62752e65f066806b004fd2ecdfe3ed3bc3e3ea9b1dfbfdbbc8",
+    "rpent/skill_library/reader.py": "29de1df08314ec31f2f484cec1588a5a8a62db6fc1a26d093179374a18953ea4",
+    "rpent/skill_library/sidecar.py": "1e747503393db4cab53f1b97312c717f7c5a32d847c2888f1d6cb3f7d47382b1",
+    "rpent/skill_library/store.py": "03e8b6c5958f275f5c73f8e303c5181182f4ad9bf1c6eff75c248bd684277019",
+    "rpent/skill_library/supervisor.py": "9e201a7489101e3ff2db856918a5f1c9837b84986c1b9a34a129e03a6e0fd1eb",
+    "rpent/source_identity.py": "b5dc29aff7d7f45d1553930d809d10703b3b5e3c6ef37b53cfe7fb2db02e54c8",
+    "rpent/tools/__init__.py": "30067b5fa65ee7f7bb56da2ab6a96af0861a981f4d5cc506694a350d8757b9fe",
+    "rpent/tools/common.py": "85b46355bca6dc5d6ebcc84a756c1fcc3ff00cff24215690b06e7af107de3add",
+    "rpent/tools/harness_session.py": "eccf5f25a82e452efe5f78f1511b37742253866f66c0b8b9ae7979d3d5c63f6a",
+    "rpent/tools/toolkit.py": "ed6d2bc914af435f81fbadbe4a98ebdb9333e317f04085e8cacc0e598a665204",
+    "rpent/tools/vla.py": "fb7416161d6eaa3c57efd01a67f8168406441acb9911e02a5d008188f63727c2",
+    "rpent/ui/__init__.py": "dbd307303013a782e36474f3bcfe3210683bf070ebae138845c3e95ff2468a4a",
+    "rpent/ui/app.py": "c39b41a1d2b276cae1ba10273a643fefed17b0c3a130cdb38aa2a130b9b3ebfb",
+    "rpent/ui/case_runtime.py": "17bee2df2955c77c20e6800aada795f69ca16d70ffde34f1f88b556150d5a0ef",
+    "rpent/ui/case_snapshot.py": "023668652f2e9bf191210e1429a153b045013773d9944f64022cd3f139d81de2",
+    "rpent/ui/console.py": "15c4ce9094e18a0ed3256ffe7f08a6a9e2f72ed9811a612bb1d3adc8280046e4",
+    "rpent/ui/diagnostics.py": "46656253329bb7402a6b25b9cccb14ce1393d67dbe9109cce77146fa3de226ca",
+    "rpent/ui/event_hub.py": "2d9b0517bc5fdbe9c2ea94916a8f7f5a3f7d26cf37685d83f654fc93e80c32d8",
+    "rpent/ui/io_gate.py": "d9c522beef721b9c93eaa170462978b31402e13c23326ef7925929dffd283835",
+    "rpent/ui/json_safety.py": "e924ff3cf78edcb3ad965495ce0b9a0b56aba99c1bffd4aeefdb0430c4cd23fa",
+    "rpent/ui/notification_identity.py": "84c5bc547b872c9746f300186c09ab357eccb97ecd951696dcf7348b85c2662c",
+    "rpent/ui/operation_projection.py": "29bc377628b8e6ce97b84c9b6922cf1b6d3b10be9e3dcb67a2fb2a9bf7f7172a",
+    "rpent/ui/operation_snapshot.py": "7b3bf51fdec3391d97355f4929d917ecc45aedc854df9d93ae7479f1e6a8c6b5",
+    "rpent/ui/projection_summary.py": "89befe03bcc14cb0eb86ea98fc5e26b2946c25bfa010f3dfc70e7ad88ec7c1f4",
+    "rpent/ui/repository.py": "c959715c45eb44b45cb45dbc6a422afe481bbf73a8537295aef405313ef70d25",
+    "rpent/ui/routes/__init__.py": "7958eb516533899d926b93282dcd7dccd147445587c9cfd11db9e99142b835b3",
+    "rpent/ui/routes/cases.py": "795f60f0fc4151f0d8e827d03a7e9e10a2c67bb2f8d21e05b8ec87c770017674",
+    "rpent/ui/routes/evaluations.py": "1b664a0021de0747bb87a18b4aa8eee67bb9e8391699abfbbb98d2fbc15f1469",
+    "rpent/ui/routes/internal.py": "91506cd3c0591fb96081c3539e7c5c8ba8fdc098547a23610fc64b826ced867e",
+    "rpent/ui/routes/simulators.py": "27d892061baf7577789be3c939c4cb9eef91274e4797500e90bbfdb928ec823e",
+    "rpent/ui/schemas.py": "359156a33f973ea19b89235439fc16fe366597cbe23427c35291a51840e922d1",
+    "rpent/ui/service.py": "751d5f8839dd20dc6ceb629a9559fb91fc97ce615b3a52c47c04910eba97e35b",
+    "rpent/ui/sse.py": "fe4d00ae831d423e06fa41e67cd0410a2ad5c63d4723c9c8466303ddeadafc49",
+    "rpent/ui/timeline_index.py": "6fde477efe59880f2b2f08d152eb3472e9da403f9e15bbcbfb2f39ae55e8a128",
+    "rpent/utils/__init__.py": "3e00298384fda239400f961b68534c63870fc304f820762660c42e78bf5ceb6a",
+    "rpent/utils/config.py": "069f01160ab3f57fccd0726a4bf579f2d335458928ca950c36be20036e1ab4e0",
+    "rpent/utils/daemon.py": "78ad9df0bc4d727744bc939a3fc3ce398ea596b358ffef1f11e76e89dafeaeb6",
+    "rpent/utils/http_rpc.py": "9088a73b4b79d8bcb929461f39e1979c45848b8fb2b80c4c81cf463f780dcc39",
+    "rpent/utils/logging.py": "3fbb1e7ef2cb619d8617dc16b4e6638d36d19933ee68319d15356b6ddb3e3e9d",
+    "rpent/utils/model_load_diagnostics.py": "655d7f59ff1d3c80ff8145810f07c649080acffb53619b0f727f5935561e2f19",
+    "rpent/utils/resources.py": "4c9827e72c81fe5b40937883593262eb985a5155390eb54b024a56bbd3222e69",
+    "rpent/utils/rpc.py": "d7cbbb0af3e79bb3775133d385a24d06e808c58a6c100207e7a7755b26cbd0e0",
+    "rpent/utils/sam3_client.py": "e46b610600f19d538e2f585635eaaf4af1d007436f87aeaf1d45f1eb1ca8634d",
+    "rpent/utils/socket_rpc.py": "551a46bff24932cae4544ba116756fb6b41c0008f98fdebe50cee363d4acbfe3",
+    "rpent/utils/templates.py": "901a1447dbe8c5fc1ec4419790758d8ae80b1dc8aa016319f9aaba694a8a9093",
+    "rpent/utils/vla_client.py": "e1a3200bbca46c764b75c8966b63e735ef245feb4971a7ab5f6ff2792388155a",
+    "RELEASE.json": "5bcbea6dd8aaf4604cf581610e30d1830dd6698e8e9cbb21c0200a683a0443db"
+  },
+  "files": {
+    ".env.example": {
+      "sha256": "4fea1482382992e3d49cead90df51221cc27edb203059a593a26862475918be5",
+      "bytes": 1165,
+      "mode": "100644"
+    },
+    ".gitattributes": {
+      "sha256": "a13a9fa86aa66026e9d793ee4dae43ef6260f3c172d74ecc2ecd6be004153ad6",
+      "bytes": 183,
+      "mode": "100644"
+    },
+    ".github/workflows/open-source-prep.yml": {
+      "sha256": "6a0af3a2247dacb14bb0fda99ca5062b912a6a10e2c7a5e6db1d51421f2a0899",
+      "bytes": 2591,
+      "mode": "100644"
+    },
+    ".gitignore": {
+      "sha256": "072fe2e8cf54bc4793cd1eb1610d2a4177041849d80883c093625a530ee8a36d",
+      "bytes": 880,
+      "mode": "100644"
+    },
+    "CITATION.bib": {
+      "sha256": "367dc71ffce24ab50ff381ae55270858ca555410de9f7218343d196c9f9923cf",
+      "bytes": 331,
+      "mode": "100644"
+    },
+    "LICENSE": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "mode": "100644"
+    },
+    "LICENSES/RPent-Apache-2.0.txt": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "mode": "100644"
+    },
+    "LICENSES/RoboCasa-MIT.txt": {
+      "sha256": "5da18670b3f00c59847b1ded9c28dee59940d963b1e03b528b0108d9c5a09885",
+      "bytes": 1418,
+      "mode": "100644"
+    },
+    "LICENSES/robosuite-MIT.txt": {
+      "sha256": "177978cbece0a4c454c2aaec5b3f145b39270814874c43109da9e829c39d9cba",
+      "bytes": 1474,
+      "mode": "100644"
+    },
+    "NOTICE": {
+      "sha256": "36ef8e010bd453116b634e08250727a4fee0ad7bffeca939405100256d0b0c32",
+      "bytes": 2889,
+      "mode": "100644"
+    },
+    "README.md": {
+      "sha256": "50eff6cb0b44a4ff47d5988eb60539edeb08b7570f34715f1d5e5612b7bf8b46",
+      "bytes": 6320,
+      "mode": "100644"
+    },
+    "README.zh-CN.md": {
+      "sha256": "66d8317f6586abd3d92b7097d8d9d3b0ace6551be7427b0f2287adc6c14ef852",
+      "bytes": 3912,
+      "mode": "100644"
+    },
+    "RELEASE.json": {
+      "sha256": "5bcbea6dd8aaf4604cf581610e30d1830dd6698e8e9cbb21c0200a683a0443db",
+      "bytes": 1700,
+      "mode": "100644"
+    },
+    "SOURCE_PROVENANCE.json": {
+      "sha256": "0ea3a461249df54f587ae30f3e296ad9859056ba02058f5f055de84e109fa0c6",
+      "bytes": 1925,
+      "mode": "100644"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "c433719705d91c350b0f4266cd55da7e8406d31fd822e8764c6f8266c62b8098",
+      "bytes": 4022,
+      "mode": "100644"
+    },
+    "docs/README.md": {
+      "sha256": "c43886b2417d3a6162ff6ca6cb1184e88ee5ebc39f8334a288b0ac1878304933",
+      "bytes": 1663,
+      "mode": "100644"
+    },
+    "docs/figures/policy-comparison.png": {
+      "sha256": "dcbc850a632a794427a39df1f9135811382c901934110c566abeb6eda1b8939c",
+      "bytes": 66918,
+      "mode": "100644"
+    },
+    "docs/harness/README.md": {
+      "sha256": "4f5973a796d81833d5b9f8d21c00bdb9e83bcef8939b492c3fffa9d31be8d964",
+      "bytes": 3034,
+      "mode": "100644"
+    },
+    "docs/harness/change-checklist.md": {
+      "sha256": "eb943a6ed48eb83d3d73945410df7ebc28525fdbc205151b3e9b42cd8dd4723d",
+      "bytes": 1808,
+      "mode": "100644"
+    },
+    "docs/harness/lifecycle.md": {
+      "sha256": "54d805375eefc6076992e5399ba392164c7a33411ab63e2dc833f5bb951887ca",
+      "bytes": 10912,
+      "mode": "100644"
+    },
+    "docs/harness/lifecycle.mmd": {
+      "sha256": "86b935fc2ba311f06791d8cc003d9421b521ae3a74d10f4958c74450a6b62820",
+      "bytes": 1186,
+      "mode": "100644"
+    },
+    "docs/license-status.md": {
+      "sha256": "c01e544339753f78bcf048609e91b755abf349c9dc309ebde702347149a5ba8c",
+      "bytes": 1645,
+      "mode": "100644"
+    },
+    "docs/open-source-preparation.md": {
+      "sha256": "5cc47e14e13bb6c778d405531ba1c0e5672c67e1083cfd8e93776558c3262722",
+      "bytes": 4837,
+      "mode": "100644"
+    },
+    "docs/policy-setup.md": {
+      "sha256": "d7f02f999aa5356974560dfd6b258190a0b8b9a36dc9a9fb6d62022cf6414dfd",
+      "bytes": 5219,
+      "mode": "100644"
+    },
+    "docs/release-checklist.md": {
+      "sha256": "b4704c35970da064a0ff337b6d03b776c2a1e0b46e76ef77030232ac57d50198",
+      "bytes": 3722,
+      "mode": "100644"
+    },
+    "docs/robocasa365.md": {
+      "sha256": "d9d339f67692aa8d9d6aab627700edadc2d1a04da1a8f19f5890899357e359e6",
+      "bytes": 2902,
+      "mode": "100644"
+    },
+    "docs/runtime-reference-data.md": {
+      "sha256": "d654504612f61c1a1b7d0e8387cfd77fa06559da14593c996d00201d1839c790",
+      "bytes": 1381,
+      "mode": "100644"
+    },
+    "evaluations/README.md": {
+      "sha256": "7091c332cfa198a7362ecaedbdafb2181cd36010a7bcaa86a7c5f7eed28ae2e1",
+      "bytes": 3435,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/PLANNER.md": {
+      "sha256": "24f4a651f253a183da701cdfcc186c787742ad49d430611e170ab70240f0e5be",
+      "bytes": 3813,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/PR_DRAFT.md": {
+      "sha256": "2e14ca124e03c73352ac9913164c177e63741e8de9f59264ae4e86d5d728737a",
+      "bytes": 3714,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/README.md": {
+      "sha256": "2ef41d22ee973b67a9208aefdf833d568177714e906a47a16b785863205ea52b",
+      "bytes": 14055,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/RoboHarness-Zero_2026_11_15.json": {
+      "sha256": "a9b7a87eee2c63c23affcaa8794b92eb4e2a3c2fe52d0a4fd63dce29b07f6a7b",
+      "bytes": 2283,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/candidate.json": {
+      "sha256": "264a71e4d964983707f02bab4a2627eef3fa50185d0a9586cfaf6072c0e9fa2b",
+      "bytes": 6113,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/coordinator-tested-versions.json": {
+      "sha256": "00ed47386cf7ef1c6ae03c2c553d5c4531c38709e1fabda2596fcf87da7d7148",
+      "bytes": 492,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/coordinator.in": {
+      "sha256": "677c55ce0c1679e923b77dc6c8fd2eea8fa36f08f088b2ba2cc263d3af6b8830",
+      "bytes": 334,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/coordinator.lock": {
+      "sha256": "29add760a5615c9590124423c0bf43d90eafba2f1d0748d030e29fa302e0e596",
+      "bytes": 91261,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/manifest.json": {
+      "sha256": "483e1a2fe5c66fbdfb80d724f566628bdc32c9becfebd83f59e993a94792373f",
+      "bytes": 2040,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/policy.in": {
+      "sha256": "d7d2acb05212f764e55ba5e26a3352f6070e59b243fc9d2a59ca512b958c3c8f",
+      "bytes": 376,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/policy.lock": {
+      "sha256": "a0fb7f27a1677a6a78b4da93acd62b48a153525fed91827267050030c4d3708c",
+      "bytes": 88761,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/simulator.in": {
+      "sha256": "bef5b179375164cc355690639e840315fa9768d1885215fff99465fbf8f7ceb9",
+      "bytes": 271,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/environments/simulator.lock": {
+      "sha256": "c91e8563358cebf6fce111c300c3908a34ad74249ab3a6147bc35e24328d4b6d",
+      "bytes": 128502,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/evaluation-profile.json": {
+      "sha256": "e136720ff95fc977ba651c845c2e13cf78a350fcd71bb64cc9f2ccc6fce1bcf3",
+      "bytes": 7797,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/historical-parameters.json": {
+      "sha256": "ce678e1270fe093857565388349f702368c5fba639231bc673d6e36aa6f98b62",
+      "bytes": 2815,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/historical-selection.json": {
+      "sha256": "2e37549b9ae339d2f28876f6d9f6306c7c093c38460cdae4fe2004a38f538ecc",
+      "bytes": 2427,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/planner-evidence.json": {
+      "sha256": "b76cba1f9e5c15932b52c82a0c98ff3f1c4aa4c9758e1617ae0149065b8431ed",
+      "bytes": 3460,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/2.0/planner.json": {
+      "sha256": "85b376a122cc97262266cb5e938fc3b73008858cf114d17af9b7e54c24ebf6ab",
+      "bytes": 3090,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/README.md": {
+      "sha256": "3bf0442ac972f5ff5125079c339341fa75c26b3730ae1d1a653fc6f441ba6674",
+      "bytes": 3884,
+      "mode": "100644"
+    },
+    "evaluations/robocasa365/agentic-submission.example.json": {
+      "sha256": "a4d2100239dc6182c6b84a6b36182bb410fe03fba2dc5320c4e9d61693ab7723",
+      "bytes": 804,
+      "mode": "100644"
+    },
+    "publication/validation.json": {
+      "sha256": "6cc7782ecbb964820f4c6727ddc33631ae0b87d35edb280fa67bdf19a8630651",
+      "bytes": 14334,
+      "mode": "100644"
+    },
+    "pyproject.toml": {
+      "sha256": "d192879a7e991aac2bdc1df4e861c620269e582cb587f685a8839a736e50388d",
+      "bytes": 2594,
+      "mode": "100644"
+    },
+    "pytest.ini": {
+      "sha256": "7610fe40b8d4affa1a87f3ea84fc48bcad5f102ee90d96894faa3361e3d518e5",
+      "bytes": 76,
+      "mode": "100644"
+    },
+    "requirements/test.txt": {
+      "sha256": "dd603772b29fd805f7de92ca7bf90c5ca1b18082fbfad01227b0faebab2ece3e",
+      "bytes": 184,
+      "mode": "100644"
+    },
+    "results/2.0-selected200/README.zh-CN.md": {
+      "sha256": "8d6223a85a707224bfa933c4c1f589ad4038e5dffdfc8d5819a189c0ba9d4e03",
+      "bytes": 2611,
+      "mode": "100644"
+    },
+    "results/2.0-selected200/REPORT.md": {
+      "sha256": "2f2e295664aea073a0886280ece5108eba936fd28bc341b8803c53a300bb8380",
+      "bytes": 6962,
+      "mode": "100644"
+    },
+    "results/2.0-selected200/selected200-index-20261107-r002.json": {
+      "sha256": "1a801d939d2837116b4fe4a7ab025f9fcb24466a794e1099a7e50256683ad018",
+      "bytes": 83952,
+      "mode": "100644"
+    },
+    "results/2.0-selected200/selected200-summary-20261107-r002.json": {
+      "sha256": "2b07a05b6934cf6cc99fc4aec4669a103512d6c4309ce20d8b0a643db5eac5de",
+      "bytes": 7885,
+      "mode": "100644"
+    },
+    "results/2.0-selected200/verification.json": {
+      "sha256": "4e64e7f6393a47da5be1c12539edae882a7c95ebe612f8ff3595eb0333045e69",
+      "bytes": 1227,
+      "mode": "100644"
+    },
+    "results/2.0-selected200/version-identity.json": {
+      "sha256": "0162be3194adc7a132ef89652234339c3849735615668f63fd22f4f7c9de6cb8",
+      "bytes": 3119,
+      "mode": "100644"
+    },
+    "results/README.md": {
+      "sha256": "4b6cf4cf8c1f699fdee76b26c78ed415be333697a76f902e128e0917a07f7fb2",
+      "bytes": 1335,
+      "mode": "100644"
+    },
+    "robots/__init__.py": {
+      "sha256": "9f57c5cfa32be03bab2ea4eecb3217f111daff80afb09501b9a41a741d3a9290",
+      "bytes": 380,
+      "mode": "100644"
+    },
+    "robots/robocasa/__init__.py": {
+      "sha256": "38448f82df4919a9de833386b2317e5d4bba70f350f666c91eee794f3eebb438",
+      "bytes": 11769,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/__init__.py": {
+      "sha256": "e63dff0ea89f23955bf3511b37b083952330900446f174a1f638ec49d1d78263",
+      "bytes": 1754,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/SKILL.md": {
+      "sha256": "b4597c3dd9de4416bb3e5f46f7402d2ba65f7bf87f6d1feabee74e2184e4732b",
+      "bytes": 1856,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/manifest.json": {
+      "sha256": "65905941639a9c99d1e2375c65ada0d145924791a07f29a7366bde5755810121",
+      "bytes": 2085,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/OrganizeMeasuringCups.md": {
+      "sha256": "7e5e0e2576c23d4bb91cd9e60ef0b8b7538c3e9d31e3b3d6f94cd67688cfa47d",
+      "bytes": 599,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/PortionHotDogs.md": {
+      "sha256": "baf80f6be22326f40b6da9edce556762f9439cc35dea76bdb153d2c423403a8f",
+      "bytes": 1065,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/RestockSinkSupplies.md": {
+      "sha256": "3099e2c5441ffdb32ef9eeb2150483b687d9be0cfbda0343f000ca69e90f2039",
+      "bytes": 604,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/StrainerSetup.md": {
+      "sha256": "09b3dc024fb3954e831dcff8fcdf1f403a31080f3a5b1106c36bc1ef92e12dcd",
+      "bytes": 522,
+      "mode": "100644"
+    },
+    "robots/robocasa/acceptance_skills/robocasa-acceptance/references/WeighIngredients.md": {
+      "sha256": "e9433af5e3131b8bb5784c02e7776af52e424819829184c838eb2a9b2168fdc2",
+      "bytes": 616,
+      "mode": "100644"
+    },
+    "robots/robocasa/binding.py": {
+      "sha256": "a36738240f1b8fc65fa62a64978ab5d1ba09c006a92b89e384d89b4f63aae724",
+      "bytes": 1493,
+      "mode": "100644"
+    },
+    "robots/robocasa/capabilities.py": {
+      "sha256": "543dabe5745be5e2166198683127979ce3a762e68ee8345525eeb1ca176d4c38",
+      "bytes": 12980,
+      "mode": "100644"
+    },
+    "robots/robocasa/competition.py": {
+      "sha256": "a519ad7b9c46bb33f8bd49d504544d52bd408f3efc3e99c2587051064e951b03",
+      "bytes": 4365,
+      "mode": "100644"
+    },
+    "robots/robocasa/competition_worker.py": {
+      "sha256": "9dae2db2c9920e824a78c4f72ef08176ef9ad1d8489aeb526e35866dda40f89e",
+      "bytes": 18440,
+      "mode": "100644"
+    },
+    "robots/robocasa/config.py": {
+      "sha256": "3e8685f0133a550d0dce978786ea76918bd0a6744940196061016b0ef7da66cb",
+      "bytes": 2048,
+      "mode": "100644"
+    },
+    "robots/robocasa/control_ablation.py": {
+      "sha256": "35f7ccc250596dcdb67a4696154a6aee57b042bb5a4dd79c04329231ba7d9df1",
+      "bytes": 1466,
+      "mode": "100644"
+    },
+    "robots/robocasa/control_modes.py": {
+      "sha256": "ae1808652780dfb351c33553b2ef611eb0b0b5c11de384fd7ccb5233ae512fd3",
+      "bytes": 9237,
+      "mode": "100644"
+    },
+    "robots/robocasa/daemon.py": {
+      "sha256": "cf31cdbdbb6c275952752b332f0d13dcc06101b44b38729e9184483f47cb93d9",
+      "bytes": 12679,
+      "mode": "100644"
+    },
+    "robots/robocasa/data_schema.py": {
+      "sha256": "044c6210da26299947233222a0d9c5fafd612d704144296edd11ed963b890020",
+      "bytes": 1616,
+      "mode": "100644"
+    },
+    "robots/robocasa/dependencies.py": {
+      "sha256": "0455eaac1e264a548fbbb4d73dca6e1fc58376e44b89bd789a56fc69a67559e8",
+      "bytes": 12612,
+      "mode": "100644"
+    },
+    "robots/robocasa/display.py": {
+      "sha256": "36db58de51c131f721ef8fbe0ca8303ea2353bc77daa26601359efb5645229f0",
+      "bytes": 1877,
+      "mode": "100644"
+    },
+    "robots/robocasa/env_client.py": {
+      "sha256": "d8c327b926e4df7270890fe2e4d5116a544230994fb555fc4cdad3599a514f92",
+      "bytes": 5605,
+      "mode": "100644"
+    },
+    "robots/robocasa/env_server.py": {
+      "sha256": "20c9548fb6192613178161d5fd42c81d4c8126946e3955c71ea63d90f2348d6e",
+      "bytes": 29427,
+      "mode": "100644"
+    },
+    "robots/robocasa/evaluation.py": {
+      "sha256": "32819513f1e2cb18800f87b46185d2b90e97ada73f39d99c630ec88e31a30478",
+      "bytes": 21149,
+      "mode": "100644"
+    },
+    "robots/robocasa/grasp_progress.py": {
+      "sha256": "61e9839f77ac5fe988f3aa1d1e12452e4553236424612a7a9fb941109318c2e5",
+      "bytes": 10918,
+      "mode": "100644"
+    },
+    "robots/robocasa/launch.py": {
+      "sha256": "f60c752c7433e4ab282752c7bfa2e2217128799c3983c31fc469251c0a104fe1",
+      "bytes": 20787,
+      "mode": "100644"
+    },
+    "robots/robocasa/object_registry_preflight.py": {
+      "sha256": "7b9f131b947daded0bfbd60bb68195d4eb59aa16b6385ed185c106327a5b340f",
+      "bytes": 12482,
+      "mode": "100644"
+    },
+    "robots/robocasa/observation.py": {
+      "sha256": "bd377e07da88303a685ae4b9a07226d6af64bc56f7734538150e02d276fa8b49",
+      "bytes": 5205,
+      "mode": "100644"
+    },
+    "robots/robocasa/outcomes.py": {
+      "sha256": "ba8feb9e9b1b6a974c93fce87c7af80660937570b856f0eae8501f74efb98b19",
+      "bytes": 3123,
+      "mode": "100644"
+    },
+    "robots/robocasa/perception.py": {
+      "sha256": "982bd2fc6958f0c1fd3c9a087434b0e71926378f318afde0f81e017d04a8233d",
+      "bytes": 4741,
+      "mode": "100644"
+    },
+    "robots/robocasa/pi05_binding.py": {
+      "sha256": "db701e2197f5e147009c3dd3bf68f631a0e4cce6e0fb21ada89e82e74aa063b9",
+      "bytes": 2780,
+      "mode": "100644"
+    },
+    "robots/robocasa/policy_selection.py": {
+      "sha256": "784246d0fb9cbde1725458105973b3d6c61cba9e69c3ae6f928565bc92f3f380",
+      "bytes": 3150,
+      "mode": "100644"
+    },
+    "robots/robocasa/policy_skills/__init__.py": {
+      "sha256": "3a2c34cd5d9c72f211c0bce958e639063c15df5f6dab30cd3efde1a41bcc7869",
+      "bytes": 1273,
+      "mode": "100644"
+    },
+    "robots/robocasa/policy_skills/xiaomi-mibot.capabilities.json": {
+      "sha256": "eed90286f66dc803cac5b39f141dec982370866eac5ad5f86517ef3e14bee83e",
+      "bytes": 47282,
+      "mode": "100644"
+    },
+    "robots/robocasa/policy_skills/xiaomi-mibot.md": {
+      "sha256": "fc7fef1f6713bde5578fe2550d3670b9d88108cb620a2ef2910a0432a4c48fd4",
+      "bytes": 26873,
+      "mode": "100644"
+    },
+    "robots/robocasa/pour_tool.py": {
+      "sha256": "cdbeb1b9e57f3ee4ae6d4ec44403e27b0487b231b6bfc98d1cce4fa2e8f91d5b",
+      "bytes": 37579,
+      "mode": "100644"
+    },
+    "robots/robocasa/privileged_tools.py": {
+      "sha256": "8ec222311dc2f9e45250ea8e49b86af4ef2dfd8c036dd3a96f4ef941adf3f8d0",
+      "bytes": 52039,
+      "mode": "100644"
+    },
+    "robots/robocasa/prompts/__init__.py": {
+      "sha256": "618fd7c1177504ea0bdda17475fb80843c5c7e2cddc4ad25df379f8d4f52b26f",
+      "bytes": 33,
+      "mode": "100644"
+    },
+    "robots/robocasa/prompts/system.py": {
+      "sha256": "9b4a79e40896029573405bfc0c2e189317b0328de6c566453a5c35db476048d1",
+      "bytes": 66468,
+      "mode": "100644"
+    },
+    "robots/robocasa/qualification.py": {
+      "sha256": "664f5fb7908ec62e415082478a67493c948d2e3eac6b2ffc405492c633da91fc",
+      "bytes": 25541,
+      "mode": "100644"
+    },
+    "robots/robocasa/runtime.py": {
+      "sha256": "8451be995529da874b649ae5e223c38273d3bc9bd7a971ddb3325081a7157fca",
+      "bytes": 13486,
+      "mode": "100644"
+    },
+    "robots/robocasa/session.py": {
+      "sha256": "ad451c9e8a63ca8915b24631fb22872fd15e404a9d4f45c0acc0b48895166815",
+      "bytes": 10010,
+      "mode": "100644"
+    },
+    "robots/robocasa/submission.py": {
+      "sha256": "13a0ae0cc61c584fe9624506a3b872d19ba93d07129c8473146c141b981a832b",
+      "bytes": 12952,
+      "mode": "100644"
+    },
+    "robots/robocasa/task_groups.json": {
+      "sha256": "ba9cb693927d4f7cdf60b13189e68b5dfca1604c2a7d4f0e784bc1d03937aa3f",
+      "bytes": 155878,
+      "mode": "100644"
+    },
+    "robots/robocasa/task_review.py": {
+      "sha256": "e659bf2fdc156518229a0776bf6f52c73a1207d4157c82e8ece62fd6bc85113a",
+      "bytes": 10308,
+      "mode": "100644"
+    },
+    "robots/robocasa/tasks.py": {
+      "sha256": "de8f1c78c3a7f9fa33f3866a498244a0aa6ef42fb59a4dfe9ffea80a6549cff7",
+      "bytes": 20549,
+      "mode": "100644"
+    },
+    "robots/robocasa/toolkit.py": {
+      "sha256": "58a071c5980febfe9d59e435682915699f54a22e018646deee0a804536504966",
+      "bytes": 132252,
+      "mode": "100644"
+    },
+    "robots/robocasa/tools/build_capabilities.py": {
+      "sha256": "72803d476b287a9622df1eb66bb3090a36c28b38b754d6523945337ed546ba4b",
+      "bytes": 10808,
+      "mode": "100644"
+    },
+    "robots/robocasa/tools/build_handback.py": {
+      "sha256": "3329eabea36d7155c93d9786cfb13629b21aefa94ffa497f3f08d84842ce7d39",
+      "bytes": 13340,
+      "mode": "100644"
+    },
+    "robots/robocasa/tools/convert_xiaomi_summary.py": {
+      "sha256": "08c549c24951eb00558ff05fee0a51cce13a637e5e22bbe21418c65874f292ec",
+      "bytes": 2996,
+      "mode": "100644"
+    },
+    "robots/robocasa/tools/skill_table.py": {
+      "sha256": "7763fb87fed016a1a5807dcc4574ff71fcee054c34bfc245dc6d9f6b90898665",
+      "bytes": 6138,
+      "mode": "100644"
+    },
+    "robots/robocasa/vla_runner.py": {
+      "sha256": "1ed7e725a51cec3f3634719246fbbf5a7c810270867f331d517a814c9fec9967",
+      "bytes": 6155,
+      "mode": "100644"
+    },
+    "robots/robocasa/xiaomi_binding.py": {
+      "sha256": "ce24144af97b60763561964640515725a1b6caade3a32941b7ab7e7525e16c96",
+      "bytes": 7005,
+      "mode": "100644"
+    },
+    "robots/robocasa/xiaomi_policy_pool.py": {
+      "sha256": "665b0c7990ef089885464a7afdef5b9e1fad969534c314dc86500d6661e83039",
+      "bytes": 8671,
+      "mode": "100644"
+    },
+    "rpent/__init__.py": {
+      "sha256": "b6890a4c8ccc5a8094cab709d31d4665940dc2be3af0b2beca96f099b0938201",
+      "bytes": 78,
+      "mode": "100644"
+    },
+    "rpent/cli/__init__.py": {
+      "sha256": "b50411ce305d7912aea5e39b1c359fb28eaec5fb98dc6b1ee93b2f715175f814",
+      "bytes": 68,
+      "mode": "100644"
+    },
+    "rpent/cli/main.py": {
+      "sha256": "af4c88ded3017f9b923761212f67d1c04cf2f6cf13addce4c430bc7247b85b63",
+      "bytes": 41549,
+      "mode": "100644"
+    },
+    "rpent/cli/tui.py": {
+      "sha256": "5bf64582b31305a92d5804ca668ee2c486d4855eefde675e204153f63886c0e6",
+      "bytes": 8645,
+      "mode": "100644"
+    },
+    "rpent/context/__init__.py": {
+      "sha256": "a6adaa709caa5664aeec8e470c27fe2009beeae93222cdca95c8d065661cb13d",
+      "bytes": 568,
+      "mode": "100644"
+    },
+    "rpent/context/policy.py": {
+      "sha256": "94fbc22c6d20a1641702672c8f62e3708eb48ea79a3f60589e7a1a502bd200a6",
+      "bytes": 2066,
+      "mode": "100644"
+    },
+    "rpent/context/projectors.py": {
+      "sha256": "1c20a19f629d226101269802ac1bdacfde2f3ded64eca241d85f544437151516",
+      "bytes": 7772,
+      "mode": "100644"
+    },
+    "rpent/context/prompt_utils.py": {
+      "sha256": "4ae5644f52f690bc19c2bba38850cec240507f99002282b12b6f2579b1e5f98e",
+      "bytes": 4491,
+      "mode": "100644"
+    },
+    "rpent/context/prompts/prompt.py": {
+      "sha256": "c618a4a5a14c3c7eab287b96f4a71907d42568cea518b1cbdd3f2ac4a9886b3c",
+      "bytes": 765,
+      "mode": "100644"
+    },
+    "rpent/context/registry.py": {
+      "sha256": "5671b53210280c85a7dd3154f86148ba220fc5a72d95ee9648ca70f29534689e",
+      "bytes": 304,
+      "mode": "100644"
+    },
+    "rpent/dashboard/__init__.py": {
+      "sha256": "5497bac5720c5957d884d50d1a005a44571db57fd778d7698093b8c721f92048",
+      "bytes": 497,
+      "mode": "100644"
+    },
+    "rpent/dashboard/attachment.py": {
+      "sha256": "1d12d0fe043385c848c85e304291104f485fa5a0232470bdf557418e1fa79a7e",
+      "bytes": 26573,
+      "mode": "100644"
+    },
+    "rpent/dashboard/server.py": {
+      "sha256": "190b7d1c9aefba65fbc1bc817cb8b61e9681469771e597b61e4e13df92c0e112",
+      "bytes": 21789,
+      "mode": "100644"
+    },
+    "rpent/dashboard/state.py": {
+      "sha256": "86fa4fb6ff52faecc7d6792dd9bf990c4d41a17837edb076caa4ce5d6b4e77ae",
+      "bytes": 7132,
+      "mode": "100644"
+    },
+    "rpent/envs/__init__.py": {
+      "sha256": "c8b9459fe697afc7d327628ee6376a32a300e2c01bd7ce7095df0dd55d7280e5",
+      "bytes": 307,
+      "mode": "100644"
+    },
+    "rpent/envs/base.py": {
+      "sha256": "67bc137bcbcdb77996e8310aa135fc18896024493cb7afb3f6d7e599edc769d3",
+      "bytes": 1750,
+      "mode": "100644"
+    },
+    "rpent/envs/env_spec.py": {
+      "sha256": "d0cb798206d99057f595afd1920d9fb250900163d674fac21f18c34bbde9b006",
+      "bytes": 2701,
+      "mode": "100644"
+    },
+    "rpent/envs/launch.py": {
+      "sha256": "7a7eeb88ff6bb8d4c4c9ed8da46644f91a9cb7425a74c25ee9a6e17e0726a7a3",
+      "bytes": 21386,
+      "mode": "100644"
+    },
+    "rpent/envs/prerequisites.py": {
+      "sha256": "dfc989cd8dfa94a82c17649c4e65685ada42834ef320a9de4871e9445cf1deba",
+      "bytes": 5470,
+      "mode": "100644"
+    },
+    "rpent/envs/prompt_bundle.py": {
+      "sha256": "1cb7c508ee179a27ebee798fa8ae13f2e2acff7fd48f7665b4314b11470cde25",
+      "bytes": 917,
+      "mode": "100644"
+    },
+    "rpent/episode/__init__.py": {
+      "sha256": "e3943b83f95da9d4d45227b60e0e20e24f26a4542ece4a9636dd1dec41372d32",
+      "bytes": 1124,
+      "mode": "100644"
+    },
+    "rpent/episode/binding.py": {
+      "sha256": "88685c588a20408afc5b34684c0ace5c1ea91d60d7b58582f7d6711e28928155",
+      "bytes": 12684,
+      "mode": "100644"
+    },
+    "rpent/episode/contracts.py": {
+      "sha256": "95ae98ca9f5e710b838f9c168c4fead52502eb591b95c9ec32b2a22bba8c2bd9",
+      "bytes": 4174,
+      "mode": "100644"
+    },
+    "rpent/episode/controller.py": {
+      "sha256": "6727b507f1c4fb99cce8390993c3cbc2bf7e9d2aa3e4e3756f9396fc87dbf426",
+      "bytes": 14687,
+      "mode": "100644"
+    },
+    "rpent/episode/liveness.py": {
+      "sha256": "55c748f4afac4d08099963e240c187c9d5c0b0158cdbb4a16bae4d2e8e470085",
+      "bytes": 3587,
+      "mode": "100644"
+    },
+    "rpent/episode/presets.py": {
+      "sha256": "496326dbb6a112635f1747843ffaef27f5d91c2465a802150a1becc986e39e8d",
+      "bytes": 1355,
+      "mode": "100644"
+    },
+    "rpent/episode/recording.py": {
+      "sha256": "842dfa54b83e07168c538f72520244c92cd2e2eeb3c11657101a113ae1b15c9b",
+      "bytes": 7556,
+      "mode": "100644"
+    },
+    "rpent/episode/runtime.py": {
+      "sha256": "6a48a8817e641c0166e23643cc8cc21d5fec29447e19358c53f35a0ea2464deb",
+      "bytes": 6439,
+      "mode": "100644"
+    },
+    "rpent/evaluation/__init__.py": {
+      "sha256": "83412abcdf810592541f3db780c7bc4771c6e582312211c82ac44233d44062d2",
+      "bytes": 679,
+      "mode": "100644"
+    },
+    "rpent/evaluation/attempt_registration.py": {
+      "sha256": "5e178e4101c31299af4d8df513c39a1b9a5bf7aac703a7a09ab31e0476f62790",
+      "bytes": 9088,
+      "mode": "100644"
+    },
+    "rpent/evaluation/batches.py": {
+      "sha256": "5563a2c4a63d2b759d5e2e3cc4b8b4e23a3800fc2de830df7ebed41ae6ae7b82",
+      "bytes": 17053,
+      "mode": "100644"
+    },
+    "rpent/evaluation/cases.py": {
+      "sha256": "7652f64b7cd0bf9689aa35a55c2235f2cab92bed5832a8133cbf0832f9eb9770",
+      "bytes": 8649,
+      "mode": "100644"
+    },
+    "rpent/evaluation/control.py": {
+      "sha256": "8cfa07fb6ae312e1daa91a42fef8c913e31267c42a3f735d564c4259a930341b",
+      "bytes": 1226,
+      "mode": "100644"
+    },
+    "rpent/evaluation/coordinator.py": {
+      "sha256": "507cd6ae12675fd83eebd3318f99e234ba52fd4abfc06b7612d1be6531acb71c",
+      "bytes": 53865,
+      "mode": "100644"
+    },
+    "rpent/evaluation/diagnostics.py": {
+      "sha256": "eb6210c00396fbc369955507788eaa12c7d09f27b4028043234205eaff0e6929",
+      "bytes": 8518,
+      "mode": "100644"
+    },
+    "rpent/evaluation/front_controller.py": {
+      "sha256": "c2e991cd84e949d55577b74a0a151448bf05806446ad4eb55c6a2f0e817e193e",
+      "bytes": 25441,
+      "mode": "100644"
+    },
+    "rpent/evaluation/manifest.py": {
+      "sha256": "f8233d6976d0f23f930274ddc610c0d909760a5ca14e5ea96f0764a7a908c1fb",
+      "bytes": 15495,
+      "mode": "100644"
+    },
+    "rpent/evaluation/official_metrics.py": {
+      "sha256": "314bd6e9a9e4963f167dff4f5b42867ad26ffb2aa59a5a2f249c771e03eab4de",
+      "bytes": 10118,
+      "mode": "100644"
+    },
+    "rpent/evaluation/parallel.py": {
+      "sha256": "db1625311ec66ce5be7e8572a024f29bc28469f2dc63f040430dc71bb30488d2",
+      "bytes": 12173,
+      "mode": "100644"
+    },
+    "rpent/evaluation/preparation.py": {
+      "sha256": "34cc517bb060e3d10d81020ddf83d9e991e391e21661ab35eca29e7eeef6ecc0",
+      "bytes": 2360,
+      "mode": "100644"
+    },
+    "rpent/evaluation/preparation_progress.py": {
+      "sha256": "117c531fe049761f03d7dabfa99febf2bf47e7a6ce03a6da136cf40ed5abaf06",
+      "bytes": 15634,
+      "mode": "100644"
+    },
+    "rpent/evaluation/result_acceptance.py": {
+      "sha256": "ab7223e335bee7b4fd7241da1c71537bd1da3fefb6e1f4e63a21f56b7bcc48a4",
+      "bytes": 13530,
+      "mode": "100644"
+    },
+    "rpent/evaluation/results.py": {
+      "sha256": "593f327c98e978ccbaf64ebd03ae0f277dc6ede91ec59689516378d688829320",
+      "bytes": 14883,
+      "mode": "100644"
+    },
+    "rpent/evaluation/startup.py": {
+      "sha256": "596b6c738edb0144de6088d223ab1465efbf45b27393936577ffb6e3a9936600",
+      "bytes": 6840,
+      "mode": "100644"
+    },
+    "rpent/evaluation/startup_log.py": {
+      "sha256": "3bb7eda2ab067e941c8e6e5e71bf6d859ba9068733fc03958a10b794864a3dda",
+      "bytes": 6563,
+      "mode": "100644"
+    },
+    "rpent/evaluation/timeouts.py": {
+      "sha256": "26f3a7bda37d804a43bd8daf2c876bdae18939efc4d31f4945e3f6896d3d1e18",
+      "bytes": 4050,
+      "mode": "100644"
+    },
+    "rpent/evaluation/worker.py": {
+      "sha256": "9e1e94e406848560ad237d0bb7bf9c7327cd154dcda02e33d9fc8abcbbe91130",
+      "bytes": 24564,
+      "mode": "100644"
+    },
+    "rpent/harness/__init__.py": {
+      "sha256": "8690d2534f1e99ccd78397228820b0906e61da54bc999759aef9b42eebf3e54a",
+      "bytes": 878,
+      "mode": "100644"
+    },
+    "rpent/harness/controller.py": {
+      "sha256": "ee992c63dd2fbf030ca6c4c5de939dba023a54accfc8ee5c0b1c6fa79378b14e",
+      "bytes": 62494,
+      "mode": "100644"
+    },
+    "rpent/harness/evidence.py": {
+      "sha256": "609c4b669a506467ad73ca3d7142ea2aa28ba77a52a28d02b9cb9a87534641ae",
+      "bytes": 2894,
+      "mode": "100644"
+    },
+    "rpent/harness/finishing.py": {
+      "sha256": "ab285bba7a1392192403db30bc95053f24ebc5fdf6f7a647a00520cfb0206947",
+      "bytes": 3685,
+      "mode": "100644"
+    },
+    "rpent/harness/gate.py": {
+      "sha256": "4cfddd5de863d75e856882eaba4c217786f628d5a57aa722f30279a44b62da65",
+      "bytes": 2173,
+      "mode": "100644"
+    },
+    "rpent/harness/hooks.py": {
+      "sha256": "b22bf66b3e4a069850735dfaed792196c477f8ec9e095bffb988f3c3fd91805c",
+      "bytes": 14696,
+      "mode": "100644"
+    },
+    "rpent/harness/lifecycle.py": {
+      "sha256": "a74004ad5c5b41e5185b374c4e1a48dd2376838b54a9f521ad2f13b122915f9b",
+      "bytes": 22001,
+      "mode": "100644"
+    },
+    "rpent/harness/outcomes.py": {
+      "sha256": "35575bbfa22963338e1ef2c2bb1b2246370adaa944e5552026dcbd3a1d605ef5",
+      "bytes": 23155,
+      "mode": "100644"
+    },
+    "rpent/harness/policy_progress.py": {
+      "sha256": "7790b5acb058fea5e4884dafd73bd481bec7c56e900845ea098b9e3c9f7022bd",
+      "bytes": 3843,
+      "mode": "100644"
+    },
+    "rpent/harness/recovery.py": {
+      "sha256": "a0c709f72b73de56a24655f2b7f4360a8bad0ed8f4c04013ff9e3c282a8beba3",
+      "bytes": 9561,
+      "mode": "100644"
+    },
+    "rpent/harness/session.py": {
+      "sha256": "b3eac9d5124076615734836d9748c3dd0b7e2a771ee9d16a94756eb29146f947",
+      "bytes": 57431,
+      "mode": "100644"
+    },
+    "rpent/harness/stages.py": {
+      "sha256": "2e48cfdea71359533c37970a184c86fe9071ea676d0a561a1d30749e3f90272a",
+      "bytes": 2777,
+      "mode": "100644"
+    },
+    "rpent/harness/state.py": {
+      "sha256": "efba615dbdcfecfe83a0174f85e7ca3f3966421a691ebcabed3c7de0293d6e38",
+      "bytes": 87355,
+      "mode": "100644"
+    },
+    "rpent/harness/verification.py": {
+      "sha256": "3b417add3eaf45a0ec35f4453a5ad33467ac8fe11df7616f6d7fa651e9cc805d",
+      "bytes": 11813,
+      "mode": "100644"
+    },
+    "rpent/harness/verifiers.py": {
+      "sha256": "0e35c8097dd489af655583e8b02e69cd240c67720a224d9032fcb79854135072",
+      "bytes": 5797,
+      "mode": "100644"
+    },
+    "rpent/planning/__init__.py": {
+      "sha256": "7600c7f3c75318dfdfe9ee05a72c030b03572ba809cfca75a9c926fde4b4f55c",
+      "bytes": 3131,
+      "mode": "100644"
+    },
+    "rpent/planning/components.py": {
+      "sha256": "8d144e0e68a17545a06bcd78737a261d9fe85f628ee46b24cacddd721728bf15",
+      "bytes": 385,
+      "mode": "100644"
+    },
+    "rpent/planning/coverage.py": {
+      "sha256": "8d972c45619c8e071b99af699d515d8d9ed7e6595c706bf2f1a52821da494c0e",
+      "bytes": 2264,
+      "mode": "100644"
+    },
+    "rpent/planning/events.py": {
+      "sha256": "93e46debd74a8e4d6faa53c42037f0dc6d6b955bd98e5589e83f0ea83c21fc20",
+      "bytes": 2952,
+      "mode": "100644"
+    },
+    "rpent/planning/feedback.py": {
+      "sha256": "d2f0bec1fa51452c6d070338e4209a2dee9c12f9a4ea1bb7b652973180254329",
+      "bytes": 3218,
+      "mode": "100644"
+    },
+    "rpent/planning/generator.py": {
+      "sha256": "8e0a78cbb0b4e1899bb9ea243577c5d12e9c5d8716547d86f16dc25cb8d3c5fb",
+      "bytes": 1161,
+      "mode": "100644"
+    },
+    "rpent/planning/information.py": {
+      "sha256": "4ec9a2ea9e2f69b81df6624d45e69745c4611a4addcc54061fc2d7f7a10850a3",
+      "bytes": 6560,
+      "mode": "100644"
+    },
+    "rpent/planning/instructions.py": {
+      "sha256": "5ede25eddbaeabc69bc73faed11a0cca7986a477e074cb215db37f7eba029666",
+      "bytes": 2731,
+      "mode": "100644"
+    },
+    "rpent/planning/manifest.py": {
+      "sha256": "71f06b725a9d08424b75e791f5364b4a36ff9d58ec3ad1c1124db8f6d3d537f9",
+      "bytes": 3992,
+      "mode": "100644"
+    },
+    "rpent/planning/observation.py": {
+      "sha256": "4b1f142c5902235e94db71f8fec472c4be2592ca1f1acc77c195642eec6b7764",
+      "bytes": 4820,
+      "mode": "100644"
+    },
+    "rpent/planning/outcome_program.py": {
+      "sha256": "726ab3c87e58739ee5586a345baff1df6db455f14a742bf400093ec2dd8925d5",
+      "bytes": 7267,
+      "mode": "100644"
+    },
+    "rpent/planning/outcomes.py": {
+      "sha256": "1bf2647a893f79734d2774b8417c263b198e2fe223abb75a1af343acc2556351",
+      "bytes": 1038,
+      "mode": "100644"
+    },
+    "rpent/planning/policy.py": {
+      "sha256": "c998942be572f038ae9e1572fc7e85ba8ec0d29937bbe8d9277488055e0e6c4f",
+      "bytes": 1105,
+      "mode": "100644"
+    },
+    "rpent/planning/profiles.py": {
+      "sha256": "b528dddbaa37907da95c9d11a2cb084c0f6325d0090c2632a6c3b252bd162856",
+      "bytes": 628,
+      "mode": "100644"
+    },
+    "rpent/planning/replay.py": {
+      "sha256": "00be94d76e8796c9a54aa21a61d42adab737ee1db637f407377090fa10e0c708",
+      "bytes": 2452,
+      "mode": "100644"
+    },
+    "rpent/planning/runtime.py": {
+      "sha256": "5853abe75080f407dc5506e98ba5cf720dd68aa7bb7902cc07915ac4bff80298",
+      "bytes": 2687,
+      "mode": "100644"
+    },
+    "rpent/planning/schemas.py": {
+      "sha256": "0a16b52e2bc4f614f9c87921b1a47d07d6b3a8bb571c28f906aca9bcf2a3dbaa",
+      "bytes": 13327,
+      "mode": "100644"
+    },
+    "rpent/planning/stack.py": {
+      "sha256": "9c8a5457f1ae43bd47721c57e29dd00cc24745136ce328cda06e964a1d99043f",
+      "bytes": 46677,
+      "mode": "100644"
+    },
+    "rpent/policies/__init__.py": {
+      "sha256": "2e3bc461e51d4eaf5b62c925965f3c5a123e3c9f477eb0de446ddf84b57cae16",
+      "bytes": 636,
+      "mode": "100644"
+    },
+    "rpent/policies/lerobot_smolvla_artifacts.py": {
+      "sha256": "fac8964be3501562fe2de4c56e25b42ed1d4b754170da476ae316e3b38d6bacb",
+      "bytes": 19061,
+      "mode": "100644"
+    },
+    "rpent/policies/robocasa_pi05_catalog.py": {
+      "sha256": "df1bbbf4e2b773919bae361318240c15cb2d648335ac1f28c096c402d30b308a",
+      "bytes": 2086,
+      "mode": "100644"
+    },
+    "rpent/policies/smolvla_catalog.py": {
+      "sha256": "ad6b1fdbe7e30f190a09f85a0cc0623da5144430f9f00c1d1aab85d4081ae6d0",
+      "bytes": 3978,
+      "mode": "100644"
+    },
+    "rpent/policies/xiaomi_mibot_artifacts.py": {
+      "sha256": "baa4869413f1780f6daec7a67eb6e3f5bba3c84682cad0bd802d67165f4c9237",
+      "bytes": 6153,
+      "mode": "100644"
+    },
+    "rpent/policies/xiaomi_mibot_catalog.py": {
+      "sha256": "1d7ba603efde72514a98a398a5bc6fa51ddee07783c1e0e78b967133bac44c96",
+      "bytes": 3346,
+      "mode": "100644"
+    },
+    "rpent/policies/xiaomi_mibot_client.py": {
+      "sha256": "00e199078d947d5a385e47f99854a6198dbf9915779fc184a5dbe0e8ecf20a9b",
+      "bytes": 10520,
+      "mode": "100644"
+    },
+    "rpent/policies/xiaomi_mibot_daemon.py": {
+      "sha256": "6f6e2cbe78232199856f054ff8ed8995257c417cfea5f640c942c9877400e7e7",
+      "bytes": 11872,
+      "mode": "100644"
+    },
+    "rpent/policies/xiaomi_mibot_protocol.py": {
+      "sha256": "db2d1b54da1016965d2629884018352e15545149ebed8a612f22374f521ec1df",
+      "bytes": 16616,
+      "mode": "100644"
+    },
+    "rpent/policies/xiaomi_mibot_rng.py": {
+      "sha256": "eb9d4da198e07143adb09e38051f414b154ceba47871867bd5fec18ba9659f53",
+      "bytes": 2339,
+      "mode": "100644"
+    },
+    "rpent/policies/xiaomi_mibot_server.py": {
+      "sha256": "e9cbea4b9e7c877b448fa31e498f167ca9b6611aafaed04eec0ce5f598b9f879",
+      "bytes": 16210,
+      "mode": "100644"
+    },
+    "rpent/recording/__init__.py": {
+      "sha256": "19ef80fe0de57824077de949402c8ae27c0b5b34a4ecf62e8f163553fde73b55",
+      "bytes": 506,
+      "mode": "100644"
+    },
+    "rpent/recording/contracts.py": {
+      "sha256": "d1037ee6c3a3d868af9f9e3f3c8f9430f1c2c561be9575efae97aae19340462e",
+      "bytes": 19389,
+      "mode": "100644"
+    },
+    "rpent/recording/data_schema.py": {
+      "sha256": "1fc8919bee67937596eb9f83ee76d1d760ee8dee9bd09fbfff211e460d12faf5",
+      "bytes": 3399,
+      "mode": "100644"
+    },
+    "rpent/recording/display.py": {
+      "sha256": "39bf41fba844c23073b80dd50dbf476b87a494278af62ae1e432078b0d5edc19",
+      "bytes": 7701,
+      "mode": "100644"
+    },
+    "rpent/recording/json_safe.py": {
+      "sha256": "3f9379dc9230315b8062b2c467862e7c90786859e5c1a5e5a90befc9b775cb13",
+      "bytes": 1583,
+      "mode": "100644"
+    },
+    "rpent/recording/live_events.py": {
+      "sha256": "20b2bde7f068f642ae5a14cad67402ac895bea8bb9b352e9272c046baf87916a",
+      "bytes": 6259,
+      "mode": "100644"
+    },
+    "rpent/recording/llm_images.py": {
+      "sha256": "6c41fd293b739482ab0d6d62bd8e239d46aa6811340827a9b742609796e0e719",
+      "bytes": 14132,
+      "mode": "100644"
+    },
+    "rpent/recording/media.py": {
+      "sha256": "e0a6df578a757cd387b1a6b94c7d12d6b0da773de4d99b83497ff1988ea910fd",
+      "bytes": 10137,
+      "mode": "100644"
+    },
+    "rpent/recording/narrated/__init__.py": {
+      "sha256": "f731817697360544d2de436555e17c6f18dd42d3be8c5adbe610f5d670b9aec8",
+      "bytes": 80,
+      "mode": "100644"
+    },
+    "rpent/recording/narrated/capture.py": {
+      "sha256": "da6e6387e42591f2d38c58b1c8f2ebf3318e929f084da660ece52c13a8bc1ec0",
+      "bytes": 1279,
+      "mode": "100644"
+    },
+    "rpent/recording/narrated/hd.py": {
+      "sha256": "6bfcd7186bbd9cd99bad76a1e708287c063c90c0c2cfc0808a358d30f1d8ac2c",
+      "bytes": 12225,
+      "mode": "100644"
+    },
+    "rpent/recording/narrated/instrumentation.py": {
+      "sha256": "8ec5ebf947f7781961b744cb635f9990d05f3e72ab86b80683eeb13f5b983a55",
+      "bytes": 1998,
+      "mode": "100644"
+    },
+    "rpent/recording/narrated/model.py": {
+      "sha256": "7632471d613be4fe82d6a24c7915313a40ac5fe1c09ef58ceb5af357496daccf",
+      "bytes": 1824,
+      "mode": "100644"
+    },
+    "rpent/recording/notifications.py": {
+      "sha256": "63904c9805e353a4de332f4609c8a93a2eec32d556cf1d5878d3bd89a131b526",
+      "bytes": 10720,
+      "mode": "100644"
+    },
+    "rpent/recording/recorder.py": {
+      "sha256": "efa67f98f089438d8c810e49569178972a0935cf8420f06ae8640defee061ca8",
+      "bytes": 49298,
+      "mode": "100644"
+    },
+    "rpent/runtime/__init__.py": {
+      "sha256": "64e08a9bad32b909d8349b213ac5cecdf877f013aa61adf932a7c1e9b165d1d8",
+      "bytes": 835,
+      "mode": "100644"
+    },
+    "rpent/runtime/api.py": {
+      "sha256": "fa223957ee8d6f3ae2d86205c224b1946fc190c01c0703a0b2f3349bb15eb09e",
+      "bytes": 31074,
+      "mode": "100644"
+    },
+    "rpent/runtime/base.py": {
+      "sha256": "f931a13ff9a5bfa2933f8ba86dae9db4c09e709df5a9cf6ed296ca2bcf57d76b",
+      "bytes": 2000,
+      "mode": "100644"
+    },
+    "rpent/runtime/codexgateway.py": {
+      "sha256": "e06d903d0c2f6f0d0aae48e74ef8b061d7da413cde080cd779734477daa756e7",
+      "bytes": 12002,
+      "mode": "100644"
+    },
+    "rpent/runtime/factory.py": {
+      "sha256": "e99e27d161f9acdde9273dcb0ed69621447dc1cbf7d9970e7e3f7252e54aadc2",
+      "bytes": 5023,
+      "mode": "100644"
+    },
+    "rpent/runtime/finish.py": {
+      "sha256": "3977eeee2f5b491977f821e24244343eb1e8635bf380d99c9fcb9ed59281b8c5",
+      "bytes": 1019,
+      "mode": "100644"
+    },
+    "rpent/runtime/plan_generation.py": {
+      "sha256": "0ae487715bf6ad6f48bff6459934f598c470440286409ea778f95eb239a8820a",
+      "bytes": 49029,
+      "mode": "100644"
+    },
+    "rpent/runtime/predicate_verification.py": {
+      "sha256": "c0a2b078e9dc920c13ed09da799409520ef1af5e46e2ce57e49101ea788edf88",
+      "bytes": 17842,
+      "mode": "100644"
+    },
+    "rpent/runtime/telemetry.py": {
+      "sha256": "86c5a674e9fa67982ebf94f72e9df7b5fa15cc7f3c642eaa7f47895cfb9447e7",
+      "bytes": 10429,
+      "mode": "100644"
+    },
+    "rpent/runtime/termination.py": {
+      "sha256": "16e1b65b3fad93a51d52663d45d806628effaf7ea1bef2ff9aa63979ba65d8e4",
+      "bytes": 3124,
+      "mode": "100644"
+    },
+    "rpent/source_identity.py": {
+      "sha256": "b5dc29aff7d7f45d1553930d809d10703b3b5e3c6ef37b53cfe7fb2db02e54c8",
+      "bytes": 669,
+      "mode": "100644"
+    },
+    "rpent/tools/__init__.py": {
+      "sha256": "30067b5fa65ee7f7bb56da2ab6a96af0861a981f4d5cc506694a350d8757b9fe",
+      "bytes": 168,
+      "mode": "100644"
+    },
+    "rpent/tools/common.py": {
+      "sha256": "85b46355bca6dc5d6ebcc84a756c1fcc3ff00cff24215690b06e7af107de3add",
+      "bytes": 5063,
+      "mode": "100644"
+    },
+    "rpent/tools/harness_session.py": {
+      "sha256": "eccf5f25a82e452efe5f78f1511b37742253866f66c0b8b9ae7979d3d5c63f6a",
+      "bytes": 6511,
+      "mode": "100644"
+    },
+    "rpent/tools/toolkit.py": {
+      "sha256": "ed6d2bc914af435f81fbadbe4a98ebdb9333e317f04085e8cacc0e598a665204",
+      "bytes": 34851,
+      "mode": "100644"
+    },
+    "rpent/tools/vla.py": {
+      "sha256": "fb7416161d6eaa3c57efd01a67f8168406441acb9911e02a5d008188f63727c2",
+      "bytes": 11097,
+      "mode": "100644"
+    },
+    "rpent/ui/__init__.py": {
+      "sha256": "dbd307303013a782e36474f3bcfe3210683bf070ebae138845c3e95ff2468a4a",
+      "bytes": 147,
+      "mode": "100644"
+    },
+    "rpent/ui/app.py": {
+      "sha256": "c39b41a1d2b276cae1ba10273a643fefed17b0c3a130cdb38aa2a130b9b3ebfb",
+      "bytes": 28949,
+      "mode": "100644"
+    },
+    "rpent/ui/case_runtime.py": {
+      "sha256": "17bee2df2955c77c20e6800aada795f69ca16d70ffde34f1f88b556150d5a0ef",
+      "bytes": 64928,
+      "mode": "100644"
+    },
+    "rpent/ui/case_snapshot.py": {
+      "sha256": "023668652f2e9bf191210e1429a153b045013773d9944f64022cd3f139d81de2",
+      "bytes": 4395,
+      "mode": "100644"
+    },
+    "rpent/ui/console.py": {
+      "sha256": "15c4ce9094e18a0ed3256ffe7f08a6a9e2f72ed9811a612bb1d3adc8280046e4",
+      "bytes": 6051,
+      "mode": "100644"
+    },
+    "rpent/ui/diagnostics.py": {
+      "sha256": "46656253329bb7402a6b25b9cccb14ce1393d67dbe9109cce77146fa3de226ca",
+      "bytes": 9891,
+      "mode": "100644"
+    },
+    "rpent/ui/event_hub.py": {
+      "sha256": "2d9b0517bc5fdbe9c2ea94916a8f7f5a3f7d26cf37685d83f654fc93e80c32d8",
+      "bytes": 23797,
+      "mode": "100644"
+    },
+    "rpent/ui/io_gate.py": {
+      "sha256": "d9c522beef721b9c93eaa170462978b31402e13c23326ef7925929dffd283835",
+      "bytes": 9395,
+      "mode": "100644"
+    },
+    "rpent/ui/json_safety.py": {
+      "sha256": "e924ff3cf78edcb3ad965495ce0b9a0b56aba99c1bffd4aeefdb0430c4cd23fa",
+      "bytes": 955,
+      "mode": "100644"
+    },
+    "rpent/ui/notification_identity.py": {
+      "sha256": "84c5bc547b872c9746f300186c09ab357eccb97ecd951696dcf7348b85c2662c",
+      "bytes": 14840,
+      "mode": "100644"
+    },
+    "rpent/ui/operation_projection.py": {
+      "sha256": "29bc377628b8e6ce97b84c9b6922cf1b6d3b10be9e3dcb67a2fb2a9bf7f7172a",
+      "bytes": 11079,
+      "mode": "100644"
+    },
+    "rpent/ui/operation_snapshot.py": {
+      "sha256": "7b3bf51fdec3391d97355f4929d917ecc45aedc854df9d93ae7479f1e6a8c6b5",
+      "bytes": 1802,
+      "mode": "100644"
+    },
+    "rpent/ui/projection_summary.py": {
+      "sha256": "89befe03bcc14cb0eb86ea98fc5e26b2946c25bfa010f3dfc70e7ad88ec7c1f4",
+      "bytes": 5683,
+      "mode": "100644"
+    },
+    "rpent/ui/repository.py": {
+      "sha256": "c959715c45eb44b45cb45dbc6a422afe481bbf73a8537295aef405313ef70d25",
+      "bytes": 170036,
+      "mode": "100644"
+    },
+    "rpent/ui/routes/__init__.py": {
+      "sha256": "7958eb516533899d926b93282dcd7dccd147445587c9cfd11db9e99142b835b3",
+      "bytes": 420,
+      "mode": "100644"
+    },
+    "rpent/ui/routes/cases.py": {
+      "sha256": "795f60f0fc4151f0d8e827d03a7e9e10a2c67bb2f8d21e05b8ec87c770017674",
+      "bytes": 46469,
+      "mode": "100644"
+    },
+    "rpent/ui/routes/evaluations.py": {
+      "sha256": "1b664a0021de0747bb87a18b4aa8eee67bb9e8391699abfbbb98d2fbc15f1469",
+      "bytes": 27485,
+      "mode": "100644"
+    },
+    "rpent/ui/routes/internal.py": {
+      "sha256": "91506cd3c0591fb96081c3539e7c5c8ba8fdc098547a23610fc64b826ced867e",
+      "bytes": 7111,
+      "mode": "100644"
+    },
+    "rpent/ui/routes/simulators.py": {
+      "sha256": "27d892061baf7577789be3c939c4cb9eef91274e4797500e90bbfdb928ec823e",
+      "bytes": 7622,
+      "mode": "100644"
+    },
+    "rpent/ui/schemas.py": {
+      "sha256": "359156a33f973ea19b89235439fc16fe366597cbe23427c35291a51840e922d1",
+      "bytes": 22511,
+      "mode": "100644"
+    },
+    "rpent/ui/service.py": {
+      "sha256": "751d5f8839dd20dc6ceb629a9559fb91fc97ce615b3a52c47c04910eba97e35b",
+      "bytes": 35025,
+      "mode": "100644"
+    },
+    "rpent/ui/sse.py": {
+      "sha256": "fe4d00ae831d423e06fa41e67cd0410a2ad5c63d4723c9c8466303ddeadafc49",
+      "bytes": 24993,
+      "mode": "100644"
+    },
+    "rpent/ui/timeline_index.py": {
+      "sha256": "6fde477efe59880f2b2f08d152eb3472e9da403f9e15bbcbfb2f39ae55e8a128",
+      "bytes": 14772,
+      "mode": "100644"
+    },
+    "rpent/utils/__init__.py": {
+      "sha256": "3e00298384fda239400f961b68534c63870fc304f820762660c42e78bf5ceb6a",
+      "bytes": 1314,
+      "mode": "100644"
+    },
+    "rpent/utils/config.py": {
+      "sha256": "069f01160ab3f57fccd0726a4bf579f2d335458928ca950c36be20036e1ab4e0",
+      "bytes": 12741,
+      "mode": "100644"
+    },
+    "rpent/utils/daemon.py": {
+      "sha256": "78ad9df0bc4d727744bc939a3fc3ce398ea596b358ffef1f11e76e89dafeaeb6",
+      "bytes": 3818,
+      "mode": "100644"
+    },
+    "rpent/utils/http_rpc.py": {
+      "sha256": "9088a73b4b79d8bcb929461f39e1979c45848b8fb2b80c4c81cf463f780dcc39",
+      "bytes": 7367,
+      "mode": "100644"
+    },
+    "rpent/utils/logging.py": {
+      "sha256": "3fbb1e7ef2cb619d8617dc16b4e6638d36d19933ee68319d15356b6ddb3e3e9d",
+      "bytes": 4251,
+      "mode": "100644"
+    },
+    "rpent/utils/model_load_diagnostics.py": {
+      "sha256": "655d7f59ff1d3c80ff8145810f07c649080acffb53619b0f727f5935561e2f19",
+      "bytes": 2499,
+      "mode": "100644"
+    },
+    "rpent/utils/resources.py": {
+      "sha256": "4c9827e72c81fe5b40937883593262eb985a5155390eb54b024a56bbd3222e69",
+      "bytes": 1164,
+      "mode": "100644"
+    },
+    "rpent/utils/rpc.py": {
+      "sha256": "d7cbbb0af3e79bb3775133d385a24d06e808c58a6c100207e7a7755b26cbd0e0",
+      "bytes": 4150,
+      "mode": "100644"
+    },
+    "rpent/utils/socket_rpc.py": {
+      "sha256": "551a46bff24932cae4544ba116756fb6b41c0008f98fdebe50cee363d4acbfe3",
+      "bytes": 5035,
+      "mode": "100644"
+    },
+    "rpent/utils/templates.py": {
+      "sha256": "901a1447dbe8c5fc1ec4419790758d8ae80b1dc8aa016319f9aaba694a8a9093",
+      "bytes": 2779,
+      "mode": "100644"
+    },
+    "scripts/generate_harness_docs.py": {
+      "sha256": "69d62ece19dcd7a7bdc0be4fd9ee232a2424b4e1ccb1b94f5b8353440415a927",
+      "bytes": 6283,
+      "mode": "100644"
+    },
+    "scripts/probe_robocasa_xiaomi_parity.py": {
+      "sha256": "a2dd5b76f6a55e07f4a0a5cd20b9054c933848a2c24b4dcb3ab05d9678b30f94",
+      "bytes": 11268,
+      "mode": "100644"
+    },
+    "scripts/probe_xiaomi_policy_service.py": {
+      "sha256": "9ee18ccce4432c8bcbc0479c19f97f0c7534c9199d5ffb00213c0194eb064388",
+      "bytes": 5016,
+      "mode": "100644"
+    },
+    "tests/conftest.py": {
+      "sha256": "a72e247d4d62db8ef2eae89d7d265fa8b226f9f66dd1730e76e2629430bfc53d",
+      "bytes": 3064,
+      "mode": "100644"
+    },
+    "tests/fixtures/robocasa/cs04_preclose_chunk.json": {
+      "sha256": "914c510005c279a475dd657495f1c653935d8c153f3581216c61ef7e68f161d5",
+      "bytes": 7847,
+      "mode": "100644"
+    },
+    "tests/fixtures/robocasa/toaster_pick_s8.json": {
+      "sha256": "bffcfc1205ac37a510cc7908850745704fe220db485df5b32d71166d96158ac8",
+      "bytes": 374597,
+      "mode": "100644"
+    },
+    "tests/fixtures/ui/completed-evaluation/evaluation_manifest.json": {
+      "sha256": "a53e305aedd6ac0b93dc88fff0241ff29c6644f0b40c76c529081b813b2ee65b",
+      "bytes": 1053,
+      "mode": "100644"
+    },
+    "tests/fixtures/ui/completed-evaluation/results.jsonl": {
+      "sha256": "ad20c1104843125279ccd75cf669397a9e08f67e69e8d3f345e4810e082b1941",
+      "bytes": 916,
+      "mode": "100644"
+    },
+    "tests/fixtures/ui/completed-evaluation/summary.json": {
+      "sha256": "da1d1385023b9bb00c59bb8984e1e415901f54bcb2e1e1c617d2c749845676c2",
+      "bytes": 358,
+      "mode": "100644"
+    },
+    "tests/fixtures/xiaomi_handback_20261012.json": {
+      "sha256": "e5695fefa1744112ca2eb33536aeffb8a6ac6dddb6525078c3573b782fded243",
+      "bytes": 217522,
+      "mode": "100644"
+    },
+    "tests/fixtures/xiaomi_mibot/input_observations.npz": {
+      "sha256": "5a3ee99158f9160fe29d175bba0ce377a202942c8f0d6e0b7a41aa7b0b549794",
+      "bytes": 1613,
+      "mode": "100644"
+    },
+    "tests/fixtures/xiaomi_mibot/official_contract.json": {
+      "sha256": "3fd59b239067ffc56c7c48f2e4daba2d3a6869db3a3873dbc889f3aa3a94d14d",
+      "bytes": 1463,
+      "mode": "100644"
+    },
+    "tests/integration/test_robocasa_body_motion_smoke.py": {
+      "sha256": "2afee92a1fdb609efe75f49564bba57bb30ac147872687aaf3102ff47ca26dae",
+      "bytes": 6739,
+      "mode": "100644"
+    },
+    "tests/integration/test_robocasa_grasp_cycle_smoke.py": {
+      "sha256": "e9228825b93acea90c9ceaab50bc08648af5a8d2384ed963fc42c5de028f5d54",
+      "bytes": 4035,
+      "mode": "100644"
+    },
+    "tests/integration/test_robocasa_horizon_smoke.py": {
+      "sha256": "9a1c379e362db96a4f7b4fd036c96f2c26681198b2ad279be19986729a222627",
+      "bytes": 4831,
+      "mode": "100644"
+    },
+    "tests/integration/test_robocasa_policy_first_smoke.py": {
+      "sha256": "33e52dceda510fd8d49e8c71b6945441828dbe5169232497bca9604dd4122e42",
+      "bytes": 6537,
+      "mode": "100644"
+    },
+    "tests/integration/test_robocasa_preclose_smoke.py": {
+      "sha256": "b0db28ea9408121af422bf4c679d61d7408b9f28580f2169261921246c6fd9f7",
+      "bytes": 13044,
+      "mode": "100644"
+    },
+    "tests/integration/test_robocasa_privileged_tools_smoke.py": {
+      "sha256": "a5c28ac01d9ac501b7c323dcb9bced32753471c6180004412b6f5f730a7b37ee",
+      "bytes": 12119,
+      "mode": "100644"
+    },
+    "tests/synthetic_tasks.py": {
+      "sha256": "2f1e7b1d16700cf1a78a48d7e555602b1d1366bc437e9831e341686d4f201aa0",
+      "bytes": 2470,
+      "mode": "100644"
+    },
+    "tests/test_action_camera_clips.py": {
+      "sha256": "9fe57012577c0c2e35ac1e4d91be1ed80a7fd0af605596de554ab8afb88af3e8",
+      "bytes": 12451,
+      "mode": "100644"
+    },
+    "tests/test_artifact_route_security.py": {
+      "sha256": "01475b21251d356e75dd9af75da3066f86d79b607fe35b791051794e2fce5e0c",
+      "bytes": 61181,
+      "mode": "100644"
+    },
+    "tests/test_attempt_registration.py": {
+      "sha256": "ca7b53c54ddd2d810bd9c4c17a924ac01562bb9f4ed50bdb93e6fc6f099e7aa6",
+      "bytes": 8055,
+      "mode": "100644"
+    },
+    "tests/test_case_recorder.py": {
+      "sha256": "44d352d21a9ca7d37a4c1f0b5cef189484cb0b8492d7bb7f7b3e135807b5a094",
+      "bytes": 15014,
+      "mode": "100644"
+    },
+    "tests/test_case_recorder_recovery.py": {
+      "sha256": "508edab2bcfbf3833936fd6ed8297a4a037bb7d055de31c24268cd45c17cf7ea",
+      "bytes": 39695,
+      "mode": "100644"
+    },
+    "tests/test_case_runtime.py": {
+      "sha256": "3106987e09f372cffd6b196efb732b077caf2bfc950ca1b68e5cf2d7363a0284",
+      "bytes": 31245,
+      "mode": "100644"
+    },
+    "tests/test_case_runtime_recovery.py": {
+      "sha256": "15af0ef376dbea698abf21aba5247e2caef9dec631bbe462b162ca63588bc851",
+      "bytes": 11959,
+      "mode": "100644"
+    },
+    "tests/test_case_snapshot.py": {
+      "sha256": "c826a7f38e0cb9a2f9bbb54ac11eae94fedc679292908237705f49ac312ada3a",
+      "bytes": 3660,
+      "mode": "100644"
+    },
+    "tests/test_case_snapshot_recovery.py": {
+      "sha256": "10572ffeb85c15afedc268c12bea36d8abe42e42f7274bef55743cc9282ea944",
+      "bytes": 14078,
+      "mode": "100644"
+    },
+    "tests/test_cli_authoritative_assembly.py": {
+      "sha256": "b6fae0cd841bacc0796272583c6073a84fa805a6d9ad8a8927a43efaad37e579",
+      "bytes": 14425,
+      "mode": "100644"
+    },
+    "tests/test_codexgateway_runtime.py": {
+      "sha256": "52eedf1c5a05571b5b26ae8f34fb53437ee30e5c1c392277b13a0043c5605c66",
+      "bytes": 21438,
+      "mode": "100644"
+    },
+    "tests/test_completed_step_review.py": {
+      "sha256": "75e9bd8faee064c68be148dcb8cf6acc4910bd20eeb3e1daf4426a3fa9bc3097",
+      "bytes": 12931,
+      "mode": "100644"
+    },
+    "tests/test_context_policy.py": {
+      "sha256": "6c199301e2c1a57227e62d946b2bcd4dc01e29608c1421bd1536aac2a1848cd5",
+      "bytes": 13067,
+      "mode": "100644"
+    },
+    "tests/test_dashboard_attachment.py": {
+      "sha256": "6f4e53ba058ee2fe487e3ef3901ada0faa8eceb978391ea5ca409684dd5391d7",
+      "bytes": 44304,
+      "mode": "100644"
+    },
+    "tests/test_data_schema.py": {
+      "sha256": "b04797be8b57128fc8df6132529add1b02192668962df50836af4c8df94f0807",
+      "bytes": 2005,
+      "mode": "100644"
+    },
+    "tests/test_display_adapters.py": {
+      "sha256": "d7ae7e931e3f4efb647b8ad8a5dbd92c4bb4c6958064ea5311986c565179d1cc",
+      "bytes": 7833,
+      "mode": "100644"
+    },
+    "tests/test_environment_feedback.py": {
+      "sha256": "fd2f4eda8a015b01287e0145dc963ad77d98b13220dcede323271e7116368c00",
+      "bytes": 7117,
+      "mode": "100644"
+    },
+    "tests/test_episode_cases.py": {
+      "sha256": "94ee442a20277fb3f387e910c3b50a53cf4e76b28a621a95b1d49f7c1a998a8e",
+      "bytes": 5700,
+      "mode": "100644"
+    },
+    "tests/test_episode_contracts.py": {
+      "sha256": "d430e419886d436ef7475077bdc0c7fcecbbf6e7f19fed8039bf180979989f32",
+      "bytes": 2936,
+      "mode": "100644"
+    },
+    "tests/test_episode_controller.py": {
+      "sha256": "96a36048830b08106948745116499cd25d17bc523c3caaffc6d324890bf560e2",
+      "bytes": 13892,
+      "mode": "100644"
+    },
+    "tests/test_episode_coordinator.py": {
+      "sha256": "d63b9e00345b38bb98bb9bb76c5abf212eea050e454d5c46a4121845161101ff",
+      "bytes": 56960,
+      "mode": "100644"
+    },
+    "tests/test_episode_liveness.py": {
+      "sha256": "33a05d04e41ed7fa8d79c062997b8e593376758563f1912e9565efd23e2e8ca6",
+      "bytes": 6459,
+      "mode": "100644"
+    },
+    "tests/test_episode_recording.py": {
+      "sha256": "0b5d42be7331448813e97f2ca97ef6b39f2ff76c1057ab5e92fc7a43de226e53",
+      "bytes": 17169,
+      "mode": "100644"
+    },
+    "tests/test_episode_runtime.py": {
+      "sha256": "57e5f2c0dabd913db88c2a509e6f5a91fb279651110c9c92260ae39c81efb122",
+      "bytes": 13237,
+      "mode": "100644"
+    },
+    "tests/test_episode_worker.py": {
+      "sha256": "b0f1706ec87e2badffc8ed895a25adda9f7605af4073e29587c98c266b0dca32",
+      "bytes": 12012,
+      "mode": "100644"
+    },
+    "tests/test_episode_worker_recording.py": {
+      "sha256": "f23ab4714277ca1392c0e544c438db50d1dde3f31dae511e6a23123c35f13f47",
+      "bytes": 22335,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_batches.py": {
+      "sha256": "3af820bc1b153d5c92b5570efa0c56839e9647e4d801d3733b25ef8242e21dd4",
+      "bytes": 11924,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_cancellation.py": {
+      "sha256": "1fe3a767da389465076e3c2fe17880315c76caae24fc97677030730fcb4dac62",
+      "bytes": 13282,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_cli.py": {
+      "sha256": "59252280641e7daa3a64c2fdeb8c00770c5e72345092401801a49f35e05f0f84",
+      "bytes": 44451,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_event_hub.py": {
+      "sha256": "b6ec7bdee126995028cbc8e2d9228f8454d383daf59969cd0e10dafd760f7dea",
+      "bytes": 16538,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_manifest.py": {
+      "sha256": "8f32c4a9a0a8762b7d277e0ad217cea59f6b914df9bd4e4d9e8c36791d10a018",
+      "bytes": 10074,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_preparation.py": {
+      "sha256": "89c488f3cbf7811fdee9a302fe86193b76c6c5b2aab542d823d1bf297cc75fb5",
+      "bytes": 3156,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_preparation_progress.py": {
+      "sha256": "23b96110f5eafd43eedb2b7a601924a10ef440d4769eb246227f36527dd37c7e",
+      "bytes": 6690,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_results.py": {
+      "sha256": "1892158cedd87e631fabdb29d73a157e618539e5b6db27392d95ce7aa6834bd7",
+      "bytes": 18447,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_sse.py": {
+      "sha256": "c16bb7416dd6105041419b5202574963ce6acfa884f0671d4e3c0f0844c81a01",
+      "bytes": 41158,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_startup.py": {
+      "sha256": "5ed94ae5610024ee3c819ef3fec6aff7bdbbd061655d42589b8907889022a753",
+      "bytes": 930,
+      "mode": "100644"
+    },
+    "tests/test_evaluation_startup_log.py": {
+      "sha256": "ab1fa5d195faeba9852315c065a105c8f7b3bd966b8e8875437534621a25ba9d",
+      "bytes": 2864,
+      "mode": "100644"
+    },
+    "tests/test_finishing_reserve.py": {
+      "sha256": "d68e6ab374bedc5dc7d023023b11651254e56c9d441e3d11754a5bef2ee5f5ad",
+      "bytes": 7998,
+      "mode": "100644"
+    },
+    "tests/test_first_vla_failure_takeover.py": {
+      "sha256": "aa262885f792935d50b48a82255abde53d5ea4b1dc822ba1e9c5d50fd6efb978",
+      "bytes": 4286,
+      "mode": "100644"
+    },
+    "tests/test_handback_navigation.py": {
+      "sha256": "4a2e8e0ced0b08c83fdc8ff14cf45a9d11c4e4f8e19fe2b6a7a8124c4578d4ab",
+      "bytes": 3025,
+      "mode": "100644"
+    },
+    "tests/test_harness.py": {
+      "sha256": "d431355abda6912fcfce445d43dac686d3fbfa05aa4c983c5ae80bcb31c3ef79",
+      "bytes": 38894,
+      "mode": "100644"
+    },
+    "tests/test_harness_1010_integration.py": {
+      "sha256": "275e2fec650f2f176af37a13ccad8fdc68501324ebddac44a4721ef59161e9f0",
+      "bytes": 5085,
+      "mode": "100644"
+    },
+    "tests/test_harness_1011_control.py": {
+      "sha256": "6184223f40c51ee4d50f00808d4404b2cd0b2126c4325c19f1090633cd07e258",
+      "bytes": 30212,
+      "mode": "100644"
+    },
+    "tests/test_harness_docs.py": {
+      "sha256": "d9f69699305c06bcfe583a41a82612640beec085f3cddc88e2687e338f02eee8",
+      "bytes": 2291,
+      "mode": "100644"
+    },
+    "tests/test_harness_evidence.py": {
+      "sha256": "43267419ef115c440c8925043868fbfca63c16f5776c6f52aca241220f536d1e",
+      "bytes": 2277,
+      "mode": "100644"
+    },
+    "tests/test_harness_lifecycle.py": {
+      "sha256": "a956adfa8504bb0e0679bfb01e31e7b51bc59364055d2676b2d9f00082676a4e",
+      "bytes": 7605,
+      "mode": "100644"
+    },
+    "tests/test_harness_session.py": {
+      "sha256": "dcd7356411e2386113e5958a0398334b222d4e6d4790d1dde5432bab6c874b20",
+      "bytes": 49811,
+      "mode": "100644"
+    },
+    "tests/test_harness_state.py": {
+      "sha256": "719b18b19374e7886e5579869025cf1ceb3f0204c9c397d2631aa6504b597536",
+      "bytes": 15103,
+      "mode": "100644"
+    },
+    "tests/test_launch_presets.py": {
+      "sha256": "773b3e96f45a271865eff0cb852de53c4db4045531afef50a781157ea6af2856",
+      "bytes": 23523,
+      "mode": "100644"
+    },
+    "tests/test_live_monitor_events.py": {
+      "sha256": "2e9cc25f86d3e0ce1e09297bc5d667f4272a1f76cd1a84b550c4b30f607a8b99",
+      "bytes": 3292,
+      "mode": "100644"
+    },
+    "tests/test_llm_image_archive.py": {
+      "sha256": "8396ce8341d4a3689dbc02b9244c8c4f74e550fc172d70abb590dd9bcb3adc9d",
+      "bytes": 8040,
+      "mode": "100644"
+    },
+    "tests/test_model_load_diagnostics.py": {
+      "sha256": "c288ac8985556d96f4de1aa7acffc1720d0cfaffd8511b4122c95575f5c9cbee",
+      "bytes": 3139,
+      "mode": "100644"
+    },
+    "tests/test_narrated_hd.py": {
+      "sha256": "108340f1fc4bed059898f4c560cb138c771565448377c8b2fa67dad6cc04fc3f",
+      "bytes": 4358,
+      "mode": "100644"
+    },
+    "tests/test_notification_identity.py": {
+      "sha256": "92bab377abe7644ea6c5cda40182c782d5a5c2253f764221e267c41b464d5479",
+      "bytes": 56467,
+      "mode": "100644"
+    },
+    "tests/test_numbered_instructions.py": {
+      "sha256": "f6e1a6e1da3adc01bde40d255c0f695d2b497e14f6564ff24a867fc27f66777e",
+      "bytes": 3325,
+      "mode": "100644"
+    },
+    "tests/test_official_metrics.py": {
+      "sha256": "2ad5380a984e796f44b9808e16de84f2c27d23372bdf7407278c43b4f660888d",
+      "bytes": 6466,
+      "mode": "100644"
+    },
+    "tests/test_offline_evaluation_dry_run.py": {
+      "sha256": "5fafbe47f5345b1acfda9ce7dbc397ad7a2d46462b9f00c7c8820f8e32f3a266",
+      "bytes": 3327,
+      "mode": "100644"
+    },
+    "tests/test_operation_snapshot.py": {
+      "sha256": "faecae9f3c4412ff2bcf503b313a205ba8ffb632053e64890f4b0f93afe3efa8",
+      "bytes": 1801,
+      "mode": "100644"
+    },
+    "tests/test_outcome_coverage.py": {
+      "sha256": "f4efb312943ef77b2e47c993a2fe0c73490c7a70f54bb997a4c86f7fc35b95eb",
+      "bytes": 1933,
+      "mode": "100644"
+    },
+    "tests/test_outcome_graph.py": {
+      "sha256": "3428f6bf84f18ffc8a022dc976566b6486d65320133a6e8c67f582ba878d2d5a",
+      "bytes": 10493,
+      "mode": "100644"
+    },
+    "tests/test_outcome_program.py": {
+      "sha256": "702713793d57bd4e1b163518af7352804aec5e2d2a010679fed58dc921ea4d0a",
+      "bytes": 3976,
+      "mode": "100644"
+    },
+    "tests/test_package_contents.py": {
+      "sha256": "2dda14e8da2fd9fdb58af3908d0876763bd748fd6071b28bcc4550fb1b6c050e",
+      "bytes": 4437,
+      "mode": "100644"
+    },
+    "tests/test_parallel_evaluation.py": {
+      "sha256": "bb35d0342288fa7479f48753195ce647f0f18646df34f10a07079cd418b58cdd",
+      "bytes": 15750,
+      "mode": "100644"
+    },
+    "tests/test_plan_control_modes.py": {
+      "sha256": "b303291c1241ffc62025d03b223270415286d3cef1f670ea22c5a64006a76763",
+      "bytes": 26995,
+      "mode": "100644"
+    },
+    "tests/test_plan_generation.py": {
+      "sha256": "2c18c8ef197cc29e024bf044aef1c02e74bbec960b214890b28c4cc375a581d0",
+      "bytes": 20406,
+      "mode": "100644"
+    },
+    "tests/test_planning.py": {
+      "sha256": "788475aad62851b9ca699db607980e6d11d3cc58e4212e677899bf1b46332882",
+      "bytes": 23889,
+      "mode": "100644"
+    },
+    "tests/test_planning_information.py": {
+      "sha256": "04967dbf1cd04115c2922d0815b292c50d93f4fca07124125c1ccf21e73fa9d2",
+      "bytes": 12959,
+      "mode": "100644"
+    },
+    "tests/test_planning_runtime.py": {
+      "sha256": "fea452da0185b361c3aee69a9bd7c51bf02dab57019e6cd1f8b5a2235f0f36ba",
+      "bytes": 12843,
+      "mode": "100644"
+    },
+    "tests/test_policy_binding.py": {
+      "sha256": "264c19cb0b582d31a7ff6a10e33e08aaa143d3418877ac5595848002972bd79c",
+      "bytes": 16518,
+      "mode": "100644"
+    },
+    "tests/test_policy_first_six_change_integration.py": {
+      "sha256": "9b09e27d79017f73ff469978e501b9b40508d830ffd9992c6bbc45f209313a26",
+      "bytes": 4638,
+      "mode": "100644"
+    },
+    "tests/test_predicate_verification.py": {
+      "sha256": "37c46795aa1a9785087c5040ea83a05f63dd155a06c4afc07cafec934d1c04e2",
+      "bytes": 9528,
+      "mode": "100644"
+    },
+    "tests/test_prompt_template_contract.py": {
+      "sha256": "975b11a04454807bb147ef323dab54548414392093f1637037f0812369b295e9",
+      "bytes": 628,
+      "mode": "100644"
+    },
+    "tests/test_prompt_vla_neutral.py": {
+      "sha256": "3fd28683e7632acea6b60f27e65cc53f2b7d4d7ace622512a33ad9c4aaf9fef3",
+      "bytes": 1905,
+      "mode": "100644"
+    },
+    "tests/test_public_release.py": {
+      "sha256": "5dcf6b2167dff1f7786672792ebcf6ca16fe242c030b7f577f6d8e5ff8ddcbeb",
+      "bytes": 19711,
+      "mode": "100644"
+    },
+    "tests/test_recording_contracts.py": {
+      "sha256": "1eebf8fdabba09d2a83afe029520ee1173cc8333f8be9452d9e279d55f18892e",
+      "bytes": 15003,
+      "mode": "100644"
+    },
+    "tests/test_recording_profiles.py": {
+      "sha256": "12e8f676d8a6211c7c8cfbeb2a42bee4402d573470aec1d67ee7fde862abbd7a",
+      "bytes": 13559,
+      "mode": "100644"
+    },
+    "tests/test_recovery_tracker.py": {
+      "sha256": "8aca6ad67fb63d667e8277ad3f5bfbc74fabc2533e7f517f3983ff164eb5ff21",
+      "bytes": 5851,
+      "mode": "100644"
+    },
+    "tests/test_release_identity.py": {
+      "sha256": "ef23345be8066a4c5705a06b6592b7275cf3e443218ed11f7dd932f52ed26135",
+      "bytes": 572,
+      "mode": "100644"
+    },
+    "tests/test_result_acceptance.py": {
+      "sha256": "4b2bd2ee80de3106bb80527b41342d16390521089f74ab3e81ef021be09b54eb",
+      "bytes": 15539,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_1011_data.py": {
+      "sha256": "4738a162c96f78729adfa981aec4d67020e3d362f60cf264e8171a373ca2d790",
+      "bytes": 6393,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_1011_tools.py": {
+      "sha256": "8f4e2819d611b6dad5a3cad4c382ed970be0dedcac83ac3396cfd3a7f49c5788",
+      "bytes": 28908,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_acceptance_skill.py": {
+      "sha256": "3e34cbb361f1d5e6b741ee81d11ce64cfe6e76a15bf6d23040ad41cae7386dde",
+      "bytes": 4807,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_action_history.py": {
+      "sha256": "e9f26d7891304a6a7d591b458dce4c13842ee2f8e2e36ad9ac33ca6421a7906b",
+      "bytes": 10548,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_base_torso.py": {
+      "sha256": "91f3b5d2aef46a2af33527f40b9f1688f6963e73339cbd5819e18ff57980c195",
+      "bytes": 10334,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_binding.py": {
+      "sha256": "46ba2a4b7a476d1bfdaafb7e98cea2526aed38ebb7606f94a2caea38c10e9dd5",
+      "bytes": 3553,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_competition.py": {
+      "sha256": "4fb74ac1f498dc2571817de33adb63fc1d5de6353dd1ba6d0c1a3774d44c9d84",
+      "bytes": 17578,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_competition_worker.py": {
+      "sha256": "971500f73c8ca999ba0d6412d15eed3ba4436b5a46a955625804ca5714b8150a",
+      "bytes": 32318,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_config.py": {
+      "sha256": "41d3ad34e43a7fe294bd9956167c9fb4f40573ade715ca41427e39d2951436d1",
+      "bytes": 7659,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_control_modes.py": {
+      "sha256": "7c494a740396d1e16e1c0449d53169e2c6f609450c8cbb24c3cffc8c60fe788d",
+      "bytes": 24303,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_daemon.py": {
+      "sha256": "ed9e1e904029edb2533685ab07232e42fa73a23f24f294f30712039acf590274",
+      "bytes": 13499,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_dependencies.py": {
+      "sha256": "de11dcb46839d2c8468d40de460c5246b22ed849165724e0cf56e1e07092b798",
+      "bytes": 6433,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_env_client.py": {
+      "sha256": "aed910170256e17933da541f1e55073f6e9d609dd100a5e79fbb63cda38542af",
+      "bytes": 11290,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_env_server.py": {
+      "sha256": "add172d73187458d559edf535322277e43a33ffa11334bbc4b05d05f01fe60c4",
+      "bytes": 27472,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_execution_guard_regressions.py": {
+      "sha256": "615233468b4c25723a7436274fb56044c9aa26101f70294c1a1c1963667a1784",
+      "bytes": 6810,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_grasp_cycle_boundaries.py": {
+      "sha256": "4ca09fd5ad0c8c7074d4ee278cacc649aeba6844bce2a6c9388c489f9a089438",
+      "bytes": 7426,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_grasp_lost.py": {
+      "sha256": "16c999477157d4af6618925cf247414d1b3775dee04d42c05a5a69c48efa03cc",
+      "bytes": 15937,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_grasp_progress.py": {
+      "sha256": "3933789d7d54daff0d079540fe9d96e2280c21ab1cead9efc516d427c07a6827",
+      "bytes": 3156,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_horizon_profile.py": {
+      "sha256": "9ed7089f5d07c222165a675eb047b28858159be37f9c7481d735556013acbb43",
+      "bytes": 6344,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_import_isolation.py": {
+      "sha256": "f225bf90accd6ecb63b21009f2f8da4b232d5a8b2cfaf5fd16d8f1db1d5e9840",
+      "bytes": 944,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_motion_handoff.py": {
+      "sha256": "76ffc2c0ca1bd05b22666fe9bf793d623c65fab93b071ab66337ba13f3c9b213",
+      "bytes": 10662,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_multimodal_evidence.py": {
+      "sha256": "5fe95c0772862b49c57e0e09aede5c27c7476414fcd8187f91a3ab59b3bb7410",
+      "bytes": 5690,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_object_registry_preflight.py": {
+      "sha256": "966783110a0faf12f93eaf8cd368f235661aeb9879a8c959bb0e3f33b41ba619",
+      "bytes": 10515,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_observation.py": {
+      "sha256": "d7df5eb01f44e0a134445dca87f37c5d765552e4b85119b72294c350dc0f30fe",
+      "bytes": 5553,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_outcomes.py": {
+      "sha256": "b12b9f583aa34a2f024e31455695073b14217ad526cf7a075125b49a295681b1",
+      "bytes": 2152,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_perception.py": {
+      "sha256": "7c8da1df9ad2b43f81ce637677317ed1a9ed357997a5b5aeca675417c3574388",
+      "bytes": 7380,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_planner_configuration.py": {
+      "sha256": "1fffda054b2cac6e4f1c8b72d0b3a2973c87e0398b808b62f62c9471e1341fd2",
+      "bytes": 3809,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_planning_budget.py": {
+      "sha256": "da92a61c8257707b0f156bc9ed9042d91829428cb34b405c09eb8b5f43d06d1d",
+      "bytes": 11087,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_policy_intervention.py": {
+      "sha256": "58762c59aac981727e9f4425cf540d931586b0a82415279f7f9ab12a302b1e16",
+      "bytes": 5742,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_policy_selection.py": {
+      "sha256": "699fb7d19182bae164080be4e260f5aa1ed0a8f52b3d39066e190c4e924af8f4",
+      "bytes": 2207,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_pour_tool.py": {
+      "sha256": "95f64cd4cae2b378793fdd4a3b43066550c302f37be5e3c51fb08c9bcc17eca9",
+      "bytes": 22922,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_preclose_review.py": {
+      "sha256": "0bc65fa6a08ddbc7b8c08b7b966861d64f8503accf7862e9163b4056b9752a3c",
+      "bytes": 24432,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_privileged_tools.py": {
+      "sha256": "b9695b458b94a1e5b107d8d3a04f08c8124d8ecb5ae01c1ddab23ecb5a19e543",
+      "bytes": 26209,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_prompt_termination.py": {
+      "sha256": "b6398e0133fe5b35165065e9f579643aadf9feff08382194a9f6128f933a3e6e",
+      "bytes": 18834,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_qualification.py": {
+      "sha256": "7bfc60d6e8a619f82c7a24792a53a58639eb378da2c62a9af84504ad9a55ff43",
+      "bytes": 28822,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_runtime.py": {
+      "sha256": "23129dfb293fc2fb80e786490c49c4557a3852d9894ea52ce617fe08a1696d91",
+      "bytes": 19960,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_session.py": {
+      "sha256": "0fd5980cef7178b7cdd9288949664f03fe3717011130708da2fa51edbd7f8526",
+      "bytes": 9554,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_submission.py": {
+      "sha256": "a6dd42cb1550015306feae9654a4e821ce3adc05b0e4e570250b1155c72ef0b5",
+      "bytes": 10340,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_submission_environment.py": {
+      "sha256": "44f6056b9d8eead98611c5dd7810f0bbc9902dd391efe38df405174a74e8a296",
+      "bytes": 8612,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_submission_preparation.py": {
+      "sha256": "196e70ad9bd3b2e8c4b37ad55baa9a88f5bd95d334c1428aecec0dfcbf20c983",
+      "bytes": 13591,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_submission_runner.py": {
+      "sha256": "36b46ae7636279f7c76e7803d42e876bb14d2f94df491c1a8ce39cb90a36880a",
+      "bytes": 8963,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_task_scope.py": {
+      "sha256": "a987210f75e93ec74a1de19ff89d89db888c3a8e38a8d2e0e6e0874ec4966e40",
+      "bytes": 10620,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_tasks.py": {
+      "sha256": "1b8497c993ebcc70e5f2ac19d165de195683fe4318ef684e139ada24eb702784",
+      "bytes": 15972,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_toolkit.py": {
+      "sha256": "f0a98575e973d4023e48b13b22f63d8304a09b10a69a4f8a3cd58df43adedaf5",
+      "bytes": 88244,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_vla_runner.py": {
+      "sha256": "203e4c21e15699930017a949ba8da0663e43b7e53c577803aeb77ac6c6ef0260",
+      "bytes": 5797,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_xiaomi_binding.py": {
+      "sha256": "4d3ebd88d5fa258ce1370ee39dd77942b1aa79b35844def3d74633b66b7ce0ab",
+      "bytes": 6139,
+      "mode": "100644"
+    },
+    "tests/test_robocasa_xiaomi_policy_pool.py": {
+      "sha256": "0f8f2f41d39ffc3e1e88e3faa785a1fe0fb04637f2030278c4bba9fcb6dc7b41",
+      "bytes": 5042,
+      "mode": "100644"
+    },
+    "tests/test_rpc_ready.py": {
+      "sha256": "e9cc6ace25da26deda5103e0fb6c56110ded87dd5f3c212e448acd2805816f50",
+      "bytes": 2230,
+      "mode": "100644"
+    },
+    "tests/test_runtime_config.py": {
+      "sha256": "be28bc4b76ca6d36b9e52cbf9f642d449e12f41dbd34e2e60b93949603421eeb",
+      "bytes": 4562,
+      "mode": "100644"
+    },
+    "tests/test_runtime_config_consumers.py": {
+      "sha256": "7b8e46545c82e420043d418303d1d5572ef978525786b2e6ecf620fd2011cbe3",
+      "bytes": 1136,
+      "mode": "100644"
+    },
+    "tests/test_runtime_factory.py": {
+      "sha256": "2aa22668d29654c35d0b7516ce6e234823a6015b35ab3941ae3a9a37b927bb13",
+      "bytes": 192,
+      "mode": "100644"
+    },
+    "tests/test_runtime_predicate_verification.py": {
+      "sha256": "9c0f16e70c423f96fdd91e6912b77a1f978a719e709dfe08754a9a2f8347f3f5",
+      "bytes": 17360,
+      "mode": "100644"
+    },
+    "tests/test_runtime_settings.py": {
+      "sha256": "decb22305764798fa984992aa4b5044ee04678866f2370b58d0556efbd4e9a93",
+      "bytes": 10451,
+      "mode": "100644"
+    },
+    "tests/test_runtime_termination.py": {
+      "sha256": "035a9560864566d7e972fd26eaa6373623e07e14f4b650ff3ad14969ef889fa3",
+      "bytes": 3650,
+      "mode": "100644"
+    },
+    "tests/test_selected200_submission.py": {
+      "sha256": "677bcbd42faba7b24b58b56e2fffa3a30cf3a2f11b8f51d3ab7dc5a51c49e162",
+      "bytes": 2270,
+      "mode": "100644"
+    },
+    "tests/test_skill_outcomes.py": {
+      "sha256": "8e307403d2bbeae732007908774cee2b4ffaa70538fa81a5e71e35ed1fa526e2",
+      "bytes": 7190,
+      "mode": "100644"
+    },
+    "tests/test_stage_runtime.py": {
+      "sha256": "028a92df30e992f8df885c78bab44d99dbac83de541e3865912aa4026df7692b",
+      "bytes": 4087,
+      "mode": "100644"
+    },
+    "tests/test_staged_plan_generation.py": {
+      "sha256": "a6c51b5c2b633c7c72ad1790dc76ae07983beedd535eba23f65bd2d1f05f7fc8",
+      "bytes": 17361,
+      "mode": "100644"
+    },
+    "tests/test_submission_scope.py": {
+      "sha256": "f8a1fc68f327f1bc001486acb6c8f244c960a9db77228034c1982cc6433239a4",
+      "bytes": 1929,
+      "mode": "100644"
+    },
+    "tests/test_synthesis_policy.py": {
+      "sha256": "af989ce6ce0c736e9bce302ce74d7c3b7f9e37433b5d8c29cf87735d14373c27",
+      "bytes": 6576,
+      "mode": "100644"
+    },
+    "tests/test_task_conflict_escalation.py": {
+      "sha256": "f82758be4a1947addb276a7c07a229c86564beb85881a0cc1850958d8cffec8c",
+      "bytes": 9012,
+      "mode": "100644"
+    },
+    "tests/test_toolkit_harness_session.py": {
+      "sha256": "74d360f058d7d682c3c6d4512286041fd4f8802f09cd43f656673edfe2700433",
+      "bytes": 19520,
+      "mode": "100644"
+    },
+    "tests/test_ui_console.py": {
+      "sha256": "5c29091c827dc287a9f1d809917b66d3bc87a8e13c34d2fe008053bdc3b4a072",
+      "bytes": 16636,
+      "mode": "100644"
+    },
+    "tests/test_ui_io_gate.py": {
+      "sha256": "fcb22885b25a6e1ba53ec876c8bda74228f5f5503e42adc85ed2e32a5a0a67f3",
+      "bytes": 11911,
+      "mode": "100644"
+    },
+    "tests/test_ui_projection_summary.py": {
+      "sha256": "9d16d0a6912719f1b1b8410279bac8c1a382bb77362e38701f54adf862fc3acf",
+      "bytes": 1545,
+      "mode": "100644"
+    },
+    "tests/test_ui_repository.py": {
+      "sha256": "51b7b45ae4a85be7e80f77972fbe6922981d6b0ad215761e5bea673da011e519",
+      "bytes": 140674,
+      "mode": "100644"
+    },
+    "tests/test_unmeasured_composite_policy_first.py": {
+      "sha256": "3bf1e8dbe4db4d04df10b892e8c125e014525008553f91c287f47cdd900f7583",
+      "bytes": 9138,
+      "mode": "100644"
+    },
+    "tests/test_verifier_adapters.py": {
+      "sha256": "5a121e9d931ad6a10b11ee055d281cd1a8c13283c35fff95eef29a4054a46855",
+      "bytes": 4624,
+      "mode": "100644"
+    },
+    "tests/test_vla_tool.py": {
+      "sha256": "c8b0487e04dffbaae1f86c7602f6361efcebde5a66d05f2e0ce501e2ac0289fa",
+      "bytes": 4808,
+      "mode": "100644"
+    },
+    "tests/test_wire_telemetry.py": {
+      "sha256": "345a62040e38616bf1b48bbacde51906e6e1599ebc48775da706798d1074c32f",
+      "bytes": 5209,
+      "mode": "100644"
+    },
+    "tests/test_worker_notifications.py": {
+      "sha256": "b5b34a8634f2c1e7651fc362a49175f022a4188267368ab8e4d1673735d5255e",
+      "bytes": 22433,
+      "mode": "100644"
+    },
+    "tests/test_worker_timeouts.py": {
+      "sha256": "155b39b28c24f6ac6a6766f8d058843c3f5b1db878c4ced8cd70ea994065e44c",
+      "bytes": 8661,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_capabilities.py": {
+      "sha256": "4a81cb7efdf0b94c52c22c2431e556c2ce20e46df183086b122a1c72a133c656",
+      "bytes": 4932,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_episode_bootstrap.py": {
+      "sha256": "78c954c51e508bd1ea9573a9e9ff21a5f94c92d00ad1e1250201ca25ea849b28",
+      "bytes": 6827,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_mibot_artifacts.py": {
+      "sha256": "a0ed0e570b0e6007709f589ad23c499bc455bf27c2523b59c971fe98333deaca",
+      "bytes": 6127,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_mibot_catalog.py": {
+      "sha256": "1f78a69646acb482ef9b14b09677d9537a20844378c39335873171cf38165390",
+      "bytes": 2310,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_mibot_client.py": {
+      "sha256": "4c741846dba33dcceaaf9c49122b56e120645673f5bcaf23b97aa4292b7bee6c",
+      "bytes": 12228,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_mibot_daemon.py": {
+      "sha256": "6109268abcaf382ddfb76765bbfa46c53ba5b190f104192d3e2559b48b2dc1bb",
+      "bytes": 6091,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_mibot_protocol.py": {
+      "sha256": "8f915c6b9c6c62f531de383b1b0bcc4fc84a3df3150acf235203a4be4d34bb2c",
+      "bytes": 6282,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_mibot_server.py": {
+      "sha256": "f8a861e7b44c3430d496f0f42097abb60384de204f25c398ad6d2d4189c1b40d",
+      "bytes": 9790,
+      "mode": "100644"
+    },
+    "tests/test_xiaomi_whole_composite.py": {
+      "sha256": "101529745fef20d42510f60a564c33703c8714c503477993cb33c11fc4915505",
+      "bytes": 4849,
+      "mode": "100644"
+    },
+    "tools/check_robocasa_submission_environment.py": {
+      "sha256": "19425fe0ac5334d51d4b30e39e6c2625dd0e1cdd1adc01807bef8a67e959d5ef",
+      "bytes": 11878,
+      "mode": "100644"
+    },
+    "tools/configure_robocasa_planner.py": {
+      "sha256": "f65604246cb87aa5d97c86279709c1a056a0b3384be83d310732cf8fc2d0db27",
+      "bytes": 6012,
+      "mode": "100644"
+    },
+    "tools/prepare_robocasa_submission.py": {
+      "sha256": "342ae32c8d8f0497b7611d1833ff464b520ca14f943acd9b5e50d1c54138182b",
+      "bytes": 21024,
+      "mode": "100644"
+    },
+    "tools/release.py": {
+      "sha256": "8cd8a00fa0ebef69ec92fdcda329fb5eb6d1ae9da4c12c59cfd456a68cd4010b",
+      "bytes": 16201,
+      "mode": "100644"
+    },
+    "tools/run_robocasa_submission.py": {
+      "sha256": "7ae1c9dba0c8faf349705d41d8358b0d52e5c0415b04ef413d132ef3cd15dd27",
+      "bytes": 19133,
+      "mode": "100644"
+    },
+    "tools/setup_robocasa_submission.py": {
+      "sha256": "5020c3846cf86980ed776a22af64d1d52115b975dacf60e59ac201b190e90149",
+      "bytes": 14124,
+      "mode": "100644"
+    },
+    "tools/update_public_manifest.py": {
+      "sha256": "bb923c98129623a5ee51c7f7d2188c06a693b78385bb4b553d0378cbeb7a2d3e",
+      "bytes": 2271,
+      "mode": "100644"
+    },
+    "tools/verify_results.py": {
+      "sha256": "4b9e8f3506df2faba77f4fd5428fc6fcf99af7ad1abb278bd94006e3b19dce77",
+      "bytes": 577,
+      "mode": "100644"
+    },
+    "tools/verify_selected200.py": {
+      "sha256": "f8e5d8b16a8b607d447de9e0283a749cf0726831330f507d91fdfa8b3cd39277",
+      "bytes": 6802,
+      "mode": "100644"
+    }
+  },
+  "source_scope": "robocasa365-xiaomi-submission",
+  "excluded_frozen_files": [
+    "robots/libero/__init__.py",
+    "robots/libero/binding.py",
+    "robots/libero/bootstrap.py",
+    "robots/libero/data_schema.py",
+    "robots/libero/display.py",
+    "robots/libero/env_client.py",
+    "robots/libero/env_server.py",
+    "robots/libero/evaluation.py",
+    "robots/libero/guides/env_calibration.md",
+    "robots/libero/guides/pro_hybrid_guide.md",
+    "robots/libero/guides/strict_hybrid_guide.md",
+    "robots/libero/inference_pool.py",
+    "robots/libero/launch.py",
+    "robots/libero/outcomes.py",
+    "robots/libero/prompt_bundle.py",
+    "robots/libero/prompts/__init__.py",
+    "robots/libero/prompts/system.py",
+    "robots/libero/prompts/user.py",
+    "robots/libero/sam3_server.py",
+    "robots/libero/session.py",
+    "robots/libero/toolkit.py",
+    "robots/libero/tools.py",
+    "robots/libero/vla_runner.py",
+    "robots/libero/vla_server.py",
+    "robots/robocasa/policy_pool.py",
+    "robots/robocasa/policy_skills/pi05.capabilities.json",
+    "robots/robocasa/policy_skills/pi05.md",
+    "robots/robocerebra/__init__.py",
+    "robots/robocerebra/binding.py",
+    "robots/robocerebra/config.py",
+    "robots/robocerebra/data_schema.py",
+    "robots/robocerebra/display.py",
+    "robots/robocerebra/evaluation.py",
+    "robots/robocerebra/launch.py",
+    "robots/robocerebra/prompts/__init__.py",
+    "robots/robocerebra/prompts/system.py",
+    "robots/robocerebra/runtime.py",
+    "robots/robocerebra/tasks.py",
+    "robots/robocerebra/toolkit.py",
+    "rpent/agent_runtime.py",
+    "rpent/dashboard/index.html",
+    "rpent/dashboard/index.zh-cn.html",
+    "rpent/dashboard/launcher.py",
+    "rpent/dashboard/planning_view.py",
+    "rpent/planner/__init__.py",
+    "rpent/planner/api_loop.py",
+    "rpent/planner/base.py",
+    "rpent/planner/claude_code.py",
+    "rpent/planner/codex.py",
+    "rpent/planner/utils/__init__.py",
+    "rpent/planner/utils/http_mcp_server.py",
+    "rpent/planning/backend.py",
+    "rpent/policies/lerobot_smolvla_server.py",
+    "rpent/policies/pi05.py",
+    "rpent/policies/robocasa_pi05_artifacts.json",
+    "rpent/policies/robocasa_pi05_daemon.py",
+    "rpent/policies/robocasa_pi05_server.py",
+    "rpent/policies/smolvla_client.py",
+    "rpent/policies/smolvla_daemon.py",
+    "rpent/policies/smolvla_protocol.py",
+    "rpent/recording/narrated/__main__.py",
+    "rpent/recording/narrated/cameras.py",
+    "rpent/recording/narrated/content.py",
+    "rpent/recording/narrated/pipeline.py",
+    "rpent/recording/narrated/playback.py",
+    "rpent/recording/narrated/remote_worker.py",
+    "rpent/recording/narrated/render.py",
+    "rpent/recording/narrated/timeline.py",
+    "rpent/recording/narrated/verify.py",
+    "rpent/runtime/claude.py",
+    "rpent/runtime/codex.py",
+    "rpent/runtime/http_mcp_server.py",
+    "rpent/skill_library/__init__.py",
+    "rpent/skill_library/__main__.py",
+    "rpent/skill_library/mining.py",
+    "rpent/skill_library/model.py",
+    "rpent/skill_library/reader.py",
+    "rpent/skill_library/sidecar.py",
+    "rpent/skill_library/store.py",
+    "rpent/skill_library/supervisor.py",
+    "rpent/utils/sam3_client.py",
+    "rpent/utils/vla_client.py"
+  ]
+}

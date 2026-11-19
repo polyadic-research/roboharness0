@@ -1,0 +1,46 @@
+{
+  "id": "robocasa-acceptance",
+  "version": "0.1.0",
+  "source_revision": "f970a0aac4675a7e97ed5771cade4ade7044b2af",
+  "advisory_only": true,
+  "condition_families": [
+    "direct_plate_contact",
+    "upright_placement"
+  ],
+  "object_utils": {
+    "path": "robocasa/utils/object_utils.py",
+    "sha256": "3a7ddb8ba503c5f397baa1513b7b5f370c3c3b2a6a67fa723e83c9472c58af4a"
+  },
+  "tasks": {
+    "PortionHotDogs": {
+      "condition": "direct_plate_contact",
+      "reference": "references/PortionHotDogs.md",
+      "predicate_source": "robocasa/environments/kitchen/composite/portioning_meals/portion_hot_dogs.py",
+      "predicate_source_sha256": "4394e75eba84c53c042b17d53ca6828dfab512192cff085d90de34b842b7e088"
+    },
+    "RestockSinkSupplies": {
+      "condition": "upright_placement",
+      "reference": "references/RestockSinkSupplies.md",
+      "predicate_source": "robocasa/environments/kitchen/composite/restocking_supplies/restock_sink_supplies.py",
+      "predicate_source_sha256": "d362a9f2796f975e9c247b4b4cd2344c60cae8157a2eb6be804559bce1d49da1"
+    },
+    "WeighIngredients": {
+      "condition": "upright_placement",
+      "reference": "references/WeighIngredients.md",
+      "predicate_source": "robocasa/environments/kitchen/composite/measuring_ingredients/weigh_ingredients.py",
+      "predicate_source_sha256": "13a79145f95cb9361ff4c721aac10f85d37ce35417d0ca1b1cae04f80ec2c13f"
+    },
+    "OrganizeMeasuringCups": {
+      "condition": "upright_placement",
+      "reference": "references/OrganizeMeasuringCups.md",
+      "predicate_source": "robocasa/environments/kitchen/composite/measuring_ingredients/organize_measuring_cups.py",
+      "predicate_source_sha256": "c140aacc547181d3a77b721e3e0d295e77a543b375628644e1feaa87109bea37"
+    },
+    "StrainerSetup": {
+      "condition": "upright_placement",
+      "reference": "references/StrainerSetup.md",
+      "predicate_source": "robocasa/environments/kitchen/composite/making_tea/strainer_setup.py",
+      "predicate_source_sha256": "323e90dd837aab9b8911c05ba2c8e10dd38d1ebdaa5af4a3caa10cf9da9f7c48"
+    }
+  }
+}

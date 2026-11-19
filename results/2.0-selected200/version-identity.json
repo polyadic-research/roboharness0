@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "kind": "user-authorized-harness-version-identity",
+  "effective_date": "2026-11-13",
+  "user_instruction": "我们把2.0替换成之前测过200题的1.2.3.5，就是把那个作为2.0",
+  "display_version": "2.0",
+  "status": "current_historical_evaluated_baseline",
+  "scientific_source": {
+    "original_version": "1.2.3.5",
+    "policy": "xiaomi-mibot",
+    "commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+    "source_digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc",
+    "frozen_source_run": "evaluations/sources/Harness-1.2.3.5-final-20261027",
+    "frozen_files": 896,
+    "source_and_package_bytes_unchanged": true
+  },
+  "evaluation": {
+    "kind": "existing_user_selected_native_summary_with_disclosed_parameter_overrides",
+    "native_completed": 200,
+    "successes": 141,
+    "failures": 59,
+    "success_rate_percent": 70.5,
+    "included_batches": [
+      "fresh50",
+      "followup01",
+      "followup02",
+      "followup04"
+    ],
+    "excluded_batch_ids": [
+      "astra50-followup-03-20261104-r001"
+    ],
+    "summary": {
+      "path": "selected200-summary-20261107-r002.json",
+      "sha256": "2b07a05b6934cf6cc99fc4aec4669a103512d6c4309ce20d8b0a643db5eac5de",
+      "original_workspace_path": "outputs/astra-next100-20261104-r001/user-selected-final200-native-summary-20261107-r002.json"
+    },
+    "index": {
+      "path": "selected200-index-20261107-r002.json",
+      "sha256": "1a801d939d2837116b4fe4a7ab025f9fcb24466a794e1099a7e50256683ad018",
+      "original_workspace_path": "outputs/astra-next100-20261104-r001/user-selected200-native-index-20261107-r002.json"
+    },
+    "parameter_override_disclosure": {
+      "uniform_unchanged_180second_protocol_claimed": false,
+      "user_requested_600second_nested_planning_cases": [
+        "U11-04",
+        "U12-02",
+        "C10-03",
+        "U04-03",
+        "U10-03",
+        "U11-03",
+        "U13-03",
+        "U08-04",
+        "U12-04",
+        "U13-04"
+      ],
+      "number_of_selected_600second_cases": 10,
+      "scientific_core_changed": false,
+      "model_and_other_scene_inputs_unchanged": true,
+      "selected200_mixed_protocol_supplemental_summary": true,
+      "original250_baseline_rewritten": false
+    },
+    "all200_full_workflow_canary_and_archive_complete": false,
+    "original_selected_attempts_and_results_unchanged": true,
+    "pure_policy_paired250_substituted": false
+  },
+  "superseded_display_identity": {
+    "historical_name": "2.0 timing-only derivative (2026-11-09)",
+    "branch": "codex/harness-2.0-timing-only",
+    "commit": "1836faeaa909edf328d6f445f546a40775064264",
+    "status": "retained_as_historical_timing_only_not_current_2.0",
+    "original_delivery_receipts_unchanged": true
+  },
+  "local_alias": {
+    "path": "embrain-2.0",
+    "target": "embrain-1.2.3.5-synthesis",
+    "historical_timing_alias": "embrain-2.0-timing-only-20261109"
+  },
+  "unchanged_versions": [
+    "2.1",
+    "2.2",
+    "2.3"
+  ],
+  "new_native_episodes": 0,
+  "new_policy_predictions": 0,
+  "new_LLM_calls": 0,
+  "existing_jobs_and_budgets_unchanged": true
+}

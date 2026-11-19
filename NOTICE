@@ -1,0 +1,49 @@
+RoboHarness-Zero — RoboCasa365 / Xiaomi (historical Harness 2.0)
+
+The project source, including RoboHarness-Zero additions, is distributed under
+the Apache License, Version 2.0. See LICENSE. Existing upstream copyright and
+license notices remain in effect.
+
+RPent (Apache License 2.0; The RLinf Authors)
+  https://github.com/RLinf/RPent
+  - The rpent namespace and retained robots/ integration modules derive from
+    RPent. RoboHarness-Zero extends that framework with planning, policy
+    coordination, verification, recovery and evaluation support.
+  - This distribution is a curated RoboCasa/Xiaomi subset of the historical
+    Harness 2.0 source, originally internal version 1.2.3.5 at commit
+    c8911c64f24393e8665bd9ecc34f819173d9c3ba. SOURCE_PROVENANCE.json and
+    publication/source-manifest.json identify the source and exact exclusions.
+  - Retained runtime, prompts and capability-reference files keep their frozen
+    historical bytes. Submission tooling, documentation and packaging metadata
+    are maintained separately from those scientific inputs.
+  - The inherited license text is retained in LICENSES/RPent-Apache-2.0.txt.
+
+RoboCasa365 (MIT License; Copyright (c) 2026 the RoboCasa Team)
+  https://github.com/robocasa/robocasa
+  - robots/robocasa adapts the benchmark's task definitions, task groups,
+    horizons, observations and native success checks.
+  - The installer obtains RoboCasa separately at commit
+    456174f62b89b8fca99eaaf33949c29fec9cfc2a; its implementation and kitchen
+    assets are not bundled in this source distribution.
+  - The upstream code license is retained in LICENSES/RoboCasa-MIT.txt.
+    Kitchen assets and third-party object collections retain their own terms.
+
+robosuite (MIT License; Copyright (c) 2022 Stanford Vision and Learning Lab
+  and UT Robot Perception and Learning Lab)
+  https://github.com/ARISE-Initiative/robosuite
+  - The RoboCasa adapter uses robosuite's simulator and controller interfaces.
+    The installer obtains robosuite separately at commit
+    5ce6643f3092639d08f7b0f90ed1c6a84f50552c.
+  - The upstream code license is retained in LICENSES/robosuite-MIT.txt.
+
+Xiaomi-Robotics-1-RoboCasa365 (separately obtained base policy)
+  https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365
+  - The Xiaomi adapter uses the official processor/model interface and unchanged
+    checkpoint revision 0d1aa76d0d82debc9b611e4d1e231096434d5be4.
+  - The candidate records the checkpoint's Apache-2.0 license and its immutable
+    upstream license URL. Model code and weights are downloaded separately;
+    this repository's LICENSE does not replace their upstream license notices.
+
+Other installed packages, model services, datasets and simulator assets retain
+their own licenses or service terms. THIRD_PARTY_NOTICES.md links the exact
+upstream notices and pinned dependency records for this submission scope.

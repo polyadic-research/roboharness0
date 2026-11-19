@@ -1,0 +1,20 @@
+<!-- GENERATED FILE: edit rpent/harness/lifecycle.py instead. -->
+stateDiagram-v2
+    [*] --> action_required: successful start_instruction
+    action_required --> verification_required: action_progressed
+    action_required --> recovery_required: action_failed
+    action_required --> recovery_required: exception_requested
+    action_required --> terminal_failure: budget_exhausted
+    verification_required --> verification_required: verification_uncertain
+    verification_required --> verification_required: outcome_satisfied_awaiting_final_verification
+    verification_required --> action_required: outcome_satisfied
+    verification_required --> observation_required: stage_completed
+    verification_required --> complete: contract_completed
+    verification_required --> recovery_required: verification_failed
+    verification_required --> recovery_required: exception_requested
+    verification_required --> terminal_failure: budget_exhausted
+    observation_required --> action_required: stage_advanced
+    recovery_required --> action_required: recovery_applied
+    recovery_required --> terminal_failure: budget_exhausted
+    complete --> [*]
+    terminal_failure --> [*]

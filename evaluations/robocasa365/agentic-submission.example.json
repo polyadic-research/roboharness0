@@ -1,0 +1,17 @@
+{
+  "model_name": "<candidate name and source edition>",
+  "submitter": "<team or organization>",
+  "model_type": "<base policy type>",
+  "date": "<YYYY-MM-DD>",
+  "robocasa_version": "1.0.1",
+  "atomic_seen_success": "N/A",
+  "composite_seen_success": "N/A",
+  "composite_unseen_success": "N/A",
+  "base_policy": "<one unchanged base policy>",
+  "code_url": "<public source repository URL>",
+  "commit_hash": "<immutable public source commit>",
+  "checkpoint_url": "<pinned base-policy checkpoint URL>",
+  "paper_link": "<arXiv or preprint URL>",
+  "open_source": "yes",
+  "notes": "Template only. Replace all placeholders after the required evaluation and eligibility review. Disclose the base license, closed-API planner provider/model/settings and cross-episode memory. Never include credentials."
+}

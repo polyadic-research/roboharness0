@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "kind": "historical_parameter_disclosure",
+  "scientific_source": {
+    "display_version": "2.0",
+    "original_version": "1.2.3.5",
+    "commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+    "digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc"
+  },
+  "planner_configuration_reference": "evaluations/robocasa365/2.0/planner.json",
+  "configured_model": "gpt-6-astra",
+  "configured_reasoning_effort": "xhigh",
+  "configured_max_tokens": 0,
+  "configured_http_timeout_s": 330,
+  "default_nested_planning_timeout_s": 180,
+  "selected_overrides": [
+    {
+      "scene_id": "U11-04",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "2840f207-2485-4a25-838e-a29edcac571b"
+    },
+    {
+      "scene_id": "U12-02",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "559dc380-52b1-44d0-ac11-08c0dc4a922d"
+    },
+    {
+      "scene_id": "C10-03",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "f121110d-9bfd-4ee4-a204-df5c968dbae9"
+    },
+    {
+      "scene_id": "U04-03",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "2be29cc4-7c69-42f9-97ad-1482d5de9a83"
+    },
+    {
+      "scene_id": "U10-03",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "b884a0f8-8042-47a5-afd6-8f27d7a609f3"
+    },
+    {
+      "scene_id": "U11-03",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "dd46ee27-3ce1-4cbf-ac25-3ed058827316"
+    },
+    {
+      "scene_id": "U13-03",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "87f2bcbd-20e3-43b2-a4a6-bd69902856f5"
+    },
+    {
+      "scene_id": "U08-04",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "d54f1510-2d59-4244-8ca4-4e4b6eec6763"
+    },
+    {
+      "scene_id": "U12-04",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "551c73ad-546d-4041-a646-c9711f0302e8"
+    },
+    {
+      "scene_id": "U13-04",
+      "nested_planning_timeout_s": 600,
+      "selected_attempt_id": "f9c613a5-a02a-4676-ac25-a4da09c4668c"
+    }
+  ],
+  "override_count": 10,
+  "selection_rule": "Each independently accepted new native result, regardless of success or failure, becomes the supplemental result for that exact scene; no best-of, no refund, no extra attempt. An unscored new attempt does not erase the previous accepted result.",
+  "mixed_parameter_summary": true,
+  "uniform_180_second_protocol_claimed": false,
+  "environment_seed": 7,
+  "selected_native_episode_indices": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "policy_rng_reconstruction_permitted": false,
+  "protocol_changed_for_preparation": false,
+  "interpretation": "This describes existing accepted attempts only. It is not a runnable historical replay configuration or authorization to rerun them."
+}

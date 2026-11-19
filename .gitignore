@@ -1,0 +1,64 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.code-review-graph/
+.superpowers/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local run outputs.
+logs/
+outputs/
+
+# RLinf is consumed as an external checkout, not vendored here.
+/rlinf/
+/rlinf.egg-info/
+
+/resources/
+
+uv.lock
+
+# Documentation build artifacts and local environment.
+.venv/
+.docs-venv/
+docs/build/
+docs/superpowers/
+docs/presentations/
+
+build/
+dist/
+ui/node_modules
+!ui/dist/
+!ui/dist/**
+ui/test-results/
+ui/playwright-report/
+/ui/.playwright-cli/
+.claude/settings.json
+
+# Local runtime configuration and secrets.
+*.env
+.env.*
+!.env.example
+
+# Public preparation never stages internal/bulk evidence.
+/log data/
+/archives/
+/experiments/
+/outputs/
+/logs/
+/ci-reports/
+/.runtime/
+*.mp4
+!/ui/e2e/fixtures/*.mp4
+*.tar
+*.tar.gz
+*.zip
+*.bundle
+**/physics-state/
+**/llm_inputs/
+**/auth.json
+**/credentials.json

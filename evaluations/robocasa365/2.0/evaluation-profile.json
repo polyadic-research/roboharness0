@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "kind": "future_reviewer_evaluation",
+  "profile_id": "robocasa365-leaderboard-v1",
+  "scientific_source": {
+    "display_version": "2.0",
+    "original_version": "1.2.3.5",
+    "commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+    "digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc"
+  },
+  "workload": {
+    "task_sets": [
+      "atomic_seen",
+      "composite_seen",
+      "composite_unseen"
+    ],
+    "scene_split": "pretrain",
+    "scenario_seed": 7,
+    "scenario_sampling": "seeded_task_environment_sequential_resets",
+    "rollouts_per_task": 50,
+    "task_count": 50,
+    "scheduled_rollouts": 2500,
+    "registry_digest": "sha256:13b26d1dc57c30705152c3d9bdfade87b31e76c1a6dc0e2315abd363b71a6c26",
+    "horizon_source": "robocasa_1_0_1_upstream",
+    "tasks": [
+      {
+        "task_name": "CloseBlenderLid",
+        "task_set": "atomic_seen",
+        "horizon": 900
+      },
+      {
+        "task_name": "CloseFridge",
+        "task_set": "atomic_seen",
+        "horizon": 900
+      },
+      {
+        "task_name": "CloseToasterOvenDoor",
+        "task_set": "atomic_seen",
+        "horizon": 450
+      },
+      {
+        "task_name": "CoffeeSetupMug",
+        "task_set": "atomic_seen",
+        "horizon": 600
+      },
+      {
+        "task_name": "NavigateKitchen",
+        "task_set": "atomic_seen",
+        "horizon": 450
+      },
+      {
+        "task_name": "OpenCabinet",
+        "task_set": "atomic_seen",
+        "horizon": 1050
+      },
+      {
+        "task_name": "OpenDrawer",
+        "task_set": "atomic_seen",
+        "horizon": 750
+      },
+      {
+        "task_name": "OpenStandMixerHead",
+        "task_set": "atomic_seen",
+        "horizon": 450
+      },
+      {
+        "task_name": "PickPlaceCounterToCabinet",
+        "task_set": "atomic_seen",
+        "horizon": 750
+      },
+      {
+        "task_name": "PickPlaceCounterToStove",
+        "task_set": "atomic_seen",
+        "horizon": 600
+      },
+      {
+        "task_name": "PickPlaceDrawerToCounter",
+        "task_set": "atomic_seen",
+        "horizon": 750
+      },
+      {
+        "task_name": "PickPlaceSinkToCounter",
+        "task_set": "atomic_seen",
+        "horizon": 900
+      },
+      {
+        "task_name": "PickPlaceToasterToCounter",
+        "task_set": "atomic_seen",
+        "horizon": 600
+      },
+      {
+        "task_name": "SlideDishwasherRack",
+        "task_set": "atomic_seen",
+        "horizon": 450
+      },
+      {
+        "task_name": "TurnOffStove",
+        "task_set": "atomic_seen",
+        "horizon": 750
+      },
+      {
+        "task_name": "TurnOnElectricKettle",
+        "task_set": "atomic_seen",
+        "horizon": 450
+      },
+      {
+        "task_name": "TurnOnMicrowave",
+        "task_set": "atomic_seen",
+        "horizon": 450
+      },
+      {
+        "task_name": "TurnOnSinkFaucet",
+        "task_set": "atomic_seen",
+        "horizon": 600
+      },
+      {
+        "task_name": "DeliverStraw",
+        "task_set": "composite_seen",
+        "horizon": 2550
+      },
+      {
+        "task_name": "GetToastedBread",
+        "task_set": "composite_seen",
+        "horizon": 3000
+      },
+      {
+        "task_name": "KettleBoiling",
+        "task_set": "composite_seen",
+        "horizon": 1500
+      },
+      {
+        "task_name": "LoadDishwasher",
+        "task_set": "composite_seen",
+        "horizon": 1800
+      },
+      {
+        "task_name": "PackIdenticalLunches",
+        "task_set": "composite_seen",
+        "horizon": 3900
+      },
+      {
+        "task_name": "PreSoakPan",
+        "task_set": "composite_seen",
+        "horizon": 2400
+      },
+      {
+        "task_name": "PrepareCoffee",
+        "task_set": "composite_seen",
+        "horizon": 1800
+      },
+      {
+        "task_name": "RinseSinkBasin",
+        "task_set": "composite_seen",
+        "horizon": 1350
+      },
+      {
+        "task_name": "ScrubCuttingBoard",
+        "task_set": "composite_seen",
+        "horizon": 1200
+      },
+      {
+        "task_name": "SearingMeat",
+        "task_set": "composite_seen",
+        "horizon": 4350
+      },
+      {
+        "task_name": "SetUpCuttingStation",
+        "task_set": "composite_seen",
+        "horizon": 2400
+      },
+      {
+        "task_name": "StackBowlsCabinet",
+        "task_set": "composite_seen",
+        "horizon": 2100
+      },
+      {
+        "task_name": "SteamInMicrowave",
+        "task_set": "composite_seen",
+        "horizon": 2100
+      },
+      {
+        "task_name": "StirVegetables",
+        "task_set": "composite_seen",
+        "horizon": 2400
+      },
+      {
+        "task_name": "StoreLeftoversInBowl",
+        "task_set": "composite_seen",
+        "horizon": 2550
+      },
+      {
+        "task_name": "WashLettuce",
+        "task_set": "composite_seen",
+        "horizon": 1650
+      },
+      {
+        "task_name": "ArrangeBreadBasket",
+        "task_set": "composite_unseen",
+        "horizon": 4350
+      },
+      {
+        "task_name": "ArrangeTea",
+        "task_set": "composite_unseen",
+        "horizon": 2250
+      },
+      {
+        "task_name": "BreadSelection",
+        "task_set": "composite_unseen",
+        "horizon": 1950
+      },
+      {
+        "task_name": "CategorizeCondiments",
+        "task_set": "composite_unseen",
+        "horizon": 1650
+      },
+      {
+        "task_name": "CuttingToolSelection",
+        "task_set": "composite_unseen",
+        "horizon": 1200
+      },
+      {
+        "task_name": "GarnishPancake",
+        "task_set": "composite_unseen",
+        "horizon": 2700
+      },
+      {
+        "task_name": "GatherTableware",
+        "task_set": "composite_unseen",
+        "horizon": 2250
+      },
+      {
+        "task_name": "HeatKebabSandwich",
+        "task_set": "composite_unseen",
+        "horizon": 2700
+      },
+      {
+        "task_name": "MakeIceLemonade",
+        "task_set": "composite_unseen",
+        "horizon": 3000
+      },
+      {
+        "task_name": "PanTransfer",
+        "task_set": "composite_unseen",
+        "horizon": 1800
+      },
+      {
+        "task_name": "PortionHotDogs",
+        "task_set": "composite_unseen",
+        "horizon": 2250
+      },
+      {
+        "task_name": "RecycleBottlesByType",
+        "task_set": "composite_unseen",
+        "horizon": 2850
+      },
+      {
+        "task_name": "SeparateFreezerRack",
+        "task_set": "composite_unseen",
+        "horizon": 2400
+      },
+      {
+        "task_name": "WaffleReheat",
+        "task_set": "composite_unseen",
+        "horizon": 4050
+      },
+      {
+        "task_name": "WashFruitColander",
+        "task_set": "composite_unseen",
+        "horizon": 3150
+      },
+      {
+        "task_name": "WeighIngredients",
+        "task_set": "composite_unseen",
+        "horizon": 3000
+      }
+    ]
+  },
+  "execution": {
+    "planning_profile": "robocasa-horizon-gated-v1",
+    "jobs": 1,
+    "recording_mode": "none",
+    "require_complete_artifacts": true,
+    "object_registries": [
+      "lightwheel",
+      "objaverse"
+    ],
+    "protocol": "unchanged_historical_2.0"
+  },
+  "policy": {
+    "family": "xiaomi-mibot",
+    "repo_id": "XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365",
+    "revision": "0d1aa76d0d82debc9b611e4d1e231096434d5be4",
+    "weight_edits": false,
+    "device": "cuda:0",
+    "dtype": "bfloat16"
+  },
+  "historical_replay": false,
+  "completed": false,
+  "scope_note": "Future execution of the original source profile only. This configuration is not selected200 replay, a new result, or Agentic eligibility approval. Creating or inspecting it starts no environment, model or policy.",
+  "simulator": {
+    "robocasa_version": "1.0.1",
+    "robocasa_commit": "456174f62b89b8fca99eaaf33949c29fec9cfc2a",
+    "robosuite_commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_files_verified_in_frozen_and_original_checkout": 896,
+  "scientific_source_commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+  "source_digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc",
+  "selected_native_results": 200,
+  "successes": 141,
+  "failures": 59,
+  "success_rate_percent": 70.5,
+  "selected200_summary_sha256": "2b07a05b6934cf6cc99fc4aec4669a103512d6c4309ce20d8b0a643db5eac5de",
+  "selected200_index_sha256": "1a801d939d2837116b4fe4a7ab025f9fcb24466a794e1099a7e50256683ad018",
+  "zero_native_runs_and_model_calls": true,
+  "verified_at": "2026-11-13T13:12:43.006793+00:00",
+  "workspace_alias_changed": {
+    "path": "/Users/adam/Documents/ChatGPT/VLM/embrain-2.0",
+    "old_target": "/Users/adam/.codex/worktrees/harness-2-0-timing/embrain-1.2.3.5-synthesis",
+    "new_target": "/Users/adam/Documents/ChatGPT/VLM/embrain-1.2.3.5-synthesis",
+    "new_alias_resolves_to_source_commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+    "historical_alias": "/Users/adam/Documents/ChatGPT/VLM/embrain-2.0-timing-only-20261109"
+  },
+  "selected200_copies_byte_exact": true,
+  "original_results_source_and_timing_branch_untouched": true,
+  "existing_2_2_2_3_jobs_modified": false
+}

@@ -1,0 +1,68 @@
+name: RoboCasa365 2.0 submission checks
+
+on:
+  push:
+    branches: [main, codex/robocasa365-2.0-submission]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: robocasa-submission-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cpu-and-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NO_PROXY: 127.0.0.1,localhost,::1
+      no_proxy: 127.0.0.1,localhost,::1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned coordinator and CPU test dependencies
+        run: |
+          python -m pip install --require-hashes -r evaluations/robocasa365/2.0/environments/coordinator.lock
+          python -m pip install --no-deps --no-build-isolation -e .
+          python -m pip install -r requirements/test.txt
+      - name: Install CPU recording prerequisites
+        run: |
+          python - <<'PY'
+          import imageio_ffmpeg
+          import os
+          import subprocess
+
+          binary = imageio_ffmpeg.get_ffmpeg_exe()
+          subprocess.run([binary, "-version"], check=True)
+          with open(os.environ["GITHUB_ENV"], "a") as environment:
+              environment.write(f"IMAGEIO_FFMPEG_EXE={binary}\n")
+          PY
+      - name: Verify curated source, results and preparation commands
+        run: |
+          python tools/release.py verify
+          python tools/verify_results.py
+          python tools/setup_robocasa_submission.py --check-locks
+          python tools/configure_robocasa_planner.py
+          python tools/run_robocasa_submission.py --runtime-prefix "$RUNNER_TEMP/harness-runtime" --output-dir "$RUNNER_TEMP/harness-evaluation"
+          python tools/run_robocasa_submission.py --archive-historical-results "$RUNNER_TEMP/selected200.tar.gz"
+          python tools/release.py export --output "$RUNNER_TEMP/harness-submission-source"
+      - name: Check generated Harness references
+        run: PYTHONPATH=. python scripts/generate_harness_docs.py --check
+      - name: Run applicable CPU regressions and packaging checks
+        run: >-
+          PYTHONPATH=. python -m pytest -q
+          --basetemp="$RUNNER_TEMP/submission-cpu-tmp"
+          --junitxml="$RUNNER_TEMP/submission-pytest.xml"
+      - name: Upload CPU regression evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: submission-cpu-${{ github.sha }}
+          path: ${{ runner.temp }}/submission-pytest.xml
+          if-no-files-found: ignore
+          retention-days: 7

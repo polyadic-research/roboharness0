@@ -1,0 +1,370 @@
+{
+  "schema_version": 7,
+  "date": "2026-11-17",
+  "scope": "The checks and license update dated 2026-11-17 cover the curated RoboCasa365 / Xiaomi subset of historical Harness 2.0. See latest_preparation_check for verification of the current submission files.",
+  "latest_preparation_check": {
+    "date": "2026-11-19",
+    "scope": "Local Mac arm64 CPU verification of the curated RoboHarness-Zero candidate. The earlier checks and license_update below retain their original dates and digests.",
+    "payload_files_excluding_manifest": 456,
+    "export_files_including_manifest": 457,
+    "tested_inventory_sha256": "0fa8adb6d7a48775137255c33706a37dc6df01ead6dfb46c83f19046de7aff2f",
+    "inventory_encoding": "SHA-256 of UTF-8 json.dumps(files, sort_keys=True, separators=(',', ':')) using the manifest files map with publication/validation.json omitted. The manifest excludes its own hash.",
+    "cpu": {
+      "passed": 3381,
+      "failed": 0,
+      "skipped": 9,
+      "subtests_passed": 9,
+      "seconds": 68.25,
+      "log_sha256": "722ad845c830f4240ecc978a47080c3941a20655a92665a0f63ca4b9abb33afa",
+      "junit_xml_sha256": "5f85914073f2837fa4692f3982c84bc256a47398f28d6279826cdabd7cb72204"
+    },
+    "package": {
+      "wheel": {
+        "file": "rpent-1.2.3.5-py3-none-any.whl",
+        "sha256": "89dfe9e1e84fd70b127844781388b5c18521839eabee98fa49e44b08945ae08d"
+      },
+      "sdist": {
+        "file": "rpent-1.2.3.5.tar.gz",
+        "sha256": "18e23b9be037f1b0017c7ea4e456ddf636082794edf637fcd1013da06635bfda"
+      },
+      "license_expression": "Apache-2.0",
+      "license_file_sha256": {
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "NOTICE": "36ef8e010bd453116b634e08250727a4fee0ad7bffeca939405100256d0b0c32",
+        "THIRD_PARTY_NOTICES.md": "c433719705d91c350b0f4266cd55da7e8406d31fd822e8764c6f8266c62b8098",
+        "LICENSES/RPent-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "LICENSES/RoboCasa-MIT.txt": "5da18670b3f00c59847b1ded9c28dee59940d963b1e03b528b0108d9c5a09885",
+        "LICENSES/robosuite-MIT.txt": "177978cbece0a4c454c2aaec5b3f145b39270814874c43109da9e829c39d9cba"
+      }
+    },
+    "offline_checks": [
+      "selected200 source hashes and original attempt selection",
+      "historical result archive",
+      "dependency locks",
+      "planner configuration",
+      "evaluation dry run",
+      "generated reference documentation",
+      "byte-for-byte regeneration of the leaderboard draft",
+      "Ruff on the changed Python files"
+    ],
+    "leaderboard_draft_sha256": "a9b7a87eee2c63c23affcaa8794b92eb4e2a3c2fe52d0a4fd63dce29b07f6a7b"
+  },
+  "status": "curated_source_license_cpu_and_packaging_validated",
+  "scientific_source": {
+    "commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+    "original_version": "1.2.3.5",
+    "source_digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc",
+    "source_digest_scope": "Original full scientific snapshot; curated files have a separate publication inventory.",
+    "protocol_changed": false,
+    "retained_runtime_and_model_input_files": 209,
+    "excluded_original_files": 82,
+    "retained_original_bytes_unchanged": true
+  },
+  "historical_results": {
+    "cases": 200,
+    "successes": 141,
+    "failures": 59,
+    "rate": 0.705,
+    "original_attempts_and_overrides_unchanged": true,
+    "official_2500_claimed": false
+  },
+  "metadata": {
+    "team": "Polyadic Research Group",
+    "paper": "<ARXIV_URL>",
+    "project_license": "Apache-2.0",
+    "contact_email": "123090492@link.cuhk.edu.cn",
+    "citation_file": "CITATION.bib",
+    "as_of": "2026-11-19",
+    "public_repository": "https://github.com/polyadic-research/roboharness0"
+  },
+  "checks": {
+    "source_integrity": {
+      "retained_original_runtime_files": 209,
+      "retained_release_metadata_files": 1,
+      "canonical_original_hash_map_files": 292,
+      "excluded_original_files": 82,
+      "mismatches": [],
+      "retained_bytes_exact": true
+    },
+    "selected200": {
+      "passed": true,
+      "source_commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+      "source_digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc",
+      "record_sha256": {
+        "README.zh-CN.md": "8d6223a85a707224bfa933c4c1f589ad4038e5dffdfc8d5819a189c0ba9d4e03",
+        "selected200-index-20261107-r002.json": "1a801d939d2837116b4fe4a7ab025f9fcb24466a794e1099a7e50256683ad018",
+        "selected200-summary-20261107-r002.json": "2b07a05b6934cf6cc99fc4aec4669a103512d6c4309ce20d8b0a643db5eac5de",
+        "verification.json": "4e64e7f6393a47da5be1c12539edae882a7c95ebe612f8ff3595eb0333045e69",
+        "version-identity.json": "0162be3194adc7a132ef89652234339c3849735615668f63fd22f4f7c9de6cb8"
+      },
+      "cases": 200,
+      "successes": 141,
+      "failures": 59,
+      "success_rate": 0.705,
+      "success_rate_percent": 70.5,
+      "splits": {
+        "atomic_seen": {
+          "cases": 72,
+          "successes": 62,
+          "failures": 10,
+          "success_rate": 0.8611111111111112,
+          "success_rate_percent": 86.11111111111111
+        },
+        "composite_seen": {
+          "cases": 64,
+          "successes": 45,
+          "failures": 19,
+          "success_rate": 0.703125,
+          "success_rate_percent": 70.3125
+        },
+        "composite_unseen": {
+          "cases": 64,
+          "successes": 34,
+          "failures": 30,
+          "success_rate": 0.53125,
+          "success_rate_percent": 53.125
+        }
+      },
+      "split_counts": {
+        "atomic_seen": {
+          "cases": 72,
+          "successes": 62,
+          "failures": 10,
+          "success_rate": 0.8611111111111112,
+          "success_rate_percent": 86.11111111111111
+        },
+        "composite_seen": {
+          "cases": 64,
+          "successes": 45,
+          "failures": 19,
+          "success_rate": 0.703125,
+          "success_rate_percent": 70.3125
+        },
+        "composite_unseen": {
+          "cases": 64,
+          "successes": 34,
+          "failures": 30,
+          "success_rate": 0.53125,
+          "success_rate_percent": 53.125
+        }
+      },
+      "split_success_rates": {
+        "atomic_seen": 0.8611111111111112,
+        "composite_seen": 0.703125,
+        "composite_unseen": 0.53125
+      },
+      "batch_counts": {
+        "fresh50": {
+          "cases": 50,
+          "successes": 34,
+          "failures": 16,
+          "success_rate": 0.68,
+          "success_rate_percent": 68.0
+        },
+        "followup01": {
+          "cases": 50,
+          "successes": 36,
+          "failures": 14,
+          "success_rate": 0.72,
+          "success_rate_percent": 72.0
+        },
+        "followup02": {
+          "cases": 50,
+          "successes": 34,
+          "failures": 16,
+          "success_rate": 0.68,
+          "success_rate_percent": 68.0
+        },
+        "followup04": {
+          "cases": 50,
+          "successes": 37,
+          "failures": 13,
+          "success_rate": 0.74,
+          "success_rate_percent": 74.0
+        }
+      },
+      "planning_timeout_override_cases": 10,
+      "planning_timeout_overrides": [
+        "C10-03",
+        "U04-03",
+        "U08-04",
+        "U10-03",
+        "U11-03",
+        "U11-04",
+        "U12-02",
+        "U12-04",
+        "U13-03",
+        "U13-04"
+      ],
+      "excluded_batch_ids": [
+        "astra50-followup-03-20261104-r001"
+      ],
+      "mixed_protocol_supplemental_selection": true,
+      "all200_full_workflow_canary_and_archive_complete": false,
+      "current_scope_full_Windows_archive_verified_cases": 150,
+      "is_official_2500": false,
+      "official_full_evaluation_claimed": false,
+      "raw_archives_reverified": false,
+      "new_model_calls": 0,
+      "new_policy_predictions": 0,
+      "new_simulator_episodes": 0
+    },
+    "dependencies": {
+      "coordinator_packages": 51,
+      "prior_retained_package_versions_changed": false,
+      "unused_optional_provider_packages_removed": 18,
+      "policy_lock_unchanged": true,
+      "simulator_lock_unchanged": true,
+      "native_installation_tested": false
+    },
+    "required_import_closure": {
+      "selected_cli_and_gateway_imports_passed": true,
+      "xiaomi_binding_resolved": true,
+      "optional_provider_sdks_blocked_during_check": true,
+      "network_requests": 0,
+      "model_loads": 0,
+      "environment_constructors": 0
+    },
+    "generated_harness_docs": "Original generator --check passed.",
+    "ruff": {
+      "changed_python_files_checked": 46,
+      "passed": true
+    },
+    "maintained_markdown_links": {
+      "missing": []
+    },
+    "full_cpu": {
+      "passed": 3375,
+      "skipped": 9,
+      "subtests_passed": 9,
+      "failed": 0,
+      "seconds": 56.82,
+      "log_sha256": "e6fa6e82f23fcc53d593a436ab494ad92b4f41000779efab0993a88320febaa2",
+      "platform": "Mac arm64, Python 3.12 on a verified clean scoped export. Native Linux/GPU qualification remains separate.",
+      "localhost_proxy_bypass": "NO_PROXY and no_proxy scoped to this test process.",
+      "package_metadata_isolation": "Current wheel installed without dependencies to a temporary target; shared environment unchanged.",
+      "loopback_http_tests": "Permitted local-only HTTP listeners; synthetic CPU fixtures."
+    },
+    "wheel": {
+      "version": "1.2.3.5",
+      "sha256": "680b92d87954e71b606eafcbfa4098cb6b5b46437b2c93a1aa7ccc5c17881a19",
+      "runtime_files_checked": 209,
+      "mismatches": [],
+      "excluded_source_files_in_wheel": [],
+      "frontend_assets_in_wheel": false,
+      "license_expression": "Apache-2.0",
+      "license_files": [
+        "LICENSE",
+        "NOTICE",
+        "THIRD_PARTY_NOTICES.md",
+        "LICENSES/RPent-Apache-2.0.txt",
+        "LICENSES/RoboCasa-MIT.txt",
+        "LICENSES/robosuite-MIT.txt"
+      ],
+      "license_bytes_exact": true
+    },
+    "source_boundary": {
+      "previous_tracked_files": 450,
+      "current_tracked_files": 455,
+      "removed_files": 0,
+      "new_files": 5,
+      "registered_payload_files_excluding_manifest": 454,
+      "excluded_source_set_pinned": true,
+      "credentials_caches_bulk_data_excluded": true,
+      "retained_frozen_source_files_changed": 0,
+      "canonical_selected200_files_changed": 0
+    },
+    "sdist": {
+      "version": "1.2.3.5",
+      "sha256": "dbc7ce80785d0e47893113d8c87a4b7e796d4f1075a62ce52279f3c66a64b59d",
+      "license_expression": "Apache-2.0",
+      "license_files": [
+        "LICENSE",
+        "NOTICE",
+        "THIRD_PARTY_NOTICES.md",
+        "LICENSES/RPent-Apache-2.0.txt",
+        "LICENSES/RoboCasa-MIT.txt",
+        "LICENSES/robosuite-MIT.txt"
+      ],
+      "license_bytes_exact": true
+    }
+  },
+  "branch_isolation": {
+    "mutations_target": "Current submission preparation worktree and branch only.",
+    "other_worktrees_modified": false,
+    "other_branch_updates_requested": false,
+    "history_rewritten": false
+  },
+  "new_native_episodes": 0,
+  "new_model_calls": 0,
+  "new_policy_predictions": 0,
+  "external_publication_or_submission": false,
+  "native_linux_gpu_qualified": false,
+  "license_pending_by_owner": false,
+  "clean_history_export": {
+    "method": "Verified scoped manifest export followed by fresh Git initialization.",
+    "expected_initial_commit_count": 1,
+    "internal_repository_ancestry_included": false
+  },
+  "license_confirmed_on": "2026-11-17",
+  "prior_source_validation": {
+    "date": "2026-11-16",
+    "preparation_commit": "a94bb7f4f325d1791c67664d6512228c6734eede",
+    "full_cpu": {
+      "passed": 3375,
+      "skipped": 9,
+      "subtests_passed": 9,
+      "failed": 0,
+      "seconds": 56.82,
+      "log_sha256": "e6fa6e82f23fcc53d593a436ab494ad92b4f41000779efab0993a88320febaa2",
+      "platform": "Mac arm64, Python 3.12 on a verified clean scoped export. Native Linux/GPU qualification remains separate.",
+      "localhost_proxy_bypass": "NO_PROXY and no_proxy scoped to this test process."
+    },
+    "wheel": {
+      "version": "1.2.3.5",
+      "sha256": "e6f5d3a314be317ee0804023438bf4da26d54335f84ad06fb2261e223b8e448a",
+      "runtime_files_checked": 209,
+      "mismatches": [],
+      "excluded_source_files_in_wheel": [],
+      "frontend_assets_in_wheel": false
+    },
+    "source_boundary": {
+      "previous_tracked_files": 929,
+      "current_tracked_files": 450,
+      "removed_files": 482,
+      "new_files": 3,
+      "registered_payload_files_excluding_manifest": 449,
+      "excluded_source_set_pinned": true,
+      "credentials_caches_bulk_data_excluded": true
+    }
+  },
+  "license_update": {
+    "confirmed_on": "2026-11-17",
+    "authorization": "Explicit owner instruction to use Apache-2.0 for the submission preparation branch.",
+    "project_license": "Apache-2.0",
+    "publication_format_reference": "https://github.com/HexaFuture/HexaShell",
+    "root_license_matches_retained_RPent_text": true,
+    "license_file_sha256": {
+      "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "NOTICE": "efa5179432c0117ed8d0031cc27dc1ea13ae80382ac0bced687f1fc4e2f7697c",
+      "THIRD_PARTY_NOTICES.md": "242aba314083754d041866c7c9ea32808aec931a6ac981a84d258d08202b9efa",
+      "LICENSES/RPent-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "LICENSES/RoboCasa-MIT.txt": "5da18670b3f00c59847b1ded9c28dee59940d963b1e03b528b0108d9c5a09885",
+      "LICENSES/robosuite-MIT.txt": "177978cbece0a4c454c2aaec5b3f145b39270814874c43109da9e829c39d9cba"
+    },
+    "project_license_submission_check_passed": true,
+    "other_submission_gates_retained": true,
+    "separately_obtained_weights_assets_and_services_relicensed": false,
+    "initial_cpu_check": {
+      "passed": 3372,
+      "failed": 3,
+      "log_sha256": "72aab7aff952fea224c50f28f63f8a6316d8756e9438de46b98b1cb263bf98ac",
+      "causes": [
+        "Shared environment contained old rpent installation metadata before packaging.",
+        "Sandbox denied two local HTTP listener tests."
+      ],
+      "resolution": "Re-run complete suite using isolated current-wheel metadata with loopback listeners permitted; see checks.full_cpu."
+    },
+    "upstream_text_spacing": "Scoped Git whitespace attributes preserve the exact RoboCasa and robosuite license bytes, including their original trailing spaces."
+  }
+}

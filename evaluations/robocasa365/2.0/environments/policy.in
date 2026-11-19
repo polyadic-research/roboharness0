@@ -1,0 +1,15 @@
+# Linux x86_64 CPython 3.12; PyPI torch 2.8.0 CUDA dependencies.
+# The exact FlashAttention wheel is installed separately without dependency resolution.
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+transformers==4.57.1
+accelerate==1.11.0
+safetensors==0.6.2
+numpy==2.1.3
+Pillow==11.3.0
+python-dotenv==1.2.2
+pydantic==2.13.4
+httpx==0.28.1
+setuptools==84.2.1
+wheel==0.48.0

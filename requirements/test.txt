@@ -1,0 +1,11 @@
+# CPU regression dependencies; simulator/model environments remain separate.
+pytest
+pytest-asyncio
+pytest-subtests
+PyYAML
+Pillow
+scipy
+imageio-ffmpeg==0.6.0
+build
+setuptools>=77
+wheel

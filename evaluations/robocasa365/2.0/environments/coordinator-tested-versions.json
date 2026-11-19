@@ -1,0 +1,17 @@
+{
+  "python_version": "3.12.14",
+  "packages": {
+    "pydantic-ai-slim": "2.54.0",
+    "pydantic": "2.14.3",
+    "httpx": "0.28.1",
+    "openai": "3.24.0",
+    "fastapi": "0.142.2",
+    "uvicorn": "0.54.0",
+    "imageio-ffmpeg": "0.6.0"
+  },
+  "recorded_on": "2026-11-16",
+  "scope": "Mac CPU publication compatibility evidence; not historical evaluation environment or Linux/GPU qualification",
+  "new_provider_calls": 0,
+  "new_policy_predictions": 0,
+  "new_environment_constructors": 0
+}

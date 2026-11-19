@@ -1,0 +1,2104 @@
+{
+  "checkpoint": {
+    "path": ".",
+    "repo_id": "XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365",
+    "revision": "0d1aa76d0d82debc9b611e4d1e231096434d5be4"
+  },
+  "handback": {
+    "by_fixture": {
+      "Counter": {
+        "distance_m": [
+          0.124,
+          0.318
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.004,
+          0.597
+        ],
+        "episodes": 190,
+        "front_distance_m_median": 0.173,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.874,
+          1.067
+        ]
+      },
+      "Dishwasher": {
+        "distance_m": [
+          0.239,
+          0.414
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.004,
+          0.593
+        ],
+        "episodes": 37,
+        "front_distance_m_median": 0.366,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.577,
+          0.565
+        ]
+      },
+      "Drawer": {
+        "distance_m": [
+          0.228,
+          0.451
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.003,
+          0.6
+        ],
+        "episodes": 31,
+        "front_distance_m_median": 0.287,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.629,
+          0.648
+        ]
+      },
+      "ElectricKettle": {
+        "distance_m": [
+          0.191,
+          0.309
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.007,
+          0.594
+        ],
+        "episodes": 33,
+        "front_distance_m_median": 0.243,
+        "heading_deg_max": 47.4,
+        "lateral_m": [
+          -0.121,
+          0.078
+        ]
+      },
+      "FridgeBottomFreezer": {
+        "distance_m": [
+          0.251,
+          0.52
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.002,
+          0.597
+        ],
+        "episodes": 18,
+        "front_distance_m_median": 0.289,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.324,
+          -0.027
+        ]
+      },
+      "FridgeFrenchDoor": {
+        "distance_m": [
+          0.229,
+          0.557
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.002,
+          0.591
+        ],
+        "episodes": 43,
+        "front_distance_m_median": 0.285,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.103,
+          0.117
+        ]
+      },
+      "FridgeSideBySide": {
+        "distance_m": [
+          0.222,
+          0.569
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.007,
+          0.592
+        ],
+        "episodes": 13,
+        "front_distance_m_median": 0.274,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.13,
+          0.136
+        ]
+      },
+      "HingeCabinet": {
+        "distance_m": [
+          0.287,
+          0.421
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.007,
+          0.598
+        ],
+        "episodes": 21,
+        "front_distance_m_median": 0.374,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.066,
+          0.141
+        ]
+      },
+      "Microwave": {
+        "distance_m": [
+          0.215,
+          0.388
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.005,
+          0.597
+        ],
+        "episodes": 39,
+        "front_distance_m_median": 0.288,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.131,
+          0.095
+        ]
+      },
+      "Oven": {
+        "distance_m": [
+          0.049,
+          0.481
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.007,
+          0.599
+        ],
+        "episodes": 58,
+        "front_distance_m_median": 0.336,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.543,
+          0.684
+        ]
+      },
+      "SingleCabinet": {
+        "distance_m": [
+          0.289,
+          0.387
+        ],
+        "eef_start_base_m": [
+          0.249,
+          0.002,
+          0.59
+        ],
+        "episodes": 4,
+        "front_distance_m_median": 0.382,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          0.04,
+          0.155
+        ]
+      },
+      "Sink": {
+        "distance_m": [
+          0.204,
+          0.279
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.009,
+          0.6
+        ],
+        "episodes": 13,
+        "front_distance_m_median": 0.255,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.079,
+          0.134
+        ]
+      },
+      "Stove": {
+        "distance_m": [
+          0.112,
+          0.186
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.004,
+          0.594
+        ],
+        "episodes": 25,
+        "front_distance_m_median": 0.161,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.122,
+          0.113
+        ]
+      },
+      "ToasterOven": {
+        "distance_m": [
+          0.319,
+          0.439
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.005,
+          0.599
+        ],
+        "episodes": 50,
+        "front_distance_m_median": 0.363,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.118,
+          0.105
+        ]
+      }
+    },
+    "by_task": {
+      "AdjustToasterOvenTemperature": {
+        "distance_m": [
+          0.343,
+          0.452
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.007,
+          0.603
+        ],
+        "episodes": 5,
+        "fixture": "ToasterOven",
+        "front_distance_m_median": 0.351,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.125,
+          0.079
+        ]
+      },
+      "AdjustWaterTemperature": {
+        "distance_m": [
+          0.204,
+          0.279
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.009,
+          0.6
+        ],
+        "episodes": 13,
+        "fixture": "Sink",
+        "front_distance_m_median": 0.255,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.079,
+          0.134
+        ]
+      },
+      "CheesyBread": {
+        "distance_m": [
+          0.121,
+          0.191
+        ],
+        "eef_start_base_m": [
+          0.244,
+          -0.001,
+          0.594
+        ],
+        "episodes": 15,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.176,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.135,
+          1.299
+        ]
+      },
+      "CloseCabinet": {
+        "distance_m": [
+          0.31,
+          0.39
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.011,
+          0.598
+        ],
+        "episodes": 10,
+        "fixture": "HingeCabinet",
+        "front_distance_m_median": 0.363,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.07,
+          0.142
+        ]
+      },
+      "CloseDishwasher": {
+        "distance_m": [
+          0.374,
+          0.426
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.006,
+          0.598
+        ],
+        "episodes": 14,
+        "fixture": "Dishwasher",
+        "front_distance_m_median": 0.395,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.588,
+          0.555
+        ]
+      },
+      "CloseDrawer": {
+        "distance_m": [
+          0.233,
+          0.454
+        ],
+        "eef_start_base_m": [
+          0.248,
+          0.002,
+          0.6
+        ],
+        "episodes": 15,
+        "fixture": "Drawer",
+        "front_distance_m_median": 0.302,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.641,
+          0.744
+        ]
+      },
+      "CloseElectricKettleLid": {
+        "distance_m": [
+          0.192,
+          0.331
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.006,
+          0.594
+        ],
+        "episodes": 15,
+        "fixture": "ElectricKettle",
+        "front_distance_m_median": 0.256,
+        "heading_deg_max": 43.9,
+        "lateral_m": [
+          -0.11,
+          0.065
+        ]
+      },
+      "CloseFridge": {
+        "distance_m": [
+          0.507,
+          0.569
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.002,
+          0.594
+        ],
+        "episodes": 2,
+        "fixture": "FridgeSideBySide",
+        "front_distance_m_median": 0.538,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.138,
+          -0.135
+        ]
+      },
+      "CloseFridgeDrawer": {
+        "distance_m": [
+          0.22,
+          0.22
+        ],
+        "eef_start_base_m": [
+          0.254,
+          -0.012,
+          0.584
+        ],
+        "episodes": 1,
+        "fixture": "FridgeSideBySide",
+        "front_distance_m_median": 0.22,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.071,
+          -0.071
+        ]
+      },
+      "CloseMicrowave": {
+        "distance_m": [
+          0.204,
+          0.399
+        ],
+        "eef_start_base_m": [
+          0.245,
+          -0.002,
+          0.596
+        ],
+        "episodes": 15,
+        "fixture": "Microwave",
+        "front_distance_m_median": 0.293,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.103,
+          0.087
+        ]
+      },
+      "CloseOven": {
+        "distance_m": [
+          0.459,
+          0.517
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.004,
+          0.599
+        ],
+        "episodes": 11,
+        "fixture": "Oven",
+        "front_distance_m_median": 0.478,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.559,
+          0.594
+        ]
+      },
+      "CloseToasterOvenDoor": {
+        "distance_m": [
+          0.318,
+          0.415
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.006,
+          0.599
+        ],
+        "episodes": 13,
+        "fixture": "ToasterOven",
+        "front_distance_m_median": 0.353,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.07,
+          0.082
+        ]
+      },
+      "LowerHeat": {
+        "distance_m": [
+          0.122,
+          0.178
+        ],
+        "eef_start_base_m": [
+          0.245,
+          -0.004,
+          0.592
+        ],
+        "episodes": 7,
+        "fixture": "Stove",
+        "front_distance_m_median": 0.164,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.092,
+          0.123
+        ]
+      },
+      "MakeIcedCoffee": {
+        "distance_m": [
+          0.126,
+          0.187
+        ],
+        "eef_start_base_m": [
+          0.25,
+          -0.005,
+          0.593
+        ],
+        "episodes": 13,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.169,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -1.367,
+          0.874
+        ]
+      },
+      "OpenCabinet": {
+        "distance_m": [
+          0.248,
+          0.248
+        ],
+        "eef_start_base_m": [
+          0.251,
+          0.004,
+          0.575
+        ],
+        "episodes": 1,
+        "fixture": "SingleCabinet",
+        "front_distance_m_median": 0.248,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          0.162,
+          0.162
+        ]
+      },
+      "OpenDishwasher": {
+        "distance_m": [
+          0.221,
+          0.271
+        ],
+        "eef_start_base_m": [
+          0.249,
+          0.002,
+          0.594
+        ],
+        "episodes": 9,
+        "fixture": "Dishwasher",
+        "front_distance_m_median": 0.241,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.575,
+          0.575
+        ]
+      },
+      "OpenDrawer": {
+        "distance_m": [
+          0.24,
+          0.319
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.001,
+          0.596
+        ],
+        "episodes": 13,
+        "fixture": "Drawer",
+        "front_distance_m_median": 0.281,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.514,
+          0.621
+        ]
+      },
+      "OpenElectricKettleLid": {
+        "distance_m": [
+          0.24,
+          0.325
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.004,
+          0.591
+        ],
+        "episodes": 4,
+        "fixture": "ElectricKettle",
+        "front_distance_m_median": 0.291,
+        "heading_deg_max": 25.9,
+        "lateral_m": [
+          -0.041,
+          0.06
+        ]
+      },
+      "OpenFridge": {
+        "distance_m": [
+          0.482,
+          0.501
+        ],
+        "eef_start_base_m": [
+          0.236,
+          -0.004,
+          0.598
+        ],
+        "episodes": 2,
+        "fixture": "FridgeBottomFreezer",
+        "front_distance_m_median": 0.492,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.351,
+          -0.314
+        ]
+      },
+      "OpenFridgeDrawer": {
+        "distance_m": [
+          0.198,
+          0.281
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.002,
+          0.584
+        ],
+        "episodes": 5,
+        "fixture": "FridgeFrenchDoor",
+        "front_distance_m_median": 0.228,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.103,
+          0.109
+        ]
+      },
+      "OpenMicrowave": {
+        "distance_m": [
+          0.243,
+          0.396
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.006,
+          0.595
+        ],
+        "episodes": 15,
+        "fixture": "Microwave",
+        "front_distance_m_median": 0.286,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.134,
+          0.094
+        ]
+      },
+      "OpenOven": {
+        "distance_m": [
+          0.297,
+          0.384
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.011,
+          0.599
+        ],
+        "episodes": 15,
+        "fixture": "Oven",
+        "front_distance_m_median": 0.353,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.534,
+          0.595
+        ]
+      },
+      "OpenToasterOvenDoor": {
+        "distance_m": [
+          0.355,
+          0.445
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.005,
+          0.599
+        ],
+        "episodes": 13,
+        "fixture": "ToasterOven",
+        "front_distance_m_median": 0.381,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.123,
+          0.091
+        ]
+      },
+      "PackDessert": {
+        "distance_m": [
+          0.124,
+          0.196
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.005,
+          0.595
+        ],
+        "episodes": 14,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.156,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.902,
+          0.995
+        ]
+      },
+      "PickPlaceCabinetToCounter": {
+        "distance_m": [
+          0.139,
+          0.18
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.007,
+          0.596
+        ],
+        "episodes": 11,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.162,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.979,
+          0.996
+        ]
+      },
+      "PickPlaceCounterToBlender": {
+        "distance_m": [
+          0.158,
+          0.198
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.006,
+          0.606
+        ],
+        "episodes": 15,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.189,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -1.042,
+          1.09
+        ]
+      },
+      "PickPlaceCounterToCabinet": {
+        "distance_m": [
+          0.121,
+          0.193
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.006,
+          0.595
+        ],
+        "episodes": 11,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.15,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.831,
+          0.915
+        ]
+      },
+      "PickPlaceCounterToDrawer": {
+        "distance_m": [
+          0.267,
+          0.345
+        ],
+        "eef_start_base_m": [
+          0.244,
+          -0.007,
+          0.6
+        ],
+        "episodes": 14,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.32,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.98,
+          0.635
+        ]
+      },
+      "PickPlaceCounterToMicrowave": {
+        "distance_m": [
+          0.175,
+          0.175
+        ],
+        "eef_start_base_m": [
+          0.25,
+          -0.009,
+          0.606
+        ],
+        "episodes": 1,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.175,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          0.857,
+          0.857
+        ]
+      },
+      "PickPlaceCounterToOven": {
+        "distance_m": [
+          0.0,
+          1.63
+        ],
+        "eef_start_base_m": [
+          0.244,
+          -0.009,
+          0.601
+        ],
+        "episodes": 13,
+        "fixture": "Oven",
+        "front_distance_m_median": 0.083,
+        "heading_deg_max": 90.0,
+        "lateral_m": [
+          -1.951,
+          1.707
+        ]
+      },
+      "PickPlaceCounterToSink": {
+        "distance_m": [
+          0.109,
+          0.187
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.004,
+          0.597
+        ],
+        "episodes": 12,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.152,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.34,
+          0.325
+        ]
+      },
+      "PickPlaceCounterToStove": {
+        "distance_m": [
+          0.096,
+          0.192
+        ],
+        "eef_start_base_m": [
+          0.249,
+          -0.004,
+          0.594
+        ],
+        "episodes": 12,
+        "fixture": "Stove",
+        "front_distance_m_median": 0.167,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.127,
+          0.114
+        ]
+      },
+      "PickPlaceCounterToToasterOven": {
+        "distance_m": [
+          0.126,
+          0.193
+        ],
+        "eef_start_base_m": [
+          0.244,
+          -0.006,
+          0.597
+        ],
+        "episodes": 14,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.163,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.589,
+          0.182
+        ]
+      },
+      "PickPlaceDrawerToCounter": {
+        "distance_m": [
+          0.176,
+          0.345
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.006,
+          0.597
+        ],
+        "episodes": 15,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.331,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.996,
+          1.106
+        ]
+      },
+      "PickPlaceFridgeDrawerToShelf": {
+        "distance_m": [
+          0.235,
+          0.289
+        ],
+        "eef_start_base_m": [
+          0.253,
+          -0.005,
+          0.592
+        ],
+        "episodes": 10,
+        "fixture": "FridgeFrenchDoor",
+        "front_distance_m_median": 0.265,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.086,
+          0.081
+        ]
+      },
+      "PickPlaceFridgeShelfToDrawer": {
+        "distance_m": [
+          0.222,
+          0.284
+        ],
+        "eef_start_base_m": [
+          0.243,
+          -0.005,
+          0.594
+        ],
+        "episodes": 6,
+        "fixture": "FridgeSideBySide",
+        "front_distance_m_median": 0.265,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.111,
+          0.171
+        ]
+      },
+      "PickPlaceMicrowaveToCounter": {
+        "distance_m": [
+          0.223,
+          0.243
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.001,
+          0.594
+        ],
+        "episodes": 3,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.239,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.678,
+          1.054
+        ]
+      },
+      "PickPlaceSinkToCounter": {
+        "distance_m": [
+          0.132,
+          0.189
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.004,
+          0.597
+        ],
+        "episodes": 14,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.153,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.346,
+          0.241
+        ]
+      },
+      "PickPlaceStoveToCounter": {
+        "distance_m": [
+          0.119,
+          0.165
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.005,
+          0.596
+        ],
+        "episodes": 6,
+        "fixture": "Stove",
+        "front_distance_m_median": 0.143,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.115,
+          0.049
+        ]
+      },
+      "PickPlaceToasterOvenToCounter": {
+        "distance_m": [
+          0.141,
+          0.177
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.004,
+          0.6
+        ],
+        "episodes": 10,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.156,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.545,
+          0.905
+        ]
+      },
+      "PickPlaceToasterToCounter": {
+        "distance_m": [
+          0.138,
+          0.191
+        ],
+        "eef_start_base_m": [
+          0.245,
+          -0.0,
+          0.593
+        ],
+        "episodes": 13,
+        "fixture": "Counter",
+        "front_distance_m_median": 0.179,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -1.074,
+          1.73
+        ]
+      },
+      "PreheatOven": {
+        "distance_m": [
+          0.229,
+          0.296
+        ],
+        "eef_start_base_m": [
+          0.247,
+          -0.009,
+          0.604
+        ],
+        "episodes": 7,
+        "fixture": "Oven",
+        "front_distance_m_median": 0.267,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          0.05,
+          0.129
+        ]
+      },
+      "SlideDishwasherRack": {
+        "distance_m": [
+          0.299,
+          0.371
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.006,
+          0.593
+        ],
+        "episodes": 14,
+        "fixture": "Dishwasher",
+        "front_distance_m_median": 0.331,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.491,
+          0.405
+        ]
+      },
+      "SlideOvenRack": {
+        "distance_m": [
+          0.224,
+          0.457
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.004,
+          0.596
+        ],
+        "episodes": 15,
+        "fixture": "Oven",
+        "front_distance_m_median": 0.39,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.535,
+          0.522
+        ]
+      },
+      "SlideToasterOvenRack": {
+        "distance_m": [
+          0.303,
+          0.375
+        ],
+        "eef_start_base_m": [
+          0.248,
+          -0.003,
+          0.599
+        ],
+        "episodes": 13,
+        "fixture": "ToasterOven",
+        "front_distance_m_median": 0.332,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.055,
+          0.137
+        ]
+      },
+      "TurnOnElectricKettle": {
+        "distance_m": [
+          0.192,
+          0.263
+        ],
+        "eef_start_base_m": [
+          0.246,
+          -0.008,
+          0.601
+        ],
+        "episodes": 14,
+        "fixture": "ElectricKettle",
+        "front_distance_m_median": 0.237,
+        "heading_deg_max": 47.1,
+        "lateral_m": [
+          -0.131,
+          0.078
+        ]
+      },
+      "TurnOnToasterOven": {
+        "distance_m": [
+          0.328,
+          0.46
+        ],
+        "eef_start_base_m": [
+          0.242,
+          -0.0,
+          0.597
+        ],
+        "episodes": 6,
+        "fixture": "ToasterOven",
+        "front_distance_m_median": 0.37,
+        "heading_deg_max": 0.0,
+        "lateral_m": [
+          -0.088,
+          0.058
+        ]
+      }
+    },
+    "default": {
+      "distance_m": [
+        0.049,
+        0.569
+      ],
+      "heading_deg_max": 47.4
+    },
+    "provisional": true,
+    "source": {
+      "episodes": 576,
+      "excluded_tasks": [
+        {
+          "episodes": 13,
+          "reason": "navigation start pose is not a fixture-facing handoff pose",
+          "task": "NavigateKitchen"
+        }
+      ],
+      "sources": [
+        {
+          "root": "handback-export-hybrid",
+          "successful_atomic_episodes": 144
+        },
+        {
+          "root": "handback-export-round2",
+          "successful_atomic_episodes": 432
+        }
+      ]
+    }
+  },
+  "policy": "xiaomi-mibot",
+  "rows": {
+    "AdjustToasterOvenTemperature": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 5,
+      "tier": "unstable",
+      "typical_steps": 200,
+      "wilson95": [
+        0.1517632443971473,
+        0.5828645226148023
+      ]
+    },
+    "AdjustWaterTemperature": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 192,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "CategorizeCondiments": {
+      "crosses_threshold": true,
+      "episodes": 5,
+      "family": "composite",
+      "source": "xiaomi-capability-20261012",
+      "successes": 0,
+      "tier": "weak",
+      "typical_steps": null,
+      "wilson95": [
+        0.0,
+        0.43448246478317476
+      ]
+    },
+    "CheesyBread": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 302,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "CloseBlenderLid": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 9,
+      "tier": "unstable",
+      "typical_steps": 361,
+      "wilson95": [
+        0.357468301206246,
+        0.8017550385865841
+      ]
+    },
+    "CloseCabinet": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 300,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "CloseDishwasher": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 122.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "CloseDrawer": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 118,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "CloseElectricKettleLid": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 60,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "CloseFridge": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 12,
+      "tier": "reliable",
+      "typical_steps": 264.0,
+      "wilson95": [
+        0.5481455128483065,
+        0.9295245065301844
+      ]
+    },
+    "CloseFridgeDrawer": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 10,
+      "tier": "unstable",
+      "typical_steps": 105.5,
+      "wilson95": [
+        0.41713547738519774,
+        0.8482367556028526
+      ]
+    },
+    "CloseMicrowave": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 174,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "CloseOven": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 11,
+      "tier": "reliable",
+      "typical_steps": 145,
+      "wilson95": [
+        0.4804956594401943,
+        0.8910254667430761
+      ]
+    },
+    "CloseStandMixerHead": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 75.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "CloseToasterOvenDoor": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 169,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "CoffeeServeMug": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 12,
+      "tier": "reliable",
+      "typical_steps": 169.0,
+      "wilson95": [
+        0.5481455128483065,
+        0.9295245065301844
+      ]
+    },
+    "CoffeeSetupMug": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 3,
+      "tier": "weak",
+      "typical_steps": 199,
+      "wilson95": [
+        0.07047549346981563,
+        0.45185448715169363
+      ]
+    },
+    "LowerHeat": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 8,
+      "tier": "unstable",
+      "typical_steps": 295.5,
+      "wilson95": [
+        0.30116980025498397,
+        0.7519046463426261
+      ]
+    },
+    "MakeIcedCoffee": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 238,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "NavigateKitchen": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 159,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "OpenBlenderLid": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 11,
+      "tier": "reliable",
+      "typical_steps": 162,
+      "wilson95": [
+        0.4804956594401943,
+        0.8910254667430761
+      ]
+    },
+    "OpenCabinet": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 11,
+      "tier": "reliable",
+      "typical_steps": 382,
+      "wilson95": [
+        0.4804956594401943,
+        0.8910254667430761
+      ]
+    },
+    "OpenDishwasher": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 9,
+      "tier": "unstable",
+      "typical_steps": 148,
+      "wilson95": [
+        0.357468301206246,
+        0.8017550385865841
+      ]
+    },
+    "OpenDrawer": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 179,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "OpenElectricKettleLid": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 4,
+      "tier": "weak",
+      "typical_steps": 56.0,
+      "wilson95": [
+        0.10897453325692374,
+        0.5195043405598057
+      ]
+    },
+    "OpenFridge": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 382,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "OpenFridgeDrawer": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 10,
+      "tier": "unstable",
+      "typical_steps": 163.0,
+      "wilson95": [
+        0.41713547738519774,
+        0.8482367556028526
+      ]
+    },
+    "OpenMicrowave": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 227,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "OpenOven": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 122,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "OpenStandMixerHead": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 93.0,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "OpenToasterOvenDoor": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 145,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "PackDessert": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 228.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "PanTransfer": {
+      "crosses_threshold": true,
+      "episodes": 5,
+      "family": "composite",
+      "source": "xiaomi-capability-20261012",
+      "successes": 0,
+      "tier": "weak",
+      "typical_steps": null,
+      "wilson95": [
+        0.0,
+        0.43448246478317476
+      ]
+    },
+    "PickPlaceCabinetToCounter": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 11,
+      "tier": "reliable",
+      "typical_steps": 191,
+      "wilson95": [
+        0.4804956594401943,
+        0.8910254667430761
+      ]
+    },
+    "PickPlaceCounterToBlender": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 339,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "PickPlaceCounterToCabinet": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 11,
+      "tier": "reliable",
+      "typical_steps": 202,
+      "wilson95": [
+        0.4804956594401943,
+        0.8910254667430761
+      ]
+    },
+    "PickPlaceCounterToDrawer": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 227.0,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "PickPlaceCounterToMicrowave": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 10,
+      "tier": "unstable",
+      "typical_steps": 380.5,
+      "wilson95": [
+        0.41713547738519774,
+        0.8482367556028526
+      ]
+    },
+    "PickPlaceCounterToOven": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 258,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "PickPlaceCounterToSink": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 12,
+      "tier": "reliable",
+      "typical_steps": 182.0,
+      "wilson95": [
+        0.5481455128483065,
+        0.9295245065301844
+      ]
+    },
+    "PickPlaceCounterToStandMixer": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 12,
+      "tier": "reliable",
+      "typical_steps": 217.0,
+      "wilson95": [
+        0.5481455128483065,
+        0.9295245065301844
+      ]
+    },
+    "PickPlaceCounterToStove": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 199.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "PickPlaceCounterToToasterOven": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 199.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "PickPlaceDrawerToCounter": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 314,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "PickPlaceFridgeDrawerToShelf": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 206.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "PickPlaceFridgeShelfToDrawer": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 219,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "PickPlaceMicrowaveToCounter": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 270,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "PickPlaceSinkToCounter": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 237.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "PickPlaceStoveToCounter": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 10,
+      "tier": "unstable",
+      "typical_steps": 185.0,
+      "wilson95": [
+        0.41713547738519774,
+        0.8482367556028526
+      ]
+    },
+    "PickPlaceToasterOvenToCounter": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 10,
+      "tier": "unstable",
+      "typical_steps": 160.5,
+      "wilson95": [
+        0.41713547738519774,
+        0.8482367556028526
+      ]
+    },
+    "PickPlaceToasterToCounter": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 231,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "PreheatOven": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 7,
+      "tier": "unstable",
+      "typical_steps": 164,
+      "wilson95": [
+        0.24809535365737387,
+        0.698830199745016
+      ]
+    },
+    "SlideDishwasherRack": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 168.5,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "SlideOvenRack": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 15,
+      "tier": "reliable",
+      "typical_steps": 210,
+      "wilson95": [
+        0.7961166989641515,
+        1.0
+      ]
+    },
+    "SlideToasterOvenRack": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 13,
+      "tier": "reliable",
+      "typical_steps": 92,
+      "wilson95": [
+        0.6211801716767764,
+        0.9626387408969346
+      ]
+    },
+    "StartCoffeeMachine": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 3,
+      "tier": "weak",
+      "typical_steps": 88,
+      "wilson95": [
+        0.07047549346981563,
+        0.45185448715169363
+      ]
+    },
+    "SteamInMicrowave": {
+      "crosses_threshold": true,
+      "episodes": 5,
+      "family": "composite",
+      "source": "xiaomi-capability-20261012",
+      "successes": 4,
+      "tier": "reliable",
+      "typical_steps": 1000.0,
+      "wilson95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ]
+    },
+    "StoreLeftoversInBowl": {
+      "crosses_threshold": true,
+      "episodes": 5,
+      "family": "composite",
+      "source": "xiaomi-capability-20261012",
+      "successes": 4,
+      "tier": "reliable",
+      "typical_steps": 1076.5,
+      "wilson95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ]
+    },
+    "TurnOffMicrowave": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 3,
+      "tier": "weak",
+      "typical_steps": 140,
+      "wilson95": [
+        0.07047549346981563,
+        0.45185448715169363
+      ]
+    },
+    "TurnOffSinkFaucet": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 10,
+      "tier": "unstable",
+      "typical_steps": 95.0,
+      "wilson95": [
+        0.41713547738519774,
+        0.8482367556028526
+      ]
+    },
+    "TurnOffStove": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 9,
+      "tier": "unstable",
+      "typical_steps": 267,
+      "wilson95": [
+        0.357468301206246,
+        0.8017550385865841
+      ]
+    },
+    "TurnOnBlender": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 6,
+      "tier": "unstable",
+      "typical_steps": 86.5,
+      "wilson95": [
+        0.1982449614134158,
+        0.6425316987937539
+      ]
+    },
+    "TurnOnElectricKettle": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 92.0,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "TurnOnMicrowave": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 8,
+      "tier": "unstable",
+      "typical_steps": 110.0,
+      "wilson95": [
+        0.30116980025498397,
+        0.7519046463426261
+      ]
+    },
+    "TurnOnSinkFaucet": {
+      "crosses_threshold": false,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-20261012",
+      "successes": 14,
+      "tier": "reliable",
+      "typical_steps": 203.0,
+      "wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ]
+    },
+    "TurnOnStove": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 9,
+      "tier": "unstable",
+      "typical_steps": 190,
+      "wilson95": [
+        0.357468301206246,
+        0.8017550385865841
+      ]
+    },
+    "TurnOnToaster": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 9,
+      "tier": "unstable",
+      "typical_steps": 67,
+      "wilson95": [
+        0.357468301206246,
+        0.8017550385865841
+      ]
+    },
+    "TurnOnToasterOven": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 6,
+      "tier": "unstable",
+      "typical_steps": 253.5,
+      "wilson95": [
+        0.1982449614134158,
+        0.6425316987937539
+      ]
+    },
+    "TurnSinkSpout": {
+      "crosses_threshold": true,
+      "episodes": 15,
+      "family": "atomic",
+      "source": "xiaomi-capability-round2-20261012",
+      "successes": 11,
+      "tier": "reliable",
+      "typical_steps": 83,
+      "wilson95": [
+        0.4804956594401943,
+        0.8910254667430761
+      ]
+    },
+    "WashLettuce": {
+      "crosses_threshold": true,
+      "episodes": 5,
+      "family": "composite",
+      "source": "xiaomi-capability-20261012",
+      "successes": 3,
+      "tier": "unstable",
+      "typical_steps": 968,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ]
+    }
+  },
+  "schema_version": 1,
+  "thresholds": {
+    "reliable": 0.7,
+    "unstable": 0.3
+  }
+}

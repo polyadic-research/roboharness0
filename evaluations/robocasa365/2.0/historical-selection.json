@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "kind": "historical_selected200_reference",
+  "scientific_source": {
+    "display_version": "2.0",
+    "original_version": "1.2.3.5",
+    "commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+    "digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc"
+  },
+  "result_index": {
+    "path": "results/2.0-selected200/selected200-index-20261107-r002.json",
+    "sha256": "1a801d939d2837116b4fe4a7ab025f9fcb24466a794e1099a7e50256683ad018"
+  },
+  "result_summary": {
+    "path": "results/2.0-selected200/selected200-summary-20261107-r002.json",
+    "sha256": "2b07a05b6934cf6cc99fc4aec4669a103512d6c4309ce20d8b0a643db5eac5de"
+  },
+  "selected_batches": [
+    {
+      "batch": "fresh50",
+      "display_name": "\u9996\u6279",
+      "native_completed": 50,
+      "successes": 34,
+      "failures": 16,
+      "success_rate": 0.68,
+      "native_episode_index": 1
+    },
+    {
+      "batch": "followup01",
+      "display_name": "\u540e\u7ee701",
+      "native_completed": 50,
+      "successes": 36,
+      "failures": 14,
+      "success_rate": 0.72,
+      "native_episode_index": 2
+    },
+    {
+      "batch": "followup02",
+      "display_name": "\u540e\u7ee702",
+      "native_completed": 50,
+      "successes": 34,
+      "failures": 16,
+      "success_rate": 0.68,
+      "native_episode_index": 3
+    },
+    {
+      "batch": "followup04",
+      "display_name": "\u540e\u7ee704",
+      "native_completed": 50,
+      "successes": 37,
+      "failures": 13,
+      "success_rate": 0.74,
+      "native_episode_index": 4
+    }
+  ],
+  "excluded_batch_ids": [
+    "astra50-followup-03-20261104-r001"
+  ],
+  "unique_scenes": 200,
+  "successes": 141,
+  "failures": 59,
+  "split_counts": {
+    "atomic_seen": {
+      "cases": 72,
+      "successes": 62,
+      "failures": 10
+    },
+    "composite_seen": {
+      "cases": 64,
+      "successes": 45,
+      "failures": 19
+    },
+    "composite_unseen": {
+      "cases": 64,
+      "successes": 34,
+      "failures": 30
+    }
+  },
+  "selected_attempts": "Use only the byte-exact selected_results rows in result_index; do not choose replacements or count repeats.",
+  "initial_state_and_policy_rng": "Original scene/state/RNG evidence is external. Scene identifiers and integer seed 7 do not reconstruct the original initial states or policy RNG.",
+  "replay_supported": false,
+  "official_2500_result": false,
+  "all200_workflow_archive_complete": false
+}

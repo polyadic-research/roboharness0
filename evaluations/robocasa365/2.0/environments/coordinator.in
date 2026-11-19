@@ -1,0 +1,17 @@
+# Coordinator runtime dependencies from the frozen 2.0 pyproject.
+pydantic-ai-slim[openai]==2.54.0
+pydantic==2.14.3
+python-dotenv>=1.0
+fastapi==0.142.2
+uvicorn==0.54.0
+httpx==0.28.1
+openai==3.24.0
+huggingface_hub>=0.24
+prompt-toolkit>=3.0.48
+numpy
+imageio>=2.0
+imageio-ffmpeg==0.6.0
+pyarrow>=16
+scipy
+setuptools==84.2.1
+wheel==0.48.0

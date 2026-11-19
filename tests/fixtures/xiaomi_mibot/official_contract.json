@@ -1,0 +1,35 @@
+{
+  "checkpoint_revision": "0d1aa76d0d82debc9b611e4d1e231096434d5be4",
+  "conformance_layers": [
+    "state14",
+    "packed_state",
+    "message_and_processor",
+    "decode_then_slice"
+  ],
+  "decoded_action_absolute_tolerance": 1e-5,
+  "decoded_action_relative_tolerance": 1e-5,
+  "input_layers": {
+    "camera_hashes": {
+      "robot0_agentview_left": "23462e0f01ed8d570916a889ff6d7162577bb97e3e75d605e7d12d2521906f44",
+      "robot0_agentview_right": "93f8656ca33f2804dbbb9b159deca33a1788699e0c3235ceb139b5cbfa70d7ec",
+      "robot0_eye_in_hand": "8978e692d3c0af521f8c9433fac3af1fceca07af38da5b9a2382c022910efbdf"
+    },
+    "packed_state_hash": "2ec6c2d4dc1a514ffde1ffa497441394adc6f7f8b45cce13200b2f81f2f717c3",
+    "source_npz_sha256": "5a3ee99158f9160fe29d175bba0ce377a202942c8f0d6e0b7a41aa7b0b549794",
+    "state14_hash": "2f318781b331f2a66edac0fb04fc07348a7fdee635a4fcda9e5bc9fa2d362c26"
+  },
+  "official_processor": {
+    "decoded_action_hash": "a4045606be80d79a6d80f1b87aa0d756ad473d2e191af77132d1bb27b8e2668d",
+    "input_ids_hash": "a9b7ba5a01270a183955f7970c48ebba7720df7105583a36fe65272ee3eeee29",
+    "input_ids_shape": [1, 115],
+    "pixel_values_videos_hash": "13cc67ffbe7bdb92ca7d9e7be350c64012caa4f42c6d868cb748118eb5c05926",
+    "pixel_values_videos_shape": [96, 1536],
+    "state_shape": [1, 4, 60]
+  },
+  "official_camera_order": [
+    "left",
+    "right",
+    "wrist"
+  ],
+  "source_revision": "556cca33963a2b36d835a40374c3b4c8eef68401"
+}

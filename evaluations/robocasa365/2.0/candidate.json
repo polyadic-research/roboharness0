@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "edition": "2.0",
+  "source_commit": "c8911c64f24393e8665bd9ecc34f819173d9c3ba",
+  "project_license": "Apache-2.0",
+  "policy": {
+    "name": "Xiaomi-Robotics-1-RoboCasa365",
+    "repo_id": "XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365",
+    "revision": "0d1aa76d0d82debc9b611e4d1e231096434d5be4",
+    "source_revision": "556cca33963a2b36d835a40374c3b4c8eef68401",
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365/blob/0d1aa76d0d82debc9b611e4d1e231096434d5be4/LICENSE",
+    "weight_edits": false
+  },
+  "planner": {
+    "provider": "OpenAI Codex SDK via CodexGateway",
+    "model_id": "gpt-6-astra",
+    "settings": {
+      "reasoning_effort": "xhigh",
+      "max_tokens": 0,
+      "configured_request_timeout_s": 330,
+      "note": "Configured values from historical evidence; preserve per-attempt overrides and do not claim independently verified upstream model identity.",
+      "planner_timeout_s": null,
+      "plan_generation_timeout_s": 180,
+      "reasoning_effort_scope": "Gateway server; not a frozen-client environment control"
+    },
+    "protocol": "codexgateway",
+    "configured_model_id": "gpt-6-astra",
+    "identity_independently_verified": false,
+    "configuration": "evaluations/robocasa365/2.0/planner.json",
+    "evidence": "evaluations/robocasa365/2.0/planner-evidence.json",
+    "api_access": "Supplied privately; endpoint and key are outside the repository."
+  },
+  "memory": {
+    "cross_episode": null,
+    "fixed_priors": [
+      "robots/robocasa/policy_skills/xiaomi-mibot.capabilities.json",
+      "robots/robocasa/policy_skills/xiaomi-mibot.md"
+    ],
+    "calibration_provenance": "Original Xiaomi capability references retain their measured 2026-10-12/13 atomic65 x15 and composite5 x5 provenance. Runtime cross-episode state has not been independently audited.",
+    "fixed_priors_used": true
+  },
+  "protocol_review": null,
+  "full_evaluation": null,
+  "submission": {
+    "model_name": "RoboHarness-Zero",
+    "submitter": "Polyadic Research Group",
+    "model_type": "VLA",
+    "date": "2026-11-15",
+    "robocasa_version": "1.0.1",
+    "atomic_seen_success": 86.11111111111111,
+    "composite_seen_success": 70.3125,
+    "composite_unseen_success": 53.125,
+    "base_policy": "Xiaomi-Robotics-1-RoboCasa365",
+    "code_url": "https://github.com/polyadic-research/roboharness0",
+    "commit_hash": "<PUBLIC_COMMIT_SHA>",
+    "checkpoint_url": "https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365/tree/0d1aa76d0d82debc9b611e4d1e231096434d5be4",
+    "paper_link": "<ARXIV_URL>",
+    "open_source": "yes",
+    "notes": "PREPARATION DRAFT, NOT SUBMITTED. Project source is licensed under Apache-2.0; NOTICE and THIRD_PARTY_NOTICES.md retain upstream attribution. API access is supplied privately; endpoint and key are excluded from the repository. Before success, the planner can see environment.success=false in tool responses. The first native success stops physical execution and sets the score. The terminal status can then reach the planner for finish bookkeeping. Unchanged Harness 2.0 is original 1.2.3.5 at c8911c64f24393e8665bd9ecc34f819173d9c3ba; Xiaomi base weights unchanged, Apache-2.0. Historical author-run selected200 r002: 50 tasks x4 episodes, 141/200 successes; Atomic-Seen 62/72, Composite-Seen 45/64, Composite-Unseen 34/64. Selected batches fresh50/followup01/followup02/followup04; followup03 excluded. Ten selected attempts used a 600-second nested-planning override, so this is a mixed-parameter supplemental panel, not an official 2500-rollout score. Original success feedback, success-dependent verification and RGB-D back_project are retained and disclosed for organizer review. Configured planner: OpenAI Codex SDK via codexgateway, gpt-6-astra, reasoning_effort=xhigh, max_tokens=0; upstream provider/model identity not independently verified. Fixed offline capability priors retained; dynamic cross-episode memory not independently audited. All200 workflow/archive closure is not claimed. No organizer eligibility approval or waiver is claimed. The source distribution is a curated RoboCasa/Xiaomi subset; retained runtime and model-bound inputs keep their original bytes, with exact exclusions in publication/source-manifest.json."
+  },
+  "source_digest": "751d205d8b996b8ae36aa9992ac539eef5a7e993752a0381f022237e9c9085fc",
+  "source_original_version": "1.2.3.5",
+  "submission_mode": "unchanged_historical_2.0",
+  "result_scope": "historical_selected200_r002",
+  "protocol_changes_authorized": false,
+  "historical_results": {
+    "path": "results/2.0-selected200",
+    "included_batches": [
+      "fresh50",
+      "followup01",
+      "followup02",
+      "followup04"
+    ],
+    "excluded_batch": "astra50-followup-03-20261104-r001",
+    "completed": 200,
+    "successes": 141,
+    "failures": 59,
+    "official_2500_complete": false
+  },
+  "metadata_status": {
+    "team": "confirmed",
+    "paper": "title_and_authors_confirmed_arxiv_link_pending",
+    "project_license": "owner_confirmed_Apache-2.0_on_2026-11-17",
+    "public_repository": "url_confirmed_release_commit_pending",
+    "dependency_setup": "pinned_locks_and_installer_with_offline_checks_prepared",
+    "evaluation_entrypoint": "default_plan_only_profile_and_historical_manifests_prepared",
+    "planner_configuration": "public_configuration_and_sanitized_historical_evidence_prepared",
+    "contact": "confirmed",
+    "citation": "title_authors_and_year_recorded"
+  },
+  "publication_scope": {
+    "id": "robocasa365-xiaomi-submission",
+    "manifest": "publication/source-manifest.json",
+    "excluded_original_files": 82,
+    "retained_original_runtime_files": 209,
+    "protocol_changed": false
+  },
+  "publication_metadata": {
+    "team": "Polyadic Research Group",
+    "contact_email": "123090492@link.cuhk.edu.cn",
+    "paper_title": "RoboHarness-Zero: Any Frozen VLA, Zero Per-Task Preparation",
+    "authors": "Yihao Shen, Yuxuan Chen, Xuantong Liu, Jun Gao, Weijian Luo, Tianyang Hu",
+    "paper_url": "<ARXIV_URL>",
+    "citation_file": "CITATION.bib"
+  }
+}

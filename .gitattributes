@@ -1,0 +1,3 @@
+# Preserve the pinned upstream license texts, including their original spacing.
+LICENSES/RoboCasa-MIT.txt whitespace=-blank-at-eol
+LICENSES/robosuite-MIT.txt whitespace=-blank-at-eol
