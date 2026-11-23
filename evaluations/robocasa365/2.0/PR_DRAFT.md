@@ -2,7 +2,11 @@
 
 Leaderboard file for the current draft date: `submissions/agentic/RoboHarness-Zero_2026_11_15.json`. For the final PR, use the submission JSON’s `date` for the filename suffix in `YYYY_MM_DD` format.
 
-Polyadic Research Group prepared this submission for *RoboHarness-Zero: Any Frozen VLA, Zero Per-Task Preparation*. The paper URL is `<ARXIV_URL>` and the public release commit is `<PUBLIC_COMMIT_SHA>`. [Source repository](https://github.com/polyadic-research/roboharness0) · [BibTeX citation](../../../CITATION.bib). The project source is licensed under [Apache-2.0](../../../LICENSE); [NOTICE](../../../NOTICE) and [third-party notices](../../../THIRD_PARTY_NOTICES.md) retain upstream attribution. No leaderboard PR has been opened.
+Polyadic Research Group prepared this submission for *RoboHarness-Zero: Any Frozen VLA, Zero Per-Task Preparation*.
+
+We plan to submit the RoboHarness-Zero paper to arXiv on November 23 or 24, 2026. We’ll add the arXiv abstract link to this PR as soon as it is public.
+
+The public release commit is `<PUBLIC_COMMIT_SHA>`. [Source repository](https://github.com/polyadic-research/roboharness0) · [BibTeX citation](../../../CITATION.bib). The project source is licensed under [Apache-2.0](../../../LICENSE); [NOTICE](../../../NOTICE) and [third-party notices](../../../THIRD_PARTY_NOTICES.md) retain upstream attribution. No leaderboard PR has been opened.
 
 ## Source and method
 
